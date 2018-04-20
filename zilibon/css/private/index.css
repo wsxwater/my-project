@@ -110,10 +110,13 @@
 .product-card .card .header img{display: block;width: 100%;}
 .product-card .card .body{background-color: #f6f6f6;}
 
-.banner {overflow: hidden;/* margin: 50px 0; */}
-.banner img.banner-bg{display: block;width:100%;min-height:60px;object-fit: cover;min-width: 100%;}
-/* .banner .banner-img{position: absolute;top:0;right: 0;bottom: 0;left: 0;} */
+.banner {overflow: hidden;}
+.banner img.banner-bg{display: block;width:100%;min-height:60px;}
 .banner-box{background: #16a4df url('../../images/index/fbg.jpg') repeat 0 0 /100% 100%;padding:30px 0;}
+.banner-box.nobg{background: none;padding: 0;}
+.banner-wrap{background: #16a4df url('../../images/index/banner1.jpg') repeat 0 0 /100% 100%;}
+.banner-box img.banner-bg{object-fit: cover;min-width: 100%;}
+.banner-wrap img.banner-bg{/*width: 100%; min-height: 30px; */} 
 
 /* 更多(a链接) */
 .more{font-size:12px;padding:0 5px;display: inline-block;position: relative;color: #00a7eb;}
@@ -217,12 +220,13 @@ border-radius: 0;-webkit-border-radius: 0;-moz-border-radius: 0;-o-border-radius
 .footbox-b .nav>li:first-child{padding-top: 0;}
 .logo-box .line{padding: 60px 0 110px;margin-left: 0px;}
 .footbox-b .logo{max-width:100%;display:inline-block;margin-left: -15px;}
-.qrcode-wrap{width: 140px;}
+.qrcode-wrap{width: 140px;float: right;}
 .qrcode{display: block;width: 100%;}
 .footbox-b .telphone{position: absolute;top:0;right: 0;}
 .footbox-b .telphone img{display: block;width: 254px;}
 .footbox-b .telphone>a{padding: 0;}
 .footbox-b .nav>li.telphone>a:focus, .footbox-b .nav>li.telphone>a:hover{background-color: transparent;}
+/* .footbox-b .row{margin-left: 0;margin-right: 0;} */
 
 @media (max-width: 767px){
 	.index-box .navbar {padding: 0;}
@@ -261,6 +265,7 @@ border-radius: 0;-webkit-border-radius: 0;-moz-border-radius: 0;-o-border-radius
     .footbox-b .logo-box .line{display: none;}
     .footbox-b .logo-box .logo{margin-left: 0;}
     .footbox-b .telphone{position: relative;}
+    .qrcode-wrap{float: left;}
 }
 @media (min-width: 768px) and (max-width: 992px) {
 	.index-box .navbar {padding: 20px 0;}
