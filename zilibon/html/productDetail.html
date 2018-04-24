@@ -89,7 +89,9 @@
             <div class="container">
                 <div class="clearfix white">
                     <article class="clearfix">
-                      <div class="product-classify" is="classify"></div>
+                      <div class="product-classify" is="classify">
+                        
+                      </div>
                       <div class="product-display">
                           <div class="product-title">
                               <div class="title">
@@ -150,7 +152,7 @@
                                 <div class="product-title">
                                     <div class="title clearfix">
                                         <h3 class="clearfix">产品参数</h3>
-                                        <div>Product parameter</div>
+                                        <div>PRODUCT OVERVIEW</div>
                                     </div>   
                                 </div>  
                               </section>
@@ -163,7 +165,7 @@
                       <div class="product-display">
                         <section class="application-wrap">
                           <div class="application-box align-center">
-                            <div class="application-title">适用范围<span class="ico-app ico-app1"><span>♦</span></span><span class="ico-app ico-app2"><span>♦</span></span></div>
+                            <div class="application-title">适用范围<span class="ico-app ico-app1"><span></span></span><span class="ico-app ico-app2"><span></span></span></div>
                             <div class="application-body clearfix">
                                 <div class="application-cell-wrap clearfix">
                                   <div class="application-cell">
@@ -429,6 +431,15 @@
                 })
             }
 
+            //行业分类 产品分类 内容点击
+            $('.item-body').on('click','a',function () {
+              $(this).addClass('active').parents('.product-show').find('.item-body a').not($(this)).removeClass('active');
+            })
+
+            $('.product-show').on('click','.menu-item',function () {
+                $(this).addClass('active').parents('.product-show').find('.menu-item').not($(this)).removeClass('active');
+            })
+
             $('.shop-list-box .dropdown-menu').on('click', '.menu-item', function(event) {
                 $(this).addClass('current').siblings('li.menu-item').removeClass('current');
                 event.preventDefault();
@@ -441,9 +452,31 @@
             });
             
             
-            $('.product-show').on('click','.item-title',function () {
-                $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideUp();
-            })
+            function IsPC() {
+                var userAgentInfo = navigator.userAgent;
+                var Agents = ["Android", "iPhone",
+                            "SymbianOS", "Windows Phone",
+                            "iPad", "iPod"];
+                var flag = true;
+                for (var v = 0; v < Agents.length; v++) {
+                    if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+                return flag;
+            }
+             
+            var flag = IsPC(); 
+            console.log(flag)//true为PC端，false为手机端和ipad
+              
+            if (!flag) {
+              /*菜单收缩*/
+              $('.product-show .item-body').hide();
+              $('.product-show').on('click','.item-title',function () {
+                  $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideUp();
+              })
+            }
 
             setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 

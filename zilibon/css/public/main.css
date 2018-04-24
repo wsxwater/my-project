@@ -81,12 +81,10 @@
 .ico-shop9{background-position: 0px -450px;}
 .current .ico-shop9{background-position: 0 -475px;}
 
-.shop-list-box{background-color: #00a7eb;}
 .shop-list-box .nav{line-height:36px;}
 .shop-list-box .nav li{float:left;text-align:center;}
-.shop-list-box .nav li a{font:14px/36px "Microsoft YaHei","微软雅黑";color: #fff;display:block;padding: 11px 34px 13px;}
-.shop-list-box .nav li a:hover,
-.shop-list-box .nav li a:focus{background-color: #0790d2;}
+.shop-list-box .nav li a{font:14px/36px "Microsoft YaHei","微软雅黑";display:block;padding: 11px 34px 13px;color: #000;}
+
 
 
 /* 顶部搜索框 */
@@ -124,6 +122,7 @@
 .product-show .container{padding-left: 0;}
 .product-show .title h3{margin: 0;float:left;border-bottom:2px solid #0d7ad7;color:#333;font-size: 16px;height:28px;margin-right:10px;position: relative;margin-top: 1px;}
 .product-show .title h4{margin: 0;line-height:28px;color:#ADADAD;padding-left:4px;font-size: 14px;font-weight: normal;}
+.product-classify{background-color: #f6f6f6;}
 .product-classify .card {margin-bottom: 0;/* display: none; */}
 .product-classify .card .card-image img{height: 115px;}
 .product-classify .title{color: #fff;position: absolute;top:0;right: 0;left: 0;bottom: 0;}
@@ -135,18 +134,23 @@
 .product-classify .title .title-en{font-size: 12px;line-height: 1;text-transform: uppercase;}
 /* 分类列表 */
 .product-classify{width: 34%;float: left;border: 1px solid #0d7ad7;margin-bottom: 20px;}
-.product-classify .item-title{color: #ff7802;margin:0;padding:16px;font-weight: normal;}
+.product-classify .item-title{color: #ff7802;margin:0px 0 14px;padding:16px;font-weight: normal;}
+
 .product-classify .list-group{margin-bottom: 0;}
 .product-classify .list-group-item{/* padding:10px;padding-bottom: 13px; */padding:0;border: none;background: #f6f6f6;
 	border-top: 1px dashed #0797dd;border-bottom:1px dashed #0797dd;}
 .product-classify .list-group-item:first-child{border-top: none;}
 .product-classify .list-group-item:last-child{border-bottom: none;}
-.product-classify .item-body{color: #ff5500;padding:0 15px;padding-bottom:10px;display: none;}
+.product-classify .item-body{color: #ff5500;padding:0 15px;padding-bottom:10px;}
 .product-classify .item-body a{text-decoration: none;text-align:center;font-size:14px;display: inline-block;width:90px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;vertical-align: middle;color: #888;padding:11px 0;}
-
+.product-classify .item-body a.active,.product-classify .item-body a:focus,.product-classify .item-body a:hover{color: #ff7802;background-color: transparent;border:none;}
 .product-classify .item-body .line{/* padding: 14px 10px 5px;margin-left: 20px; */}
 .product-classify .menu-item{font-size: 16px; padding:16px;text-align: center;background: #f5f5f5 url('../../images/list/titbg.png') 0 0 repeat-y /100% 100%;}
-.product-classify .menu-item a{display: block;text-decoration: none;color: #0790d2;}
+.product-classify .menu-item a{display: block;text-decoration: none;color:#333;}
+.product-classify .menu-item i{color:#333;}
+.product-classify .menu-item.active,.product-classify .menu-item:hover{color: #0790d2;}
+.product-classify .menu-item.active a,.product-classify .menu-item:hover a,
+.product-classify .menu-item.active i,.product-classify .menu-item:hover i{color: #0790d2;}
 /* 产品展示标题 */
 .product-display{width: 64%;float: right;}
 .product-title{border-bottom:1px solid #0d7ad7;height: 29px;}
@@ -187,7 +191,7 @@ width: 20px;height: 20px;vertical-align: middle;margin-top: -4px;}
 .nav-title.ico-nav0:before{background-position: 0 0;}
 .nav-title.ico-nav1:before{background-position: 0 -20px;}
 .nav-title.ico-nav2:before{background-position: 0 -40px;}
-/* .nav-title.ico-nav2{height: 40px;overflow: hidden;display: block;} */
+.nav-title.ico-nav2{height: 40px;overflow: hidden;display: block;}
 .ico-fly{background-position: 0 -60px;}
 
 /* 底部 */
@@ -270,7 +274,7 @@ border-radius: 0;-webkit-border-radius: 0;-moz-border-radius: 0;-o-border-radius
 .reason-txt,.reason-img{position: relative;padding: 10px;}
 .reason-txt h3{color: #ff8400;font-size: 22px;}
 .reason-txt h3 span{position: relative;display: inline-block;border:2px solid transparent;font-size: 32px;width: 46px;height: 45px;line-height: 45px;color: #FFF;text-align: center;font-style: italic;font-weight: normal;margin-right: 5px;
-background: url('../../images/index/ico-num.png') 0 0 no-repeat;}
+background: url('../../images/index/ico-num.png') 0 0 no-repeat;font-family: "Angular";}
 .reason-img-l{text-align: left;}
 .reason-img-r{text-align: right;}
 .reason-txt-r{text-align: right;}
