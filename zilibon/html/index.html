@@ -20,10 +20,12 @@
 	<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="../css/style.min.css">
-    <link rel="stylesheet" type="text/css" href="../plugins/Swiper-3.2.7/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../plugins/Swiper-3.2.7/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/private/index.css">
+  <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
 	<link href="../css/themes/all-themes.css" rel="stylesheet" />
+
 </head>
 <body class="white">
     <!-- Page Loader -->
@@ -62,10 +64,10 @@
 
         <div class="search-box">
             <div class="container">
-                <div class="search-box-left">其它产品</div>
+                <div class="search-box-left" is-pc="true">其它产品</div>
                 <div class="search-box-right">
                     <div class="row">
-                        <div class="col-lg-8 col-xs-12">
+                        <div class="col-lg-8 col-xs-12 p-l-0" is-pc="true">
                            <div class="search-nav">
                                <span>热搜词：</span>
                                <a href="javascript:;">洗衣粉</a>
@@ -78,7 +80,7 @@
                                </span>
                            </div>
                         </div>
-                        <div class="col-lg-4 col-xs-12">
+                        <div class="col-lg-4 col-xs-12 p-l-0">
                             <div class="input-group">
                               <span class="input-group-addon" id="searchProduct"><i class="material-icons">search</i></span>
                               <input type="text" class="form-control" placeholder="请输入关键词..." aria-describedby="searchProduct">
@@ -89,315 +91,400 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="product-show">
+            <div class="container">
+                <div class="clearfix">
+                  <div class="product-classify">
+                     <div class="card">
+                         <div class="card-image">
+                             <img src="../images/index/titbg1.jpg">
+                             <div class="title clearfix">
+                                 <div class="title-sec">
+                                   <div class="title-cell title-cell1"><img src="../images/index/ico-class.png"></div>
+                                   <div class="title-cell">
+                                     <div class="title-ch">产品分类</div>
+                                     <div class="title-en">PRODUCT DISPLAY</div>
+                                   </div>
+                                 </div>
+                             </div>  
+                         </div>
+                     </div>
+                     <ul class="list-group">
+                         <li class="list-group-item">
+                            <h3 class="item-title align-center">洗衣粉</h3>
+                              <div class="item-body clearfix">
+                                      <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">增白洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">低温洗衣粉</a>
+                                      <a href="javascript:;">低泡洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">通用洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">无磷洗衣粉</a>
+                                      <a href="javascript:;">黄碱洗衣粉</a>
+                              </div> 
+                         </li>
+                         <li class="list-group-item">
+                            <h3 class="item-title align-center">清洗粉</h3>
+                              <div class="item-body clearfix">
+                                      <a href="javascript:;">强力除油粉</a><span class="line"></span>
+                                      <a href="javascript:;">地毯清洁粉</a><span class="line"></span>
+                                      <a href="javascript:;">去渍粉</a>
+                                      <a href="javascript:;">通渠粉</a>
+                              </div> 
+                         </li>
+                         <li class="list-group-item">
+                            <h3 class="item-title align-center">洗洁精</h3>
+                              <div class="item-body clearfix">
+                                      <a href="javascript:;">通用洗洁精</a><span class="line"></span>
+                                      <a href="javascript:;">易过水洗洁精</a><span class="line"></span>
+                                      <a href="javascript:;">低泡洗洁精</a>
+                                      <a href="javascript:;">餐具洗洁精</a>
+                              </div> 
+                         </li>
+                         <li class="list-group-item">
+                            <h3 class="item-title align-center">洗衣液</h3>
+                              <div class="item-body clearfix">
+                                      <a href="javascript:;">工业洗衣液</a><span class="line"></span>
+                                      <a href="javascript:;">去油洗衣液</a><span class="line"></span>
+                                      <a href="javascript:;">浓缩洗衣液</a>
+                              </div> 
+                         </li>
+                         <li class="list-group-item">
+                            <h3 class="item-title align-center">洗涤剂</h3>
+                              <div class="item-body clearfix">
+                                      <a href="javascript:;">除油洗涤剂</a><span class="line"></span>
+                                      <a href="javascript:;">除蜡洗涤剂</a><span class="line"></span>
+                                      <a href="javascript:;">强力洗涤剂</a>
+                                      <a href="javascript:;">液晶洗涤剂</a><span class="line"></span>
+                                      <a href="javascript:;">洗手液</a><span class="line"></span>
+                                      <a href="javascript:;">全能洗涤剂</a>
+                              </div> 
+                         </li>
+                     </ul>
+                  </div>
+                  <div class="product-display">
+                      <div class="product-title">
+                          <div class="row">
+                              <div class="col-xs-9 p-r-0">
+                                  <div class="title">
+                                      <h3>产品展示</h3>
+                                      <h4>PRODUCT&nbsp;DISPLAY</h4>
+                                  </div>   
+                              </div>
+                              <div class="col-xs-3 clearfix p-l-0">
+                                  <a href="javascript:;" class="pull-right">MORE <i class="material-icons">add_circle</i></a>
+                              </div>
+                          </div>
+                      </div>   
+                      <div class="product-card">
+                          <div class="row align-center clearfix">
+                              <div class="col-xs-6">
+                                  <div class="card z-depth-0">
+                                      <a href="javascript:;" class="btn-block">
+                                          <div class="header">
+                                              <img src="../images/index/product.jpg">
+                                          </div>
+                                          <div class="body">强力洗衣粉</div>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-xs-6">
+                                  <div class="card z-depth-0">
+                                      <a href="javascript:;" class="btn-block">
+                                          <div class="header">
+                                              <img src="../images/index/product.jpg">
+                                          </div>
+                                          <div class="body">强力洗衣粉</div>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-xs-6">
+                                  <div class="card z-depth-0">
+                                      <a href="javascript:;" class="btn-block">
+                                          <div class="header">
+                                              <img src="../images/index/product.jpg">
+                                          </div>
+                                          <div class="body">强力洗衣粉</div>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-xs-6">
+                                  <div class="card z-depth-0">
+                                      <a href="javascript:;" class="btn-block">
+                                          <div class="header">
+                                              <img src="../images/index/product.jpg">
+                                          </div>
+                                          <div class="body">强力洗衣粉</div>
+                                      </a>
+                                  </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="clearfix m-t-50">
+                  <div class="product-classify">
+                     <div class="card">
+                         <div class="card-image">
+                             <img src="../images/index/titbg1.jpg">
+                             <div class="title clearfix">
+                                 <div class="title-sec">
+                                   <div class="title-cell title-cell1"><img src="../images/index/ico-class.png"></div>
+                                   <div class="title-cell">
+                                     <div class="title-ch">行业分类</div>
+                                     <div class="title-en">Industry classification</div>
+                                   </div>
+                                 </div>
+                             </div>  
+                         </div>
+                     </div>
+                     <ul class="list-group">
+                         <li class="list-group-item">
+                            <h3 class="item-title align-center">工业清洗行业</h3>
+                              <div class="item-body clearfix">
+                                      <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">通用洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">工业洗衣液</a>
+                                      <a href="javascript:;">除油清洗剂</a><span class="line"></span>
+                                      <a href="javascript:;">液晶清洗剂</a><span class="line"></span>
+                                      <a href="javascript:;">除锈清洗剂</a>
+                              </div> 
+                         </li>
+                         <li class="list-group-item">
+                            <h3 class="item-title align-center">酒店客房</h3>
+                              <div class="item-body clearfix">
+                                      <a href="javascript:;">地毯清洁粉</a><span class="line"></span>
+                                      <a href="javascript:;">去渍粉</a><span class="line"></span>
+                                      <a href="javascript:;">通渠粉</a>
+                                      <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">增白洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">黄碱洗衣粉</a>
+                                      <a href="javascript:;">洗手液</a><span class="line"></span>
+                                      <a href="javascript:;">全能清洗剂</a>
+                              </div> 
+                         </li>
+                         <li class="list-group-item">
+                            <h3 class="item-title align-center">餐饮行业</h3>
+                              <div class="item-body clearfix">
+                                      <a href="javascript:;">餐具洗洁精</a><span class="line"></span>
+                                      <a href="javascript:;">强力除油粉</a><span class="line"></span>
+                                      <a href="javascript:;">低泡洗衣粉</a>
+                                      <a href="javascript:;">通用洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">去渍粉</a><span class="line"></span>
+                                      <a href="javascript:;">通渠粉</a>
+                              </div> 
+                         </li>
+                         <li class="list-group-item">
+                            <h3 class="item-title align-center">洗衣房</h3>
+                              <div class="item-body clearfix">
+                                      <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">无磷洗衣粉</a><span class="line"></span>
+                                      <a href="javascript:;">增白洗衣粉</a>
+                                      <a href="javascript:;">去油污洗衣液</a><span class="line"></span>
+                                      <a href="javascript:;">浓缩洗衣液</a>
+                              </div> 
+                         </li>
+                         <li class="list-group-item">
+                            <h3 class="item-title align-center">公共区域</h3>
+                              <div class="item-body clearfix align-center">
+                                      <a href="javascript:;">全部</a>
+                              </div> 
+                         </li>
+                     </ul>
+                  </div>
+                  <div class="product-display">
+                    
+                      <div class="product-title">
+                          <div class="row">
+                              <div class="col-xs-9 p-r-0">
+                                  <div class="title">
+                                      <h3>产品展示</h3>
+                                      <h4>PRODUCT&nbsp;DISPLAY</h4>
+                                  </div>    
+                              </div>
+                              <div class="col-xs-3 clearfix p-l-0">
+                                  <a href="javascript:;" class="pull-right">MORE <i class="material-icons">add_circle</i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="product-card">
+                          <div class="row align-center clearfix">
+                              <div class="col-xs-6">
+                                  <div class="card z-depth-0">
+                                      <a href="javascript:;" class="btn-block">
+                                          <div class="header">
+                                              <img src="../images/index/product.jpg">
+                                          </div>
+                                          <div class="body">强力洗衣粉</div>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-xs-6">
+                                  <div class="card z-depth-0">
+                                      <a href="javascript:;" class="btn-block">
+                                          <div class="header">
+                                              <img src="../images/index/product.jpg">
+                                          </div>
+                                          <div class="body">强力洗衣粉</div>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-xs-6">
+                                  <div class="card z-depth-0">
+                                      <a href="javascript:;" class="btn-block">
+                                          <div class="header">
+                                              <img src="../images/index/product.jpg">
+                                          </div>
+                                          <div class="body">强力洗衣粉</div>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-xs-6">
+                                  <div class="card z-depth-0">
+                                      <a href="javascript:;" class="btn-block">
+                                          <div class="header">
+                                              <img src="../images/index/product.jpg">
+                                          </div>
+                                          <div class="body">强力洗衣粉</div>
+                                      </a>
+                                  </div>
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card banner-card m-t-30" is-pc="true">
+          <div class="card-image">
+            <img src="../images/index/banner1.jpg">
+            <div class="card-content">
+                <div class="table-cell-wrap">
+                  <div class="table-cell font-bold col-white">
+                    <div class="container">
+                      <div class="text-shadow">
+                        中联邦洗涤剂<span class="theme-col-orge text-shadow-w">中国造 · 18年沉淀</span>引领洗涤剂新方向!
+                        <span class="pull-right"><span class="font-14">咨询热线:</span> <a href="javascript:;" class="cbtn font-24">137-1348-3638</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
         
-        <section class="aside-box ls-closed">
-            <aside id="leftsidebar" class="sidebar">
+        <article>
+          <div class="reason-wrap reasonbg">
+            <div class="card banner-card z-depth-0">
+              <div class="card-image">
+                <img src="../images/index/banner2.png">
+                <div class="card-content">
+                    <div class="table-cell-wrap">
+                      <div class="table-cell align-center col-white">
+                        <div class="container">
+                          <div class="text-shadow">选择中联邦日化的<span class="theme-col-orge text-shadow-w num">5</span>大理由</div>
+                          <div class="text-shadow font-12">集科技一身 · 以智慧力量驱动 · 为全球洗涤行业做贡献</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div> 
+            <div class="reason-box container">
+              <div class="row">
+                <div class="clearfix">
+                  <div class="col-xs-12 col-sm-6">
+                   <div class="reason-txt reason-txt-r"> 
+                    <h3><span>1</span>专业团队，研究所保障技术</h3>
+                    <div>18年研发生产定制洗涤剂经验沉淀 18位研发人员组成的研发团队和应用团队 4400平方研究所、与国内外大中院校以及研究所合作</div>
+                   </div> 
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="reason-img reason-img-l"><img src="../images/index/r1.png"></div>
+                  </div>
+                </div>
                 
-            </aside>
-        </section>
+                <div class="clearfix">
+                  <div class="col-xs-12 col-sm-6">
+                   <div class="reason-img reason-img-r"><img src="../images/index/r2.png"></div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                   <div class="reason-txt reason-txt-l"> 
+                    <h3><span>2</span>厂家直销，高性价比</h3>
+                    <div>ISO9001:2008认证实力工厂，严格的管理体系生产线 拥有国内外先进的生产设备，完善的生产标准和流程 年产量20000吨</div>
+                   </div> 
+                  </div>
+                </div>  
 
-        <div class="product-show">
+                <div class="clearfix">
+                  <div class="col-xs-12 col-sm-6">
+                   <div class="reason-txt reason-txt-r"> 
+                    <h3><span>3</span>高效环保，质量保障</h3>
+                    <div>润湿性、易分散、有效去污、易漂洗、泡沫少且易消除 兼容性好，易清洗，易排放，无刺激性气味 从有严格的检测系统，确保每一款产品质</div>
+                   </div> 
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="reason-img reason-img-l"><img src="../images/index/r3.png"></div>
+                  </div>
+                </div>
+
+                <div class="clearfix">
+                  <div class="col-xs-12 col-sm-6">
+                   <div class="reason-img reason-img-r"><img src="../images/index/r4.png"></div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                   <div class="reason-txt reason-txt-l"> 
+                    <h3><span>4</span>定制开发，打造品牌</h3>
+                    <div>拥有先进的配方分析仪以及产品检测仪等 可来样定制、按效果定制、按价格定制 可以提供配方，定制专属于自己的产品，提供OEM</div>
+                   </div> 
+                  </div>
+                </div> 
+               
+                <div class="clearfix">
+                  <div class="col-xs-12 col-sm-6">
+                   <div class="reason-txt reason-txt-r"> 
+                    <h3><span>5</span>完善客户服务体系，无忧的售后</h3>
+                    <div>专业的售后服务团队365*24小时在线待命 一对一的技术团队跟踪指导效果 产品不满意一个月内可退换</div>
+                   </div> 
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="reason-img reason-img-l"><img src="../images/index/r5.jpg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="call-box clearfix">
+              <img src="../images/index/24.png">
+              <img src="../images/index/call.png" class="call-img">
+            </div>
+          </div>
+        </article> 
+
+        <div class="banner banner-box m-b-50">
             <div class="container">
-                <div class="product-list">
-                   <img src="../images/index/pro-show1.jpg" class="btn-block">
-                   <div class="title">
-                       <h3>产品分类</h3>
-                       <h4>PRODUCT&nbsp;DISPLAY</h4>
-                   </div>   
-                   <ul class="list-group">
-                       <li class="list-group-item">
-                          <h3 class="item-title align-center">洗衣粉</h3>
-                            <div class="item-body clearfix">
-                                <div>
-                                    <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">增白洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">低温洗衣粉</a>
-                                </div>
-                                <div>
-                                    <a href="javascript:;">低泡洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">通用洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">无磷洗衣粉</a>
-                                </div>
-                                <div>
-                                    <a href="javascript:;">黄碱洗衣粉</a>
-                                </div>
-                            </div> 
-                       </li>
-                       <li class="list-group-item">
-                          <h3 class="item-title align-center">清洗粉</h3>
-                            <div class="item-body clearfix">
-                                <div>
-                                    <a href="javascript:;">强力除油粉</a><span class="line"></span>
-                                    <a href="javascript:;">地毯清洁粉</a><span class="line"></span>
-                                    <a href="javascript:;">去渍粉</a>
-                                </div>
-                                <div>
-                                    <a href="javascript:;">通渠粉</a>
-                                </div>
-                            </div> 
-                       </li>
-                       <li class="list-group-item">
-                          <h3 class="item-title align-center">洗洁精</h3>
-                            <div class="item-body clearfix">
-                                <div>
-                                    <a href="javascript:;">强力洗洁精</a><span class="line"></span>
-                                    <a href="javascript:;">强力洗洁精</a><span class="line"></span>
-                                    <a href="javascript:;">强力洗洁精</a>
-                                </div>
-                                <div>
-                                    <a href="javascript:;">强力洗洁精</a>
-                                </div>
-                            </div> 
-                       </li>
-                       <li class="list-group-item">
-                          <h3 class="item-title align-center">洗衣液</h3>
-                            <div class="item-body clearfix">
-                                <div>
-                                    <a href="javascript:;">工业洗衣液</a><span class="line"></span>
-                                    <a href="javascript:;">去油洗衣液</a><span class="line"></span>
-                                    <a href="javascript:;">浓缩洗衣液</a>
-                                </div>
-                            </div> 
-                       </li>
-                       <li class="list-group-item">
-                          <h3 class="item-title align-center">洗涤剂</h3>
-                            <div class="item-body clearfix">
-                                <div>
-                                    <a href="javascript:;">除油洗涤剂</a><span class="line"></span>
-                                    <a href="javascript:;">除蜡洗涤剂</a><span class="line"></span>
-                                    <a href="javascript:;">强力洗涤剂</a>
-                                </div>
-                                <div>
-                                    <a href="javascript:;">液晶洗涤剂</a><span class="line"></span>
-                                    <a href="javascript:;">洗手液</a><span class="line"></span>
-                                    <a href="javascript:;">全能洗涤剂</a>
-                                </div>
-                            </div> 
-                       </li>
-                   </ul>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                  <h1 class="col-yellow">走进中联邦</h1>
+                  <h3 class="col-white">拥有现代化的厂房与先进设备，确保产品供应以及产品质量</h3>
+                  <h4 class="col-white">已为5000多企业进行了针对性的产品定制研发。并且提供OEM服务，帮助企业打造自己产品和品牌</h4>
+                  <h2 class="col-yellow">服务提升价值 · 质量赢取天下</h2>
+                  <h2 class="col-white">CCVT见证品牌</h2>
                 </div>
-                <div class="product-title">
-                    <div class="row">
-                        <div class="col-xs-9 p-r-0">
-                            <div class="title">
-                                <h3>产品展示</h3>
-                                <h4>PRODUCT&nbsp;DISPLAY</h4>
-                            </div>   
-                        </div>
-                        <div class="col-xs-3 clearfix p-l-0">
-                            <a href="javascript:;" class="pull-right">MORE <i class="material-icons">add_circle</i></a>
-                        </div>
-                    </div>
-                </div>   
-                <div class="product-card">
-                    <div class="row align-center clearfix">
-                        <div class="col-xs-6">
-                            <div class="card z-depth-0">
-                                <a href="javascript:;" class="btn-block">
-                                    <div class="header">
-                                        <img src="../images/index/product.jpg">
-                                    </div>
-                                    <div class="body">强力洗衣粉</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="card z-depth-0">
-                                <a href="javascript:;" class="btn-block">
-                                    <div class="header">
-                                        <img src="../images/index/product.jpg">
-                                    </div>
-                                    <div class="body">强力洗衣粉</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="card z-depth-0">
-                                <a href="javascript:;" class="btn-block">
-                                    <div class="header">
-                                        <img src="../images/index/product.jpg">
-                                    </div>
-                                    <div class="body">强力洗衣粉</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="card z-depth-0">
-                                <a href="javascript:;" class="btn-block">
-                                    <div class="header">
-                                        <img src="../images/index/product.jpg">
-                                    </div>
-                                    <div class="body">强力洗衣粉</div>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
+                <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
+                  <img src="../images/index/banner3.png" class="banner-bg">
+                </div>  
+              </div>
             </div>
         </div>
 
-        <div class="product-show">
-            <div class="container">
-                <div class="product-list">
-                   <img src="../images/index/pro-show1.jpg" class="btn-block">
-                   <div class="title">
-                       <h3>行业分类</h3>
-                       <h4>PRODUCT&nbsp;DISPLAY</h4>
-                   </div>
-                   <ul class="list-group">
-                       <li class="list-group-item">
-                          <h3 class="item-title align-center">工业清洗行业</h3>
-                            <div class="item-body clearfix">
-                                <div>
-                                    <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">通用洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">工业洗衣液</a>
-                                </div>
-                                <div>
-                                    <a href="javascript:;">除油清洗剂</a><span class="line"></span>
-                                    <a href="javascript:;">液晶清洗剂</a><span class="line"></span>
-                                    <a href="javascript:;">除锈清洗剂</a>
-                                </div>
-                            </div> 
-                       </li>
-                       <li class="list-group-item">
-                          <h3 class="item-title align-center">酒店客房</h3>
-                            <div class="item-body clearfix">
-                                <div>
-                                    <a href="javascript:;">地毯清洁粉</a><span class="line"></span>
-                                    <a href="javascript:;">去渍粉</a><span class="line"></span>
-                                    <a href="javascript:;">通渠粉</a>
-                                </div>
-                                <div>
-                                    <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">增白洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">黄碱洗衣粉</a>
-                                </div>
-                                <div>
-                                    <a href="javascript:;">洗手液</a><span class="line"></span>
-                                    <a href="javascript:;">全能清洗剂</a>
-                                </div>
-                            </div> 
-                       </li>
-                       <li class="list-group-item">
-                          <h3 class="item-title align-center">餐饮行业</h3>
-                            <div class="item-body clearfix">
-                                <div>
-                                    <a href="javascript:;">餐具洗洁精</a><span class="line"></span>
-                                    <a href="javascript:;">强力除油粉</a><span class="line"></span>
-                                    <a href="javascript:;">低泡洗衣粉</a>
-                                </div>
-                                <div>
-                                    <a href="javascript:;">通用洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">去渍粉</a><span class="line"></span>
-                                    <a href="javascript:;">通渠粉</a>
-                                </div>
-                            </div> 
-                       </li>
-                       <li class="list-group-item">
-                          <h3 class="item-title align-center">洗衣房</h3>
-                            <div class="item-body clearfix">
-                                <div>
-                                    <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">无磷洗衣粉</a><span class="line"></span>
-                                    <a href="javascript:;">增白洗衣粉</a>
-                                </div>
-                                <div>
-                                    <a href="javascript:;">去油污洗衣液</a><span class="line"></span>
-                                    <a href="javascript:;">浓缩洗衣液</a>
-                                </div>
-                            </div> 
-                       </li>
-                       <li class="list-group-item">
-                          <h3 class="item-title align-center">公共区域</h3>
-                            <div class="item-body clearfix">
-                                <div class="align-center">
-                                    <a href="javascript:;">全部</a>
-                                </div>
-                            </div> 
-                       </li>
-                   </ul>
-                </div>
-                <div class="product-title">
-                    <div class="row">
-                        <div class="col-xs-9 p-r-0">
-                            <div class="title">
-                                <h3>产品展示</h3>
-                                <h4>PRODUCT&nbsp;DISPLAY</h4>
-                            </div>    
-                        </div>
-                        <div class="col-xs-3 clearfix p-l-0">
-                            <a href="javascript:;" class="pull-right">MORE <i class="material-icons">add_circle</i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="row align-center clearfix">
-                        <div class="col-xs-6">
-                            <div class="card z-depth-0">
-                                <a href="javascript:;" class="btn-block">
-                                    <div class="header">
-                                        <img src="../images/index/product.jpg">
-                                    </div>
-                                    <div class="body">强力洗衣粉</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="card z-depth-0">
-                                <a href="javascript:;" class="btn-block">
-                                    <div class="header">
-                                        <img src="../images/index/product.jpg">
-                                    </div>
-                                    <div class="body">强力洗衣粉</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="card z-depth-0">
-                                <a href="javascript:;" class="btn-block">
-                                    <div class="header">
-                                        <img src="../images/index/product.jpg">
-                                    </div>
-                                    <div class="body">强力洗衣粉</div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="card z-depth-0">
-                                <a href="javascript:;" class="btn-block">
-                                    <div class="header">
-                                        <img src="../images/index/product.jpg">
-                                    </div>
-                                    <div class="body">强力洗衣粉</div>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
-        <div class="banner m-b-50 banner-wrap">
-            <div class="container">
-                <img src="../images/index/banner.png" class="banner-bg">
-            </div>
-        </div>
-        <div class="banner banner-box nobg"><img src="../images/index/banner2.jpg" class="banner-bg"></div>
-        <div class="banner m-b-50">
-            <div class="container">
-                <img src="../images/index/banner2.png" class="banner-bg">
-            </div>
-        </div>
-        <div class="banner m-b-50 banner-box">
-            <div class="container">
-                <img src="../images/index/banner3.png" class="banner-bg">
-            </div>
-        </div>
-
-        <div class="introduct-box">
+        <div class="introduct-box" is-pc="true">
             <div class="container">
                 <div class="title align-center">
                     <div class="font-32 col-blue font-bold">定制流程</div>
@@ -428,13 +515,24 @@
             </div>
         </div>
 
-        <div class="banner m-t-50 m-b-50 banner-wrap">
-            <div class="container">
-                <img src="../images/index/banner4.png" class="banner-bg">
+        <div class="card banner-card m-t-50" is-pc="true">
+          <div class="card-image">
+            <img src="../images/index/banner1.jpg">
+            <div class="card-content">
+                <div class="table-cell-wrap">
+                  <div class="table-cell font-bold col-white">
+                    <div class="container align-center">
+                      <div class="text-shadow">
+                        专业研发生产渡海厂家<a href="javascript:;" class="cbtn">·18年洗涤剂创新者·</a> 铸造成功合作基石
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
+          </div>
         </div>
 
-        <div class="introduct-box">
+        <div class="introduct-box" is-pc="true">
             <div class="container">
                 <div class="title align-center">
                     <div class="font-32 col-blue font-bold">应用案例</div>
@@ -495,13 +593,13 @@
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                         <img src="../images/index/aboutus.jpg" class="aboutus-img m-b-20">
                     </div>
-                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" is-pc="true">
                         <h4 class="font-16 col-blue m-t-0">广东中联邦精细化工有限公司</h4>
                         <p>广东中联邦精细化工有限公司是一家富有创业激情的科技型创业企业，致力于通过科技创新成为清洁行业内的技术先驱。 公司创业团队在5年前就开始和国外EBC技术机构有良好的合作，和清华大学、中山大学和深圳大学的资深教授深度合作。 同时自身培养有资深的研发团队和应用团队，并且拥有自己的研究所，在同行业内走在了前面。公司从事清洁用品的研发生产和经营，解决了公共区域清洁、餐饮清洁、洗衣房清洁、家居清洁等行业清洁的难题。生产的洗衣粉、洗洁精、洗衣液、洗洁剂、清洗剂等洗涤产品性能优越，极具竞争力。公司拥有现代化的厂房与先进设备，确保产品供应以及产品质量。到目前为止，已为5000多企业进行了针对性的产品定制研发。并且提供OEM服务，帮助企业打造自己产品和品牌。公司坚持以客户为本，以技术为驱动，以创新为命脉，坚持以“服务提升价值、质量赢取天下“的经营理念，严格践行“守正、担当、协作、共享”的企业文化。坚持一切从客户角度出发，急客户之所急，想客户之所想，坚持双方多赢的格局，为客户创造价值。全体中联邦人将以认真的工作态度和满腔的工作热情，为你提供优秀的产品和服务!</p>
                         <div><a href="javascript:;" class="col-orange font-12">［查看详情］</a></div>
                     </div>
                 </div>
-                <div class="row honor-box">
+                <div class="row honor-box" is-pc="true">
                     <div class="col-lg-8">
                         <div class="card-group">
                             <div class="card z-depth-0">
@@ -557,10 +655,20 @@
                 </div>
             </div>
         </div>
-        
-        <div class="card-group container m-t-40">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+
+        <div class="container m-t-40">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#Company" role="tab" data-toggle="tab">公司动态</a></li>
+            <li><a href="#Industry" role="tab" data-toggle="tab">行业资讯</a></li>
+            <li><a href="#Common" role="tab" data-toggle="tab">常见问题</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="Company">
+                <div class="card-group">
                     <div class="card z-depth-0">
                         <div class="header m-b-15">
                             <span class="line"></span>
@@ -606,8 +714,10 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                </div>  
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Industry">
+               <div class="card-group">
                     <div class="card z-depth-0">
                         <div class="header m-b-15">
                             <span class="line"></span>
@@ -653,8 +763,10 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+               </div>   
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Common">
+               <div class="card-group">
                     <div class="card z-depth-0">
                         <div class="header m-b-15">
                             <span class="line"></span>
@@ -691,15 +803,16 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                
+               </div>
             </div>
+          </div>
         </div>
         
-        <div class="links-box container">
+        
+        <div class="links-box container" is-pc="true">
             <div class="title">
                 <img src="../images/index/links.jpg">
-                <a href="javascript:;" class="pull-right" class="more">更多产品&gt;&gt;</a>
+                <a href="javascript:;" class="pull-right more">更多产品&gt;&gt;</a>
             </div> 
             <ol class="breadcrumb">
                 <li><a href="javascript:;"><span class="ico-shop ico-shop0"></span>洗衣粉</a></li>
@@ -716,7 +829,7 @@
         </div>
         
 
-        <div is="foot" class="m-t-30"></div>
+        <div is="foot"></div>
         
 
     </div>
@@ -728,118 +841,91 @@
     <script src="../plugins/node-waves/waves.min.js"></script>
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
     <script src="../js/pages/admin.js"></script>
+    <script src="../js/myroute.js"></script>
 
     <script>
        $(function(){
           
-          
-        if($('[is="head"]')){
-            $('[is="head"]').load('template/head.html');
-        }
+            var swiper = new Swiper('.swiper-box .swiper-container', {
+                                pagination : '.swiper-pagination',
+                                paginationClickable: true,
+                                preloadImages: false,
+                                lazyLoading: true, 
+                                autoplay: 3000,
+                                /*autoHeight: true, //高度随内容变化*/
+                                loop: true,
+                                autoplayDisableOnInteraction: false,
+                      });
 
-        if($('[is="nav"]')){
-            $('[is="nav"]').load('template/nav.html');
-        }
-
-        if($('[is="foot"]')){
-            $('[is="foot"]').load('template/foot.html');
-        }
-
-
-          var swiper = new Swiper('.swiper-box .swiper-container', {
-                    pagination : '.swiper-pagination',
-                    paginationClickable: true,
-                    preloadImages: false,
-                    lazyLoading: true, 
-                    autoplay: 3000,
-                    /*autoHeight: true, //高度随内容变化*/
-                    loop: true,
-                    autoplayDisableOnInteraction: false,
-          });
-
-          var now=0;
-          var disabled=true;
-          var len=$('.search-nav a').length;
-          $('.search-nav').on('click', 'a', function(event) {
-              var i=$('.search-box a').index(this);
-              now=i;
-              searchTab();
-              event.preventDefault();
-          });
-          function searchTab() {
-              $('.search-nav a').eq(now).addClass('active').siblings('a').removeClass('active');
-          }
-
-          function next() {
-              if(now==len-1){
-                 now=0;
-              }else{
-                 now++;
-              }
-              if ($('.search-nav a').last().hasClass('active')) {
-                  $('.nav-ctrl-r').addClass('disabled');
-                  $('.nav-ctrl-l').removeClass('disabled');
-              }else{
-                  $('.nav-ctrl-r').removeClass('disabled');
-                  $('.nav-ctrl-l').addClass('disabled');
-              }
-              searchTab();
-          }
-          function prev() {
-              if(now==0){
-                 now=len-1;
-              }else{
-                 now--;
-              }
-              if ($('.search-nav a').first().hasClass('active')) {
-                    $('.nav-ctrl-l').addClass('disabled');
-                    $('.nav-ctrl-r').removeClass('disabled');
-              }else{
-                    $('.nav-ctrl-l').removeClass('disabled');
-                    $('.nav-ctrl-r').addClass('disabled');
-              }
-              searchTab();
-          }
-          $('.nav-ctrl-r').click(function () {
-              next();
-          })
-          $('.nav-ctrl-l').click(function () {
-              prev();
-          })
-
-          $('.shop-list-box .dropdown-menu').on('click', '.menu-item', function(event) {
-              $(this).addClass('current').siblings('li.menu-item').removeClass('current');
-              event.preventDefault();
-          });
-
-          $('[data-toggle="tooltip"]').tooltip('show');
-
-          $(window).resize(function() {
-             $('[data-toggle="tooltip"]').tooltip('show');
-          });
-
-          setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
-
-            /*if ($('.product-list .title').is(':hidden')) {
-                $('.aside-box').addClass('ls-closed');
-                $('#leftsidebar').html();
-            }else{
-                $('.aside-box').removeClass('ls-closed');
-                $('#leftsidebar').html($('.product-list').html());
+            var now=0;
+            var disabled=true;
+            var len=$('.search-nav a').length;
+            $('.search-nav').on('click', 'a', function(event) {
+                var i=$('.search-box a').index(this);
+                now=i;
+                searchTab();
+                event.preventDefault();
+            });
+            function searchTab() {
+                $('.search-nav a').eq(now).addClass('active').siblings('a').removeClass('active');
             }
 
-            $(window).resize(function() {
-                if ($('.product-list .title').is(':hidden')) {
-                    $('.aside-box').addClass('ls-closed');
-                    $('#leftsidebar').html();
+            function next() {
+                if(now==len-1){
+                    now=0;
                 }else{
-                    $('.aside-box').removeClass('ls-closed');
-                    $('#leftsidebar').html($('.product-list').html());
-                } 
-            });*/
-
+                    now++;
+                }
+                if ($('.search-nav a').last().hasClass('active')) {
+                    $('.nav-ctrl-r').addClass('disabled');
+                    $('.nav-ctrl-l').removeClass('disabled');
+                }else{
+                    $('.nav-ctrl-r').removeClass('disabled');
+                    $('.nav-ctrl-l').addClass('disabled');
+                }
+                searchTab();
+            }
+            function prev() {
+                if(now==0){
+                     now=len-1;
+                }else{
+                     now--;
+                }
+                if ($('.search-nav a').first().hasClass('active')) {
+                    $('.nav-ctrl-l').addClass('disabled');
+                    $('.nav-ctrl-r').removeClass('disabled');
+                }else{
+                    $('.nav-ctrl-l').removeClass('disabled');
+                    $('.nav-ctrl-r').addClass('disabled');
+                }
+                searchTab();
+            }
+            if($('.nav-ctrl').length==1){
+                $('.nav-ctrl-r').click(function () {
+                    next();
+                })
+                $('.nav-ctrl-l').click(function () {
+                    prev();
+                })
+            }  
             
 
+            $('.shop-list-box .dropdown-menu').on('click', '.menu-item', function(event) {
+                $(this).addClass('current').siblings('li.menu-item').removeClass('current');
+                event.preventDefault();
+            });
+
+            $('[data-toggle="tooltip"]').tooltip('show');
+
+            $(window).resize(function() {
+                    $('[data-toggle="tooltip"]').tooltip('show');
+            });
+
+            $('.product-show').on('click','.item-title',function () {
+                $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideUp();
+            })
+
+            setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 
 
        });  
