@@ -85,7 +85,10 @@
 .shop-list-box .nav{line-height:36px;}
 .shop-list-box .nav li{float:left;text-align:center;}
 .shop-list-box .nav li a{font:14px/36px "Microsoft YaHei","微软雅黑";color: #fff;display:block;padding: 11px 34px 13px;}
-.shop-list-box .nav li a:hover{background-color: #0790d2;}
+.shop-list-box .nav li a:hover,
+.shop-list-box .nav li a:focus{background-color: #0790d2;}
+
+
 /* 顶部搜索框 */
 .search-box{min-height: 50px;}
 .search-box .container{border:1px solid #dad7d7;padding-left: 0;padding-right: 0;}
