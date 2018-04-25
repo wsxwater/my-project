@@ -19,7 +19,7 @@
 	.navbar-static .navbar-nav>li.service-hotline{display: none;}
 	.navbar-static .navbar-brand{width: 86%;}
 	.shop-list-box .shop-class{width: 100%;}
-
+    
 	.shop-list-box .container{padding-right: 0;padding-left: 0;}
 	.shop-list-box .shop-class h3{line-height: 50px;}
 	.shop-list-box .shop-class,.shop-list-box .nav{float: none;width: 100%;}
@@ -33,7 +33,7 @@
     .search-box-right{float: none;width: 100%;}
 
 	.product-show .container{padding-left: 15px;}
-
+    
 	.product-classify,.list-box .product-classify,.list-box .product-display{width: 100%;}
 	.product-classify .card .card-image img{height: 50px;}
 	.product-classify .title .title-sec img{height: 30px;}
@@ -42,10 +42,15 @@
 	/* .product-classify .card{display: block;} */
 	.product-classify .item-title{margin: 0; font-size: 16px;text-align: left;}
 	.product-classify .item-body a{padding: 5px;width: auto;}
+	.product-classify .item-body{display: none;}
 	.product-classify .item-body .line{display: none;}
 	.product-display,.list-box .product-display{width: 100%;}
 	.product-card .card{margin-top: 0px;}
-
+    
+    /* 公司动态、行业资讯、常见问题 */
+    .tab-show{display: block;}
+    .tab-show-card{display: none;}
+     
 	/* 轮播图 */
     .swiper-box img{display: inline-block;min-height: 120px;object-fit: contain;max-width: 100%;}
 
@@ -77,6 +82,7 @@
 
     /* .popover-box .title div:first-child{font-size: 20px;}
     .popover-body{font-size: 12px;} */
+ 
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
 	/* .navbar-static.navbar {padding: 20px 0;} */

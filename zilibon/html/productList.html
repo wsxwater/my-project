@@ -523,31 +523,15 @@
                     $('[data-toggle="tooltip"]').tooltip('show');
             });
 
-            function IsPC() {
-                var userAgentInfo = navigator.userAgent;
-                var Agents = ["Android", "iPhone",
-                            "SymbianOS", "Windows Phone",
-                            "iPad", "iPod"];
-                var flag = true;
-                for (var v = 0; v < Agents.length; v++) {
-                    if (userAgentInfo.indexOf(Agents[v]) > 0) {
-                        flag = false;
-                        break;
-                    }
-                }
-                return flag;
-            }
-             
-            var flag = IsPC(); 
-            console.log(flag)//true为PC端，false为手机端和ipad
-              
-            if (!flag) {
+            if ($('.product-show .item-body').is(':hidden')) {
               /*菜单收缩*/
-              $('.product-show .item-body').hide();
               $('.product-show').on('click','.item-title',function () {
                   $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideUp();
-              })
-              
+              });
+            }else{
+              $('.product-show').on('click','.item-title',function () {
+                  $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideDown();
+              });
             }
 
             setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
