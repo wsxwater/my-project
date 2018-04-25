@@ -61,25 +61,35 @@
 .shop-list-box .shop-class .dropdown-menu>li.current>a{color: #00a7eb;}
 .ico-shop{display: inline-block;vertical-align: middle;width: 25px;height: 25px;margin-right:5px;background: url('../../images/icon/ico-shop.png') no-repeat;position: relative;margin-top: -4px;}
 .ico-shop0{background-position: -2px 0;}
-.current .ico-shop0{background-position: 0 -25px;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover,
+.shop-list-box .shop-class .dropdown-menu>li>a:hover,
+.shop-list-box .shop-class .dropdown-menu>li>a:hover,
+.shop-list-box .shop-class .dropdown-menu>li>a:hover,
+.shop-list-box .shop-class .dropdown-menu>li>a:hover,
+.shop-list-box .shop-class .dropdown-menu>li>a:hover,
+.shop-list-box .shop-class .dropdown-menu>li>a:hover,
+.shop-list-box .shop-class .dropdown-menu>li>a:hover,
+.shop-list-box .shop-class .dropdown-menu>li>a:hover,
+.shop-list-box .shop-class .dropdown-menu>li>a:hover{color: #00a7eb;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover .ico-shop0,.current .ico-shop0{background-position: -2px -25px;}
 .ico-shop1{background-position: -2px -50px;}
-.current .ico-shop1{background-position: 0 -75px;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover .ico-shop1,.current .ico-shop1{background-position: -2px -75px;}
 .ico-shop2{background-position: -2px -100px;}
-.current .ico-shop2{background-position: 0 -125px;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover .ico-shop2,.current .ico-shop2{background-position: -2px -125px;}
 .ico-shop3{background-position: -4px -150px;}
-.current .ico-shop3{background-position: 0 -175px;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover .ico-shop3,.current .ico-shop3{background-position: -2px -175px;}
 .ico-shop4{background-position: -2px -200px;}
-.current .ico-shop4{background-position: 0 -225px;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover .ico-shop4,.current .ico-shop4{background-position: -2px -225px;}
 .ico-shop5{background-position: -2px -250px;}
-.current .ico-shop5{background-position: 0 -275px;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover .ico-shop5,.current .ico-shop5{background-position: -2px -275px;}
 .ico-shop6{background-position: -2px -300px;}
-.current .ico-shop6{background-position: 0 -325px;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover .ico-shop6,.current .ico-shop6{background-position: -2px -325px;}
 .ico-shop7{background-position: -2px -350px;}
-.current .ico-shop7{background-position: 0 -375px;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover .ico-shop7,.current .ico-shop7{background-position: -2px -375px;}
 .ico-shop8{background-position: -2px -400px;}
-.current .ico-shop8{background-position: 0 -425px;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover .ico-shop8,.current .ico-shop8{background-position: -2px -425px;}
 .ico-shop9{background-position: 0px -450px;}
-.current .ico-shop9{background-position: 0 -475px;}
+.shop-list-box .shop-class .dropdown-menu>li>a:hover .ico-shop9,.current .ico-shop9{background-position: 0 -475px;}
 
 .shop-list-box .nav{line-height:36px;}
 .shop-list-box .nav li{float:left;text-align:center;}
@@ -144,6 +154,20 @@
 .product-classify .item-body{color: #ff5500;padding:0 15px;padding-bottom:10px;}
 .product-classify .item-body a{text-decoration: none;text-align:center;font-size:14px;display: inline-block;width:90px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;vertical-align: middle;color: #888;padding:11px 0;}
 .product-classify .item-body a.active,.product-classify .item-body a:focus,.product-classify .item-body a:hover{color: #ff7802;background-color: transparent;border:none;}
+
+.product-classify .menu-item a.active .ico-shop0,.product-classify .menu-item a:hover .ico-shop0{background-position: -2px -25px;}
+.product-classify .menu-item a.active .ico-shop1,.product-classify .menu-item a:hover .ico-shop1{background-position: -2px -75px;}
+.product-classify .menu-item a.active .ico-shop2,.product-classify .menu-item a:hover .ico-shop2{background-position: -2px -125px;}
+.product-classify .menu-item a.active .ico-shop3,.product-classify .menu-item a:hover .ico-shop3{background-position: -2px -175px;}
+.product-classify .menu-item a.active .ico-shop4,.product-classify .menu-item a:hover .ico-shop4{background-position: -2px -225px;}
+.product-classify .menu-item a.active .ico-shop5,.product-classify .menu-item a:hover .ico-shop5{background-position: -2px -275px;}
+.product-classify .menu-item a.active .ico-shop6,.product-classify .menu-item a:hover .ico-shop6{background-position: -2px -325px;}
+.product-classify .menu-item a.active .ico-shop7,.product-classify .menu-item a:hover .ico-shop7{background-position: -2px -375px;}
+.product-classify .menu-item a.active .ico-shop8,.product-classify .menu-item a:hover .ico-shop8{background-position: -2px -425px;}
+.product-classify .menu-item a.active .ico-shop9,.product-classify .menu-item a:hover .ico-shop9{background-position: 0 -475px;}
+
+
+
 .product-classify .item-body .line{/* padding: 14px 10px 5px;margin-left: 20px; */}
 .product-classify .menu-item{font-size: 16px; padding:16px;text-align: center;background: #f5f5f5 url('../../images/list/titbg.png') 0 0 repeat-y /100% 100%;}
 .product-classify .menu-item a{display: block;text-decoration: none;color:#333;}
