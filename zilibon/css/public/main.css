@@ -155,16 +155,16 @@
 .product-classify .item-body a{text-decoration: none;text-align:center;font-size:14px;display: inline-block;width:90px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;vertical-align: middle;color: #888;padding:11px 0;}
 .product-classify .item-body a.active,.product-classify .item-body a:focus,.product-classify .item-body a:hover{color: #ff7802;background-color: transparent;border:none;}
 
-.product-classify .menu-item a.active .ico-shop0,.product-classify .menu-item:hover .ico-shop0{background-position: -2px -25px;}
-.product-classify .menu-item a.active .ico-shop1,.product-classify .menu-item:hover .ico-shop1{background-position: -2px -75px;}
-.product-classify .menu-item a.active .ico-shop2,.product-classify .menu-item:hover .ico-shop2{background-position: -2px -125px;}
-.product-classify .menu-item a.active .ico-shop3,.product-classify .menu-item:hover .ico-shop3{background-position: -2px -175px;}
-.product-classify .menu-item a.active .ico-shop4,.product-classify .menu-item:hover .ico-shop4{background-position: -2px -225px;}
-.product-classify .menu-item a.active .ico-shop5,.product-classify .menu-item:hover .ico-shop5{background-position: -2px -275px;}
-.product-classify .menu-item a.active .ico-shop6,.product-classify .menu-item:hover .ico-shop6{background-position: -2px -325px;}
-.product-classify .menu-item a.active .ico-shop7,.product-classify .menu-item:hover .ico-shop7{background-position: -2px -375px;}
-.product-classify .menu-item a.active .ico-shop8,.product-classify .menu-item:hover .ico-shop8{background-position: -2px -425px;}
-.product-classify .menu-item a.active .ico-shop9,.product-classify .menu-item:hover .ico-shop9{background-position: 0 -475px;}
+.product-classify .menu-item.active .ico-shop0,.product-classify .menu-item:hover .ico-shop0{background-position: -2px -25px;}
+.product-classify .menu-item.active .ico-shop1,.product-classify .menu-item:hover .ico-shop1{background-position: -2px -75px;}
+.product-classify .menu-item.active .ico-shop2,.product-classify .menu-item:hover .ico-shop2{background-position: -2px -125px;}
+.product-classify .menu-item.active .ico-shop3,.product-classify .menu-item:hover .ico-shop3{background-position: -2px -175px;}
+.product-classify .menu-item.active .ico-shop4,.product-classify .menu-item:hover .ico-shop4{background-position: -2px -225px;}
+.product-classify .menu-item.active .ico-shop5,.product-classify .menu-item:hover .ico-shop5{background-position: -2px -275px;}
+.product-classify .menu-item.active .ico-shop6,.product-classify .menu-item:hover .ico-shop6{background-position: -2px -325px;}
+.product-classify .menu-item.active .ico-shop7,.product-classify .menu-item:hover .ico-shop7{background-position: -2px -375px;}
+.product-classify .menu-item.active .ico-shop8,.product-classify .menu-item:hover .ico-shop8{background-position: -2px -425px;}
+.product-classify .menu-item.active .ico-shop9,.product-classify .menu-item:hover .ico-shop9{background-position: 0 -475px;}
 
 
 
