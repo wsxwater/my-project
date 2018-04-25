@@ -14,16 +14,31 @@
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 
 	<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
 	<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="../css/style.min.css">
-    <link rel="stylesheet" type="text/css" href="../plugins/Swiper-3.2.7/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../plugins/Swiper-3.2.7/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/private/list.css">
-    <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
+  <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
+  <script>
+    window._bd_share_config = {
+      common : {
+        bdText : '自定义分享内容', 
+        bdDesc : '自定义分享摘要', 
+        bdUrl : '自定义分享url地址',   
+        bdPic : '自定义分享图片'
+      },
+      share : [{
+        "bdSize" : 16
+      }]
+    }
+    /*with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];*/
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='https://wsxwater.github.io/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+  </script>
 </head>
 <body class="white">
     <!-- Page Loader -->
@@ -170,17 +185,17 @@
                                           <span>下一篇：<a href="javascript:;" class="col-orange">造纸害微生物进行有效控制</a></span>
                                       </div>
                                       <div class="col-xs-12 col-sm-4 m-b-20">
-                                          <!-- JiaThis Button BEGIN -->
-                                          <div class="jiathis_style">
-                                            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-                                            <a class="jiathis_button_qzone"></a>
-                                            <a class="jiathis_button_tsina"></a>
-                                            <a class="jiathis_button_tqq"></a>
-                                            <a class="jiathis_button_weixin"></a>
-                                            <a class="jiathis_button_renren"></a>
+                                          <!-- 百度分享 -->
+                                          <div class="bdsharebuttonbox">
+                                            <a href="#" class="bds_more" data-cmd="more">分享到</a>
+                                            <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                            <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                                            <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
                                           </div>
-                                          <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-                                          <!-- JiaThis Button END -->
+                                          
+                                          <!-- 百度分享 -->
                                       </div>
                                   </div>
                               </section>
@@ -189,6 +204,9 @@
                 </div>
             </div>
         </div>
+
+
+        
 
         <div class="links-box container" is-pc="true">
             <div class="title">
@@ -222,6 +240,7 @@
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
+
 
     <script>
        $(function(){
@@ -294,6 +313,10 @@
                 $(this).addClass('current').siblings('li.menu-item').removeClass('current');
                 event.preventDefault();
             });
+
+            $('.product-show').on('click','.menu-item',function () {
+                $(this).addClass('active').parents('.product-show').find('.menu-item').not($(this)).removeClass('active');
+            })
 
             $('[data-toggle="tooltip"]').tooltip('show');
 

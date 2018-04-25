@@ -20,7 +20,6 @@
 	<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="../css/style.min.css">
-  <link rel="stylesheet" type="text/css" href="../plugins/Swiper-3.2.7/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/private/list.css">
   <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
@@ -51,14 +50,14 @@
         <div is="nav"></div><!-- 导航条 -->
 
         <div class="topbanner">
-            <img src="../images/list/b-oem.jpg">
+            <img src="../images/list/b.jpg">
         </div>
 
         <section>
             <div class="search-box">
                 <div class="container">
                     <div class="location-tip">
-                       <span class="location"><i class="material-icons">home</i>您现在的位置：</span>产品中心» 洗衣粉  
+                       <span class="location"><i class="material-icons">home</i>您现在的位置：</span>关于我们  
                     </div>
                     <div class="search-box-right">
                         <div class="row">
@@ -244,7 +243,7 @@
               </div>
               <div class="our-map-wrap m-t-10">
                 <div class="our-map-box" id="allmap">
-                  地图
+                  
                 </div>
               </div>
             </div>
@@ -273,7 +272,6 @@
         </div>
         
         <div is="foot"></div>
-        
 
     </div>
 
@@ -282,23 +280,29 @@
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/node-waves/waves.min.js"></script>
-    <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
 
+    <!-- http 引用百度地图 -->
+    <!-- <script src="http://api.map.baidu.com/api?v=3.0&ak=41bmd1GGfnBuGChqwAS9eVDkNtWQoglu"></script> -->
+    <!-- https 引用百度地图 -->
+    <script src="https://api.map.baidu.com/api?v=3.0&ak=41bmd1GGfnBuGChqwAS9eVDkNtWQoglu&s=1"></script>
+
     <script>
        $(function(){
-            var swiper = new Swiper('.swiper-box .swiper-container', {
-                                pagination : '.swiper-pagination',
-                                paginationClickable: true,
-                                preloadImages: false,
-                                lazyLoading: true, 
-                                autoplay: 3000,
-                                /*autoHeight: true, //高度随内容变化*/
-                                loop: true,
-                                autoplayDisableOnInteraction: false,
-                      });
-            
+            // 百度地图API功能
+              var map = new BMap.Map("allmap");    // 创建Map实例
+              map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+              //添加地图类型控件
+              map.addControl(new BMap.MapTypeControl({
+                mapTypes:[
+                        BMAP_NORMAL_MAP,
+                        BMAP_HYBRID_MAP
+                    ]}));   
+              map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+              map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+           
+
 
             var now=0;
             var len=$('.search-nav a').length;

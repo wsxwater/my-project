@@ -43,6 +43,8 @@
 .honor-box a.thumbnail.active .caption-title, .honor-box a.thumbnail:focus .caption-title, .honor-box a.thumbnail:hover .caption-title{background-color: #0790d2;}
 
 /* 公司动态、行业资讯、常见问题 */
+.tab-show{display: none;}
+.tab-show-card{display: block;}
 .card-group .card .header,.card-group .card .body{padding: 15px 0px;}
 .card-group .line{padding: 12px 10px 1px 2px;margin-left: 0px;border-width: 3px;color: #0f51bb;}
 
