@@ -1,6 +1,11 @@
 node_modules/
 rubbish/
 AdminBSBMaterialDesign/
+source/
+version/
 *.zip
 *.rar
 *.psd
+
+gulpfile.js
+package.json
