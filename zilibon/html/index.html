@@ -1086,8 +1086,9 @@
                   $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideUp();
               });
             }else{
+              debugger;
               $('.product-show').on('click','.item-title',function () {
-                  $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideDown();
+                  $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this)).siblings('.item-body').slideDown();
               });
             }
 
