@@ -32,6 +32,7 @@
 .navbar-static .navbar-toggle:before{content: '';display: none;}
 .navbar-static.navbar>.container .navbar-brand{height: auto;padding: 0;margin-left: 0;}
 .navbar-static .navbar-brand img{max-width: 100%;}
+.navbar-static .navbar-nav>li>a{margin-top: 0;}
 /* 头部小屏幕收缩内容 */
 .service-hotline img{display: block;width: 230px;height: 51px;}
 .service-hotline .info-box{height: auto;background-color: transparent;margin-bottom: 0;}
