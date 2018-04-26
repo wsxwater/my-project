@@ -46,11 +46,86 @@
     
     <div class="list-box">
 
-        <div is="head"></div><!-- 头部 -->
+        <!-- 头部 -->
+        <div class="headbox">
+            <div class="topbox" is-pc="true">
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-md-10 col-sm-9 col-xs-12">欢迎访问广东中联邦精细化工有限公司网站！</div>
+                        <div class="col-md-2 col-sm-3 col-xs-12 p-r-0">
+                                <a href="javascript:;">设为首页</a> 
+                                <span class="line"></span>
+                                <a href="javascript:;">网站地图</a> 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- logo start -->
+            <nav class="navbar z-depth-0 navbar-static">
+                <div class="container">
+                    <div class="navbar-header">
+                       <a href="javascript:;" class="navbar-toggle open-sidebar-btn" id="openSidebar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+
+                        <a class="navbar-brand" href="index.html">
+                          <img src="../images/logo2.jpg">
+                        </a>
+                        
+                    </div>
+                    <ul class="nav navbar-nav navbar-right" is-pc="true">
+                        <li class="service-hotline">
+                            <a href="javascript:;" class="btn-block">
+                                <div class="info-box z-depth-0">
+                                    <div class="icon">
+                                        <span class="ico-phone"></span>
+                                    </div>
+                                    <div class="content">
+                                        <div class="font-18">服务热线：</div>
+                                        <div class="number font-bold">137-1348-3638</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="align-center">
+                            <a href="javascript:;">
+                                <div><span class="ico-navbar ico-navbar1"></span></div>
+                                <div><small>手机网站</small></div>
+                            </a>
+                        </li>
+                        <li class="align-center">
+                            <a href="javascript:;">
+                                <div><span class="ico-navbar ico-navbar2"></span></div>
+                                <div><small>我的热线</small></div>
+                            </a>
+                        </li>
+                        <li class="align-center">
+                            <a href="javascript:;">
+                                <div><span class="ico-navbar ico-navbar3"></span></div>
+                                <div><small>官方微信</small></div>
+                            </a>
+                        </li>
+                        <li class="align-center">
+                            <a href="javascript:;">
+                                <div><span class="ico-navbar ico-navbar4"></span></div>
+                                <div><small>官方微博</small></div>
+                            </a>
+                        </li>
+                        
+                    </ul>  
+                </div>
+            </nav>
+            <!-- logo end -->
+        </div> 
         <div class="divider"></div>
         <div is="nav"></div><!-- 导航条 -->
 
-        <div class="topbanner">
+        <div class="topbanner" is-pc="true">
             <img src="../images/list/b.jpg">
         </div>
 
@@ -317,23 +392,12 @@
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/node-waves/waves.min.js"></script>
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
+    <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
 
     <script>
        $(function(){
-
-            var swiper = new Swiper('.swiper-box .swiper-container', {
-                                pagination : '.swiper-pagination',
-                                paginationClickable: true,
-                                preloadImages: false,
-                                lazyLoading: true, 
-                                autoplay: 3000,
-                                /*autoHeight: true, //高度随内容变化*/
-                                loop: true,
-                                autoplayDisableOnInteraction: false,
-                      });
-
 
             var now=0;
             var disabled=true;
@@ -397,6 +461,7 @@
             $(window).resize(function() {
                     $('[data-toggle="tooltip"]').tooltip('show');
             });
+
 
             setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 
