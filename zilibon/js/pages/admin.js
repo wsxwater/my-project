@@ -456,6 +456,10 @@ $.AdminBSB.rightSideBarM = {
             $overlay.fadeOut();
             $sidebar.removeClass('open');
         });
+        $sidebar.find('.nav li').click(function(event) {
+            $overlay.fadeOut();
+            $sidebar.removeClass('open');
+        });
 
         $sidebar.find('.shop-class h3').click(function(event) {
             $(this).toggleClass('active').parents('.my-right-sidebar').find('.dropdown-menu').toggleClass('active');
