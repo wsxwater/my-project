@@ -176,7 +176,7 @@
 .our-map-wrap{position: relative;padding:48.9% 0 0;border:1px solid #eee;}
 .our-map-box{position: absolute;top: 0;left: 0;right: 0;bottom: 0;width: 100%;height: 100%;}
 
-.list-box .tab-content{/* margin-top: 60px; */}
+/* .list-box .tab-content{}
 .list-box .tab-content .product-show>.container{margin-top: 0;}
 .list-box .tab-content .product-show{padding-top: 0;}
 .list-box .tab-content .product-display{padding:0;}
@@ -190,4 +190,4 @@
 .product-detail-tabs .nav-pills>li a{color:#fff;font-size: 18px;text-align: center;padding: 0;height: 43px;line-height: 43px;background: url('../../images/list/vbg.jpg') 0 0 repeat-x;}
 .product-detail-tabs .nav-pills>li.active>a, 
 .product-detail-tabs .nav-pills>li.active>a:focus, 
-.product-detail-tabs .nav-pills>li.active>a:hover{background-color: transparent;color: #FF0;}
+.product-detail-tabs .nav-pills>li.active>a:hover{background-color: transparent;color: #FF0;} */
