@@ -20,7 +20,6 @@
 	<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="../css/style.min.css">
-    <link rel="stylesheet" type="text/css" href="../plugins/Swiper-3.2.7/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/private/list.css">
     <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
@@ -46,11 +45,143 @@
     
     <div class="list-box">
 
-        <div is="head"></div><!-- 头部 -->
-        <div class="divider"></div>
-        <div is="nav"></div><!-- 导航条 -->
+        <!-- 头部 -->
+        <div class="headbox">
+            <div class="topbox" is-pc="true">
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-md-10 col-sm-9 col-xs-12">欢迎访问广东中联邦精细化工有限公司网站！</div>
+                        <div class="col-md-2 col-sm-3 col-xs-12 p-r-0">
+                                <a href="javascript:;">设为首页</a> 
+                                <span class="line"></span>
+                                <a href="javascript:;">网站地图</a> 
+                        </div>
+                    </div>
 
-        <div class="topbanner">
+                </div>
+            </div>
+
+            <!-- logo start -->
+            <nav class="navbar z-depth-0 navbar-static">
+                <div class="container">
+                    <div class="navbar-header">
+                       <a href="javascript:;" class="navbar-toggle open-sidebar-btn" id="openSidebar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+
+                        <a class="navbar-brand" href="index.html">
+                          <img src="../images/logo2.jpg">
+                        </a>
+                        
+                    </div>
+                    <ul class="nav navbar-nav navbar-right" is-pc="true">
+                        <li class="service-hotline">
+                            <a href="javascript:;" class="btn-block">
+                                <div class="info-box z-depth-0">
+                                    <div class="icon">
+                                        <span class="ico-phone"></span>
+                                    </div>
+                                    <div class="content">
+                                        <div class="font-18">服务热线：</div>
+                                        <div class="number font-bold">137-1348-3638</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="align-center">
+                            <a href="javascript:;">
+                                <div><span class="ico-navbar ico-navbar1"></span></div>
+                                <div><small>手机网站</small></div>
+                            </a>
+                        </li>
+                        <li class="align-center">
+                            <a href="javascript:;">
+                                <div><span class="ico-navbar ico-navbar2"></span></div>
+                                <div><small>我的热线</small></div>
+                            </a>
+                        </li>
+                        <li class="align-center">
+                            <a href="javascript:;">
+                                <div><span class="ico-navbar ico-navbar3"></span></div>
+                                <div><small>官方微信</small></div>
+                            </a>
+                        </li>
+                        <li class="align-center">
+                            <a href="javascript:;">
+                                <div><span class="ico-navbar ico-navbar4"></span></div>
+                                <div><small>官方微博</small></div>
+                            </a>
+                        </li>
+                        
+                    </ul>  
+                </div>
+            </nav>
+            <!-- logo end -->
+        </div> 
+        <div class="divider"></div>
+        <div is="nav"></div><!-- PC导航条 -->
+        
+        <!-- 移动端导航条  -->
+        <div class="overlay"></div>
+        <section>
+            <aside class="right-sidebar my-right-sidebar">
+            <div class="shop-list-box">
+                <div class="shop-class">
+                    <a href="javascript:;" class="btn-block">
+                       <h3>产品中心</h3>
+                    </a>  
+                    <ul class="dropdown-menu">
+                        <li class="menu-item">
+                            <a href="javascript:;"><span class="ico-shop ico-shop0"></span>洗衣粉<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                        </li><li class="divider"></li>
+                        <li class="menu-item">
+                            <a href="javascript:;"><span class="ico-shop ico-shop1"></span>清洗粉<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                        </li><li class="divider"></li>
+                        <li class="menu-item">
+                            <a href="javascript:;"><span class="ico-shop ico-shop2"></span>洗洁精<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                        </li><li class="divider"></li>
+                        <li class="menu-item">
+                            <a href="javascript:;"><span class="ico-shop ico-shop3"></span>洗衣液<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                        </li><li class="divider"></li>
+                        <li class="menu-item">
+                            <a href="javascript:;"><span class="ico-shop ico-shop4"></span>清洗剂<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                        </li><li class="divider"></li>
+                        <li class="menu-item">
+                            <a href="javascript:;"><span class="ico-shop ico-shop5"></span>工业清洗行业<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                        </li><li class="divider"></li>
+                        <li class="menu-item">
+                            <a href="javascript:;"><span class="ico-shop ico-shop6"></span>酒店客房<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                        </li><li class="divider"></li>
+                        <li class="menu-item">
+                            <a href="javascript:;"><span class="ico-shop ico-shop7"></span>餐饮行业<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                        </li><li class="divider"></li>
+                        <li class="menu-item">
+                            <a href="javascript:;"><span class="ico-shop ico-shop8"></span>洗衣房<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                        </li><li class="divider"></li>
+                        <li class="menu-item">
+                            <a href="javascript:;"><span class="ico-shop ico-shop9"></span>公共区域<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="nav">
+                      <li><a href="index.html" class="active" target="_blank">首页</a></li>
+                      <li><a href="productList.html" target="_blank">洗衣粉</a></li>
+                      <li><a href="productList.html" target="_blank">洗洁精</a></li>
+                      <li><a href="productList.html" target="_blank">清洗剂</a></li>
+                      <li><a href="oemService.html" target="_blank">OEM服务</a></li>
+                      <li><a href="aboutUs.html" target="_blank">关于我们</a></li>
+                </ul>      
+            </div>
+             
+            </aside>
+        </section>    
+
+
+        <div class="topbanner" is-pc="true">
             <img src="../images/list/b.jpg">
         </div>
 
@@ -257,7 +388,7 @@
                         </div>   
                         <div class="product-card">
                             <div class="row align-center clearfix m-l-0 m-r-0">
-                                <div class="col-xs-12 p-l-0 p-r-0">
+                                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
                                     <ul class="list-group clearfix">
                                         <li class="list-group-item clearfix">
                                             <div class="col-xs-12 col-sm-4 p-l-0">
@@ -265,44 +396,139 @@
                                             </div>
                                             <div class="col-xs-12 col-sm-8 align-left p-r-0 p-l-0 font-14">
                                               <h4 class="col-orange">强力洗衣粉</h4>
-                                              <p class="col-blue">产品简介：</p>
-                                              <p>涂料增稠剂为一聚氨酯成份的液体水性增稠剂，使用方便，并且在流平性、涂膜光泽及耐水性等方面均优于传统的纤维素类。</p>
-                                                
-                                              <p class="col-blue">产品特性：</p>
-                                              <p>1、具有良好的高剪切粘度增稠效果，优异的流动性和流平性。</p>
-                                              <p>2、良好的刷涂手感,优异的抗辊涂飞溅性,耐水性及抗出水性能。</p>
+                                              <section is-pc="true">
+                                                  <p class="col-blue">产品简介：</p>
+                                                  <p>涂料增稠剂为一聚氨酯成份的液体水性增稠剂，使用方便，并且在流平性、涂膜光泽及耐水性等方面均优于传统的纤维素类。</p>
+                                                    
+                                                  <p class="col-blue">产品特性：</p>
+                                                  <p>1、具有良好的高剪切粘度增稠效果，优异的流动性和流平性。</p>
+                                                  <p>2、良好的刷涂手感,优异的抗辊涂飞溅性,耐水性及抗出水性能。</p>
 
-                                              <div>
-                                                <a href="javascript:;" class="btn btn-warning">立即咨询</a>
-                                                <a href="productDetail.html" class="btn col-white bg-grey">查看详情</a>
-                                              </div>
+                                                  <div>
+                                                    <a href="javascript:;" class="btn btn-warning">立即咨询</a>
+                                                    <a href="productDetail.html" class="btn col-white bg-grey">查看详情</a>
+                                                  </div>
+                                              </section>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-xs-12 p-l-0 p-r-0">
+                                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
                                     <ul class="list-group clearfix">
                                         <li class="list-group-item clearfix">
                                             <div class="col-xs-12 col-sm-4 p-l-0"><img src="../images/index/product.jpg"></div>
                                             <div class="col-xs-12 col-sm-8 align-left p-r-0 p-l-0 font-14">
                                               <h4 class="col-orange">强力洗衣粉</h4>
-                                              <p class="col-blue">产品简介：</p>
-                                              <p>涂料增稠剂为一聚氨酯成份的液体水性增稠剂，使用方便，并且在流平性、涂膜光泽及耐水性等方面均优于传统的纤维素类。</p>
-                                                
-                                              <p class="col-blue">产品特性：</p>
-                                              <p>1、具有良好的高剪切粘度增稠效果，优异的流动性和流平性。</p>
-                                              <p>2、良好的刷涂手感,优异的抗辊涂飞溅性,耐水性及抗出水性能。</p>
+                                              <section is-pc="true">
+                                                  <p class="col-blue">产品简介：</p>
+                                                  <p>涂料增稠剂为一聚氨酯成份的液体水性增稠剂，使用方便，并且在流平性、涂膜光泽及耐水性等方面均优于传统的纤维素类。</p>
+                                                    
+                                                  <p class="col-blue">产品特性：</p>
+                                                  <p>1、具有良好的高剪切粘度增稠效果，优异的流动性和流平性。</p>
+                                                  <p>2、良好的刷涂手感,优异的抗辊涂飞溅性,耐水性及抗出水性能。</p>
 
-                                              <div>
-                                                <a href="javascript:;" class="btn btn-warning">立即咨询</a>
-                                                <a href="productDetail.html" class="btn col-white bg-grey">查看详情</a>
-                                              </div>
+                                                  <div>
+                                                    <a href="javascript:;" class="btn btn-warning">立即咨询</a>
+                                                    <a href="productDetail.html" class="btn col-white bg-grey">查看详情</a>
+                                                  </div>
+                                              </section>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
-                                
-                                
+                                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
+                                    <ul class="list-group clearfix">
+                                        <li class="list-group-item clearfix">
+                                            <div class="col-xs-12 col-sm-4 p-l-0"><img src="../images/index/product.jpg"></div>
+                                            <div class="col-xs-12 col-sm-8 align-left p-r-0 p-l-0 font-14">
+                                              <h4 class="col-orange">强力洗衣粉</h4>
+                                              <section is-pc="true">
+                                                  <p class="col-blue">产品简介：</p>
+                                                  <p>涂料增稠剂为一聚氨酯成份的液体水性增稠剂，使用方便，并且在流平性、涂膜光泽及耐水性等方面均优于传统的纤维素类。</p>
+                                                    
+                                                  <p class="col-blue">产品特性：</p>
+                                                  <p>1、具有良好的高剪切粘度增稠效果，优异的流动性和流平性。</p>
+                                                  <p>2、良好的刷涂手感,优异的抗辊涂飞溅性,耐水性及抗出水性能。</p>
+
+                                                  <div>
+                                                    <a href="javascript:;" class="btn btn-warning">立即咨询</a>
+                                                    <a href="productDetail.html" class="btn col-white bg-grey">查看详情</a>
+                                                  </div>
+                                              </section>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
+                                    <ul class="list-group clearfix">
+                                        <li class="list-group-item clearfix">
+                                            <div class="col-xs-12 col-sm-4 p-l-0"><img src="../images/index/product.jpg"></div>
+                                            <div class="col-xs-12 col-sm-8 align-left p-r-0 p-l-0 font-14">
+                                              <h4 class="col-orange">强力洗衣粉</h4>
+                                              <section is-pc="true">
+                                                  <p class="col-blue">产品简介：</p>
+                                                  <p>涂料增稠剂为一聚氨酯成份的液体水性增稠剂，使用方便，并且在流平性、涂膜光泽及耐水性等方面均优于传统的纤维素类。</p>
+                                                    
+                                                  <p class="col-blue">产品特性：</p>
+                                                  <p>1、具有良好的高剪切粘度增稠效果，优异的流动性和流平性。</p>
+                                                  <p>2、良好的刷涂手感,优异的抗辊涂飞溅性,耐水性及抗出水性能。</p>
+
+                                                  <div>
+                                                    <a href="javascript:;" class="btn btn-warning">立即咨询</a>
+                                                    <a href="productDetail.html" class="btn col-white bg-grey">查看详情</a>
+                                                  </div>
+                                              </section>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
+                                    <ul class="list-group clearfix">
+                                        <li class="list-group-item clearfix">
+                                            <div class="col-xs-12 col-sm-4 p-l-0"><img src="../images/index/product.jpg"></div>
+                                            <div class="col-xs-12 col-sm-8 align-left p-r-0 p-l-0 font-14">
+                                              <h4 class="col-orange">强力洗衣粉</h4>
+                                              <section is-pc="true">
+                                                  <p class="col-blue">产品简介：</p>
+                                                  <p>涂料增稠剂为一聚氨酯成份的液体水性增稠剂，使用方便，并且在流平性、涂膜光泽及耐水性等方面均优于传统的纤维素类。</p>
+                                                    
+                                                  <p class="col-blue">产品特性：</p>
+                                                  <p>1、具有良好的高剪切粘度增稠效果，优异的流动性和流平性。</p>
+                                                  <p>2、良好的刷涂手感,优异的抗辊涂飞溅性,耐水性及抗出水性能。</p>
+
+                                                  <div>
+                                                    <a href="javascript:;" class="btn btn-warning">立即咨询</a>
+                                                    <a href="productDetail.html" class="btn col-white bg-grey">查看详情</a>
+                                                  </div>
+                                              </section>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
+                                    <ul class="list-group clearfix">
+                                        <li class="list-group-item clearfix">
+                                            <div class="col-xs-12 col-sm-4 p-l-0"><img src="../images/index/product.jpg"></div>
+                                            <div class="col-xs-12 col-sm-8 align-left p-r-0 p-l-0 font-14">
+                                              <h4 class="col-orange">强力洗衣粉</h4>
+                                              <section is-pc="true">
+                                                  <p class="col-blue">产品简介：</p>
+                                                  <p>涂料增稠剂为一聚氨酯成份的液体水性增稠剂，使用方便，并且在流平性、涂膜光泽及耐水性等方面均优于传统的纤维素类。</p>
+                                                    
+                                                  <p class="col-blue">产品特性：</p>
+                                                  <p>1、具有良好的高剪切粘度增稠效果，优异的流动性和流平性。</p>
+                                                  <p>2、良好的刷涂手感,优异的抗辊涂飞溅性,耐水性及抗出水性能。</p>
+
+                                                  <div>
+                                                    <a href="javascript:;" class="btn btn-warning">立即咨询</a>
+                                                    <a href="productDetail.html" class="btn col-white bg-grey">查看详情</a>
+                                                  </div>
+                                              </section>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                
                             </div>
                         </div>
 
@@ -432,24 +658,12 @@
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/node-waves/waves.min.js"></script>
-    <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
+    <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
 
     <script>
        $(function(){
-
-            var swiper = new Swiper('.swiper-box .swiper-container', {
-                                pagination : '.swiper-pagination',
-                                paginationClickable: true,
-                                preloadImages: false,
-                                lazyLoading: true, 
-                                autoplay: 3000,
-                                /*autoHeight: true, //高度随内容变化*/
-                                loop: true,
-                                autoplayDisableOnInteraction: false,
-                      });
-
 
             var now=0;
             var disabled=true;
@@ -523,16 +737,24 @@
                     $('[data-toggle="tooltip"]').tooltip('show');
             });
 
+            
+            /*产品分类，行业分类 标题点击显示菜单*/
+            $('.product-show').on('click','.title-sec',function () {
+                  $(this).parents('.card').siblings('.list-group').toggle();
+            })
             if ($('.product-show .item-body').is(':hidden')) {
-              /*菜单收缩*/
-              $('.product-show').on('click','.item-title',function () {
+                /*菜单收缩*/
+                /*产品分类，行业分类一级菜单点击显示二级菜单*/
+                $('.product-show').on('click','.item-title',function () {
                   $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideUp();
-              });
+                });
+
             }else{
-              $('.product-show').on('click','.item-title',function () {
-                  $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideDown();
-              });
+                $('.product-show').on('click','.item-title',function () {
+                      $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideDown();
+                });
             }
+
 
             setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 

@@ -3,6 +3,7 @@ rubbish/
 AdminBSBMaterialDesign/
 source/
 version/
+dist/
 *.zip
 *.rar
 *.psd

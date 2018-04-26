@@ -442,10 +442,75 @@ $.AdminBSB.browser = {
         }
     }
 }
+
+
+/*仿写*/
+$.AdminBSB.rightSideBarM = {
+    activate: function () {
+        var _this = this;
+        var $sidebar = $('.my-right-sidebar');
+        var $overlay = $('.overlay');
+
+        //Close sidebar
+        $overlay.click(function(event) {
+            $overlay.fadeOut();
+            $sidebar.removeClass('open');
+        });
+
+        $sidebar.find('.shop-class h3').click(function(event) {
+            $(this).toggleClass('active').parents('.my-right-sidebar').find('.dropdown-menu').toggleClass('active');
+
+        });
+
+        $sidebar.find('.dropdown-menu li').click(function(event) {
+            $(this).addClass('current').siblings().removeClass('current');
+            /*return false;*/
+            $overlay.fadeOut();
+            $sidebar.removeClass('open');
+        });
+
+        $('.open-sidebar-btn').on('click', function () {
+            $sidebar.toggleClass('open');
+            if (_this.isOpen()) { $overlay.fadeIn(); } else { $overlay.fadeOut(); }
+        });
+
+        
+        _this.setMenuHeight();
+        $(window).resize(function () {
+            _this.checkStatuForResize();
+            /*_this.setMenuHeight();*/
+        });
+    },
+    setMenuHeight: function () {
+        if (typeof $.fn.slimScroll != 'undefined') {
+            var height=$(window).height();
+            var $el = $('.my-right-sidebar .shop-list-box');
+            console.log(height);
+            $el.slimscroll({
+                height: $el.outerHeight()+"px"
+            });
+        }
+    },
+    checkStatuForResize: function () {
+        var $body = $('body');
+        var $sidebar = $('.my-right-sidebar');
+        var width = $body.width();
+        var $overlay = $('.overlay');
+
+        if (width > 767) {
+            $sidebar.removeClass('open');
+            $overlay.fadeOut();
+        }
+    },
+    isOpen: function () {
+        return $('.my-right-sidebar').hasClass('open');
+    }
+}
+
 //==========================================================================================================================
 
-/*$(function () {
-    $.AdminBSB.browser.activate();
+$(function () {
+    /*$.AdminBSB.browser.activate();
     $.AdminBSB.leftSideBar.activate();
     $.AdminBSB.rightSideBar.activate();
     $.AdminBSB.navbar.activate();
@@ -454,5 +519,8 @@ $.AdminBSB.browser = {
     $.AdminBSB.select.activate();
     $.AdminBSB.search.activate();
 
-    setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
-});*/
+    setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);*/
+    $.AdminBSB.rightSideBarM.activate();
+
+
+});

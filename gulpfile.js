@@ -16,6 +16,11 @@ var paths = {
 
 gulp.task('default',['testJsmin','testImagemin','testCSSmin']);
 
+gulp.task('copy',function(){
+    gulp.src('source/**/**.html')
+        .pipe(gulp.dest('dist/'));
+});
+
 
 /*实现src里添加和修改时都将JS文件压缩并部署到dist目录，而当文件被删除的时候又可以删除dist下对应的文件*/
 gulp.task('testJsmin', function(){
@@ -64,15 +69,15 @@ gulp.task('testCSSmin', function () {
 
 /*一次性构建的任务：只要执行gulp deploy命令就能一次性将图片压缩、压缩JS、压缩CSS了*/
 gulp.task('deploy', function(){
-	gulp.src(paths.src + './src/**/**.{png,jpg,gif,ico}')
-	    .pipe(imagemin())
-		.pipe(gulp.dest(paths.dist));
+	//gulp.src(paths.src + './src/**/**.{png,jpg,gif,ico}')
+	    //.pipe(imagemin())
+		//.pipe(gulp.dest(paths.dist));
 	
-	gulp.src(paths.src + '/**/**.js')
-		.pipe(minjs().on('error', function(error){
-			console.log(error.message, error.lineNumber);
-		}))
-		.pipe(gulp.dest(paths.dist));
+	//gulp.src(paths.src + '/**/**.js')
+		//.pipe(minjs().on('error', function(error){
+			//console.log(error.message, error.lineNumber);
+		//}))
+		//.pipe(gulp.dest(paths.dist));
 		
 	gulp.src(paths.src + '/**/**.css')
 		.pipe(mincss())
