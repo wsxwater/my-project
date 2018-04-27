@@ -735,13 +735,14 @@
                     $('[data-toggle="tooltip"]').tooltip('show');
             });
 
-            //行业分类 产品分类 内容点击
+            //行业分类 产品分类 内容点击(二级菜单)
             $('.item-body').on('click','a',function () {
               $(this).addClass('active').parents('.product-show').find('.item-body a').not($(this)).removeClass('active');
             })
+
             /*产品分类，行业分类 标题点击显示菜单*/
             $('.product-show').on('click','.title-sec',function () {
-                  $(this).parents('.card').siblings('.list-group').toggle();
+                  $(this).parents('.card').siblings('.list-group').toggle().parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide();
             })
 
             function ClassifyMenu(show) {
@@ -754,6 +755,7 @@
                     $(this).siblings('.item-body').on('click','a',function () {
                       $('.item-body').slideUp();
                     })
+                    return false;
                   });
                 }else{
                   $('.product-show .item-body').show();

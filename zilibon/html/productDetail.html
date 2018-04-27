@@ -247,7 +247,7 @@
                                     </div>  
                                 </div>
                             </div>
-                            <ul class="list-group">
+                            <ul class="list-group" is-pc="true">
                                 <li class="list-group-item">
                                      <div class="item-title menu-item clearfix">
                                          <a href="javascript:;"><span class="ico-shop ico-shop0"></span>洗衣粉<i class="material-icons pull-right">keyboard_arrow_right</i></a>
@@ -325,7 +325,7 @@
                                     </div>  
                                 </div>
                             </div>
-                            <ul class="list-group">
+                            <ul class="list-group" is-pc="true">
                                 <li class="list-group-item">
                                      <div class="item-title menu-item clearfix">
                                          <a href="javascript:;"><span class="ico-shop ico-shop5"></span>工业清洗行业<i class="material-icons pull-right">keyboard_arrow_right</i></a>
@@ -430,8 +430,22 @@
                                   </div>
                                 </div>
 
-                                <section>
+                                <section is-pc="true">
                                   <div class="row vbtn-group align-center m-t-30">
+                                    <div class="col-xs-4 col-sm-4">
+                                      <a href="#Introduct" class="vbtn vbtn-orge">产品介绍</a>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4">
+                                      <a href="#Advantage" class="vbtn vbtn-orge">核心优势</a>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4">
+                                      <a href="#Sample" class="vbtn vbtn-orge">在线拿样</a>
+                                    </div>
+                                  </div>
+                                </section>
+
+                                <section class="fix-top" is-pc="false" id="fixTop">
+                                  <div class="row vbtn-group align-center">
                                     <div class="col-xs-4 col-sm-4">
                                       <a href="#Introduct" class="vbtn vbtn-orge">产品介绍</a>
                                     </div>
@@ -670,11 +684,14 @@
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/node-waves/waves.min.js"></script>
+    <script src="../plugins/jquery.sticky-kit/jquery.sticky-kit.min.js"></script>
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
 
     <script>
        $(function(){
+
+            $("#fixTop").stick_in_parent({parent:'.list-box'})
 
 
             var now=0;
@@ -746,13 +763,14 @@
             });
             
             
-            //行业分类 产品分类 内容点击
+            //行业分类 产品分类 内容点击(二级菜单)
             $('.item-body').on('click','a',function () {
               $(this).addClass('active').parents('.product-show').find('.item-body a').not($(this)).removeClass('active');
             })
+
             /*产品分类，行业分类 标题点击显示菜单*/
             $('.product-show').on('click','.title-sec',function () {
-                  $(this).parents('.card').siblings('.list-group').toggle();
+                  $(this).parents('.card').siblings('.list-group').toggle().parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide();
             })
 
             function ClassifyMenu(show) {
@@ -765,6 +783,7 @@
                     $(this).siblings('.item-body').on('click','a',function () {
                       $('.item-body').slideUp();
                     })
+                    return false;
                   });
                 }else{
                   $('.product-show .item-body').show();
