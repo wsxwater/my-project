@@ -89,6 +89,8 @@
 	.list-box .product-display .product-card .list-group-item .col-xs-12 h4{text-align: center;}
     .product-classify .menu-item a span,.product-classify .menu-item a i.material-icons{display: none;}
 
+    .new-box .product-show .product-classify>.clearfix{border: none;margin-left: 0;width: 100%;}
+
     /* 公司动态、行业资讯、常见问题 */
     .tab-show{display: block;}
     .tab-show-card{display: none;}
