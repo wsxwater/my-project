@@ -225,7 +225,11 @@
             </div>
         </section>
         
+<<<<<<< HEAD
         <!-- PC端产品介绍、核心优势、在线拿样 -->
+=======
+        <!-- 产品介绍、核心优势、在线拿样 -->
+>>>>>>> mergesMaster
         <div class="product-show listbg clearfix">
             <div class="container">
                 <div class="clearfix white">
@@ -390,7 +394,11 @@
                             </ul>
                         </section>
                       </div>
+<<<<<<< HEAD
                       <div class="product-display" is-pc="true">
+=======
+                      <div class="product-display">
+>>>>>>> mergesMaster
                           <div class="product-title">
                               <div class="title">
                                   <h3>洗衣粉</h3>
@@ -460,7 +468,11 @@
                       </div>
                     </article>  
                   
+<<<<<<< HEAD
                     <article class="clearfix" is-pc="true" id="Advantage">
+=======
+                    <article class="clearfix" id="Advantage">
+>>>>>>> mergesMaster
                       <div class="product-classify noborder"></div>
                       <div class="product-display">
                         <section class="application-wrap">
@@ -579,6 +591,7 @@
             </div>
         </div>
         
+<<<<<<< HEAD
         <!-- 移动端产品介绍、核心优势、在线拿样 -->
         <section>
         <div class="product-detail-tabs" is-pc="false">
@@ -827,6 +840,10 @@
         </section>
 
         <div class="introduct-box listbg sample-wrap" is-pc="true" id="Sample">
+=======
+
+        <div class="introduct-box listbg sample-wrap" id="Sample">
+>>>>>>> mergesMaster
             <div class="container">
                 <div class="title align-center">
                     <div class="col-blue font-bold clearfix font-32">在线拿样</div>
@@ -916,15 +933,21 @@
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/node-waves/waves.min.js"></script>
+<<<<<<< HEAD
     <script src="../plugins/jquery.sticky-kit/jquery.sticky-kit.min.js"></script>
+=======
+>>>>>>> mergesMaster
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
 
     <script>
        $(function(){
 
+<<<<<<< HEAD
             
             $(".product-detail-tabs .nav-pills").stick_in_parent();
+=======
+>>>>>>> mergesMaster
 
             var now=0;
             var disabled=true;
@@ -978,14 +1001,6 @@
                 })
             }
 
-            //行业分类 产品分类 内容点击
-            $('.item-body').on('click','a',function () {
-              $(this).addClass('active').parents('.product-show').find('.item-body a').not($(this)).removeClass('active');
-            })
-
-            $('.product-show').on('click','.menu-item',function () {
-                $(this).addClass('active').parents('.product-show').find('.menu-item').not($(this)).removeClass('active');
-            })
 
             $('.shop-list-box .dropdown-menu').on('click', '.menu-item', function(event) {
                 $(this).addClass('current').siblings('li.menu-item').removeClass('current');
@@ -999,25 +1014,51 @@
             });
             
             
+            //行业分类 产品分类 内容点击
+            $('.item-body').on('click','a',function () {
+              $(this).addClass('active').parents('.product-show').find('.item-body a').not($(this)).removeClass('active');
+            })
+
             /*产品分类，行业分类 标题点击显示菜单*/
             $('.product-show').on('click','.title-sec',function () {
                   $(this).parents('.card').siblings('.list-group').toggle();
             })
-            if ($('.product-show .item-body').is(':hidden')) {
+            
+
+            function ClassifyMenu(show) {
                 /*菜单收缩*/
                 /*产品分类，行业分类一级菜单点击显示二级菜单*/
-                $('.product-show').on('click','.item-title',function () {
-                  $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideUp();
-                });
-                
+                if (show) {
+                  $('.product-show .item-body').hide();
+                  $('.product-show').on('click','.item-title',function () {
+                    $(this).toggleClass('current').siblings('.item-body').slideToggle().parents('.product-show').find('.item-title').not($(this)).removeClass('current').parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideUp();
+                    $(this).siblings('.item-body').on('click','a',function () {
+                      $('.item-body').slideUp();
+                    })
+                  });
+                }else{
+                  $('.product-show .item-body').show();
+                }
 
-            }else{
-                $('.product-show').on('click','.item-title',function () {
-                      $(this).siblings('.item-body').slideToggle().parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideDown();
-                });
+
             }
             
-        
+              
+            if ($(window).width()<=767) {
+              ClassifyMenu(true);  
+            }else{
+              ClassifyMenu(false)
+            }
+
+            $(window).resize(function(event) {
+              if ($(window).width()<=767) {
+                ClassifyMenu(true);  
+              }else{
+                ClassifyMenu(false)
+              }
+            });
+
+
 
             setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 

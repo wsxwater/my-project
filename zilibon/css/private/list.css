@@ -18,7 +18,7 @@
 .list-box .links-box{/* margin-top: 240px; */}
 .list-box .product-classify{background-color: transparent;}
 .list-box .product-classify .title .title-ch{font-size: 24px;}
-.list-box .product-classify .list-group-item{background-color: #fff;padding: 0;border:none;margin-bottom: 5px;}
+.list-box .product-classify .list-group-item{background-color: #fff;padding: 0;border:none;margin-bottom: 5px;position: relative;}
 .list-box .product-classify .item-body{/* padding-right: 15px;padding-left: 15px; */padding-bottom: 0;}
 .list-box .product-classify .item-body .line{color: #333;}
 .list-box .product-classify .item-body a{width:40%;}
@@ -33,6 +33,8 @@
 .list-box .search-box-right .search-nav{padding:8px 0;}
 
 .topbanner {padding: 16% 0 0;position: relative;}
+
+.topbanner[is-pc~=false]{padding:41% 0 0;}
 .topbanner > img {position: absolute;width: 100%; height: 100%;left: 0; top: 0;}
 
 /* 详情 */
@@ -174,7 +176,8 @@
 .our-map-wrap{position: relative;padding:48.9% 0 0;border:1px solid #eee;}
 .our-map-box{position: absolute;top: 0;left: 0;right: 0;bottom: 0;width: 100%;height: 100%;}
 
-.list-box .tab-content{/* margin-top: 60px; */}
+/* .list-box .tab-content{}
+
 .list-box .tab-content .product-show>.container{margin-top: 0;}
 .list-box .tab-content .product-show{padding-top: 0;}
 .list-box .tab-content .product-display{padding:0;}
@@ -189,3 +192,5 @@
 .product-detail-tabs .nav-pills>li.active>a, 
 .product-detail-tabs .nav-pills>li.active>a:focus, 
 .product-detail-tabs .nav-pills>li.active>a:hover{background-color: transparent;color: #FF0;}
+*/
+

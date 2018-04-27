@@ -32,6 +32,7 @@
 .navbar-static .navbar-toggle:before{content: '';display: none;}
 .navbar-static.navbar>.container .navbar-brand{height: auto;padding: 0;margin-left: 0;}
 .navbar-static .navbar-brand img{max-width: 100%;}
+.navbar-static .navbar-nav>li>a{margin-top: 0;}
 /* 头部小屏幕收缩内容 */
 .service-hotline img{display: block;width: 230px;height: 51px;}
 .service-hotline .info-box{height: auto;background-color: transparent;margin-bottom: 0;}
@@ -103,7 +104,10 @@
 .my-right-sidebar{top: 0px;/* height: 100%; */bottom:0;width: 280px;background-color: transparent;right: -280px;height: 100%;box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;-o-box-shadow: none;}
 .nav-wrap{width: 100%;height: 100%;}
 .my-right-sidebar .dropdown-menu{ position: static;margin-top: 60px !important;float: left;width: 160px;}
+<<<<<<< HEAD
 
+=======
+>>>>>>> mergesMaster
 .my-right-sidebar .shop-list-box{padding-left: 160px;}
 .my-right-sidebar .shop-list-box .container{padding-right: 0;padding-left: 0;}
 .my-right-sidebar .shop-list-box .shop-class h3{/* line-height: 50px; */color: #FFF;padding-left: 15px;padding-right: 15px;}
@@ -174,7 +178,7 @@
 .product-classify .item-title{color: #ff7802;margin:0px 0 14px;padding:16px;font-weight: normal;}
 
 .product-classify .list-group{margin-bottom: 0;}
-.product-classify .list-group-item{/* padding:10px;padding-bottom: 13px; */padding:0;border: none;background: #f6f6f6;
+.product-classify .list-group-item{/* padding:10px;padding-bottom: 13px; */position: relative;;padding:0;border: none;background: #f6f6f6;
 	border-top: 1px dashed #0797dd;border-bottom:1px dashed #0797dd;}
 .product-classify .list-group-item:first-child{border-top: none;}
 .product-classify .list-group-item:last-child{border-bottom: none;}
@@ -182,26 +186,28 @@
 .product-classify .item-body a{text-decoration: none;text-align:center;font-size:14px;display: inline-block;width:90px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;vertical-align: middle;color: #888;padding:11px 0;}
 .product-classify .item-body a.active,.product-classify .item-body a:focus,.product-classify .item-body a:hover{color: #ff7802;background-color: transparent;border:none;}
 
-.product-classify .menu-item.active .ico-shop0,.product-classify .menu-item:hover .ico-shop0{background-position: -2px -25px;}
-.product-classify .menu-item.active .ico-shop1,.product-classify .menu-item:hover .ico-shop1{background-position: -2px -75px;}
-.product-classify .menu-item.active .ico-shop2,.product-classify .menu-item:hover .ico-shop2{background-position: -2px -125px;}
-.product-classify .menu-item.active .ico-shop3,.product-classify .menu-item:hover .ico-shop3{background-position: -2px -175px;}
-.product-classify .menu-item.active .ico-shop4,.product-classify .menu-item:hover .ico-shop4{background-position: -2px -225px;}
-.product-classify .menu-item.active .ico-shop5,.product-classify .menu-item:hover .ico-shop5{background-position: -2px -275px;}
-.product-classify .menu-item.active .ico-shop6,.product-classify .menu-item:hover .ico-shop6{background-position: -2px -325px;}
-.product-classify .menu-item.active .ico-shop7,.product-classify .menu-item:hover .ico-shop7{background-position: -2px -375px;}
-.product-classify .menu-item.active .ico-shop8,.product-classify .menu-item:hover .ico-shop8{background-position: -2px -425px;}
-.product-classify .menu-item.active .ico-shop9,.product-classify .menu-item:hover .ico-shop9{background-position: 0 -475px;}
 
-
+.product-classify .menu-item.current .ico-shop0,.product-classify .menu-item:hover .ico-shop0{background-position: -2px -25px;}
+.product-classify .menu-item.current .ico-shop1,.product-classify .menu-item:hover .ico-shop1{background-position: -2px -75px;}
+.product-classify .menu-item.current .ico-shop2,.product-classify .menu-item:hover .ico-shop2{background-position: -2px -125px;}
+.product-classify .menu-item.current .ico-shop3,.product-classify .menu-item:hover .ico-shop3{background-position: -2px -175px;}
+.product-classify .menu-item.current .ico-shop4,.product-classify .menu-item:hover .ico-shop4{background-position: -2px -225px;}
+.product-classify .menu-item.current .ico-shop5,.product-classify .menu-item:hover .ico-shop5{background-position: -2px -275px;}
+.product-classify .menu-item.current .ico-shop6,.product-classify .menu-item:hover .ico-shop6{background-position: -2px -325px;}
+.product-classify .menu-item.current .ico-shop7,.product-classify .menu-item:hover .ico-shop7{background-position: -2px -375px;}
+.product-classify .menu-item.current .ico-shop8,.product-classify .menu-item:hover .ico-shop8{background-position: -2px -425px;}
+.product-classify .menu-item.current .ico-shop9,.product-classify .menu-item:hover .ico-shop9{background-position: 0 -475px;}
 
 .product-classify .item-body .line{/* padding: 14px 10px 5px;margin-left: 20px; */}
 .product-classify .menu-item{font-size: 16px; padding:16px;text-align: center;background: #f5f5f5 url('../../images/list/titbg.png') 0 0 repeat-y /100% 100%;}
 .product-classify .menu-item a{display: block;text-decoration: none;color:#333;}
 .product-classify .menu-item i{color:#333;}
-.product-classify .menu-item.active,.product-classify .menu-item:hover{color: #0790d2;}
-.product-classify .menu-item.active a,.product-classify .menu-item:hover a,
-.product-classify .menu-item.active i,.product-classify .menu-item:hover i{color: #0790d2;}
+
+.product-classify .menu-item.current,.product-classify .menu-item:hover{color: #0790d2;}
+.product-classify .menu-item.current a,.product-classify .menu-item:hover a,
+.product-classify .menu-item.current i,.product-classify .menu-item:hover i{color: #0790d2;}
+
+
 /* 产品展示标题 */
 .product-display{width: 64%;float: right;}
 .product-title{border-bottom:1px solid #0d7ad7;height: 29px;}
