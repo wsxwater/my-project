@@ -64,7 +64,7 @@
 	.product-display,.list-box .product-display{width: 100%;}
 	.product-card .card{margin-top: 10px;margin-bottom: 5px;}
 	.product-show .product-classify>.clearfix{width: 50%;position: relative;float: left;border-right: 1px solid #0d7ad7;}
-    .product-show .product-classify>.clearfix:last-child{margin-left: 0px;border-left: 1px solid #0d7ad7;border-right: none;}
+    .product-show .product-classify>.clearfix:last-child{margin-left: -1px;border-left: 1px solid #0d7ad7;border-right: none;}
 
 	.list-box .product-classify .title .title-ch{font-size: 14px;}
 	.product-classify .item-title{padding:10px;}
