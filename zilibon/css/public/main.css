@@ -174,7 +174,7 @@
 .product-classify .item-title{color: #ff7802;margin:0px 0 14px;padding:16px;font-weight: normal;}
 
 .product-classify .list-group{margin-bottom: 0;}
-.product-classify .list-group-item{/* padding:10px;padding-bottom: 13px; */padding:0;border: none;background: #f6f6f6;
+.product-classify .list-group-item{/* padding:10px;padding-bottom: 13px; */position: relative;;padding:0;border: none;background: #f6f6f6;
 	border-top: 1px dashed #0797dd;border-bottom:1px dashed #0797dd;}
 .product-classify .list-group-item:first-child{border-top: none;}
 .product-classify .list-group-item:last-child{border-bottom: none;}
@@ -182,16 +182,16 @@
 .product-classify .item-body a{text-decoration: none;text-align:center;font-size:14px;display: inline-block;width:90px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;vertical-align: middle;color: #888;padding:11px 0;}
 .product-classify .item-body a.active,.product-classify .item-body a:focus,.product-classify .item-body a:hover{color: #ff7802;background-color: transparent;border:none;}
 
-.product-classify .menu-item.active .ico-shop0,.product-classify .menu-item:hover .ico-shop0{background-position: -2px -25px;}
-.product-classify .menu-item.active .ico-shop1,.product-classify .menu-item:hover .ico-shop1{background-position: -2px -75px;}
-.product-classify .menu-item.active .ico-shop2,.product-classify .menu-item:hover .ico-shop2{background-position: -2px -125px;}
-.product-classify .menu-item.active .ico-shop3,.product-classify .menu-item:hover .ico-shop3{background-position: -2px -175px;}
-.product-classify .menu-item.active .ico-shop4,.product-classify .menu-item:hover .ico-shop4{background-position: -2px -225px;}
-.product-classify .menu-item.active .ico-shop5,.product-classify .menu-item:hover .ico-shop5{background-position: -2px -275px;}
-.product-classify .menu-item.active .ico-shop6,.product-classify .menu-item:hover .ico-shop6{background-position: -2px -325px;}
-.product-classify .menu-item.active .ico-shop7,.product-classify .menu-item:hover .ico-shop7{background-position: -2px -375px;}
-.product-classify .menu-item.active .ico-shop8,.product-classify .menu-item:hover .ico-shop8{background-position: -2px -425px;}
-.product-classify .menu-item.active .ico-shop9,.product-classify .menu-item:hover .ico-shop9{background-position: 0 -475px;}
+.product-classify .menu-item.current .ico-shop0,.product-classify .menu-item:hover .ico-shop0{background-position: -2px -25px;}
+.product-classify .menu-item.current .ico-shop1,.product-classify .menu-item:hover .ico-shop1{background-position: -2px -75px;}
+.product-classify .menu-item.current .ico-shop2,.product-classify .menu-item:hover .ico-shop2{background-position: -2px -125px;}
+.product-classify .menu-item.current .ico-shop3,.product-classify .menu-item:hover .ico-shop3{background-position: -2px -175px;}
+.product-classify .menu-item.current .ico-shop4,.product-classify .menu-item:hover .ico-shop4{background-position: -2px -225px;}
+.product-classify .menu-item.current .ico-shop5,.product-classify .menu-item:hover .ico-shop5{background-position: -2px -275px;}
+.product-classify .menu-item.current .ico-shop6,.product-classify .menu-item:hover .ico-shop6{background-position: -2px -325px;}
+.product-classify .menu-item.current .ico-shop7,.product-classify .menu-item:hover .ico-shop7{background-position: -2px -375px;}
+.product-classify .menu-item.current .ico-shop8,.product-classify .menu-item:hover .ico-shop8{background-position: -2px -425px;}
+.product-classify .menu-item.current .ico-shop9,.product-classify .menu-item:hover .ico-shop9{background-position: 0 -475px;}
 
 
 
@@ -199,9 +199,9 @@
 .product-classify .menu-item{font-size: 16px; padding:16px;text-align: center;background: #f5f5f5 url('../../images/list/titbg.png') 0 0 repeat-y /100% 100%;}
 .product-classify .menu-item a{display: block;text-decoration: none;color:#333;}
 .product-classify .menu-item i{color:#333;}
-.product-classify .menu-item.active,.product-classify .menu-item:hover{color: #0790d2;}
-.product-classify .menu-item.active a,.product-classify .menu-item:hover a,
-.product-classify .menu-item.active i,.product-classify .menu-item:hover i{color: #0790d2;}
+.product-classify .menu-item.current,.product-classify .menu-item:hover{color: #0790d2;}
+.product-classify .menu-item.current a,.product-classify .menu-item:hover a,
+.product-classify .menu-item.current i,.product-classify .menu-item:hover i{color: #0790d2;}
 /* 产品展示标题 */
 .product-display{width: 64%;float: right;}
 .product-title{border-bottom:1px solid #0d7ad7;height: 29px;}

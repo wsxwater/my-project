@@ -18,7 +18,7 @@
 .list-box .links-box{/* margin-top: 240px; */}
 .list-box .product-classify{background-color: transparent;}
 .list-box .product-classify .title .title-ch{font-size: 24px;}
-.list-box .product-classify .list-group-item{background-color: #fff;padding: 0;border:none;margin-bottom: 5px;}
+.list-box .product-classify .list-group-item{background-color: #fff;padding: 0;border:none;margin-bottom: 5px;position: relative;}
 .list-box .product-classify .item-body{/* padding-right: 15px;padding-left: 15px; */padding-bottom: 0;}
 .list-box .product-classify .item-body .line{color: #333;}
 .list-box .product-classify .item-body a{width:40%;}
@@ -34,7 +34,7 @@
 
 .topbanner {padding: 16% 0 0;position: relative;}
 
-.topbanner[is-pc~=false]{padding:36% 0 0;}
+.topbanner[is-pc~=false]{padding:41% 0 0;}
 .topbanner > img {position: absolute;width: 100%; height: 100%;left: 0; top: 0;}
 
 /* 详情 */

@@ -428,10 +428,6 @@
                   $(this).parents('.card').siblings('.list-group').toggle();
             })
             
-            $('.product-show').on('click','.menu-item',function () {
-                $(this).addClass('active').parents('.product-show').find('.menu-item').not($(this)).removeClass('active');
-            })
-
             setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 
 
