@@ -1282,49 +1282,63 @@
             console.log(flag)//true为PC端，false为手机端和ipad*/
 
             
-            //行业分类 产品分类 内容点击
+            //行业分类 产品分类 内容(二级菜单)点击
             $('.item-body').on('click','a',function () {
-              $(this).addClass('active').parents('.product-show').find('.item-body a').not($(this)).removeClass('active');
+              $(this).toggleClass('active').parents('.product-show').find('.item-body a').not($(this)).removeClass('active');
             })
+
             /*产品分类，行业分类 标题点击显示菜单*/
             $('.product-show').on('click','.title-sec',function () {
                   $(this).parents('.card').siblings('.list-group').toggle().parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide();
             })
-
-            function ClassifyMenu(show) {
-                /*菜单收缩*/
-                /*产品分类，行业分类一级菜单点击显示二级菜单*/
-                if (!show) {
-                  $('.product-show .item-body').show();
-                  return;
-                }
-                if (show) {
-                  $('.product-show .item-body').hide();
-                  $('.product-show').on('click','.item-title',function () {
-                    $(this).toggleClass('current').siblings('.item-body').slideToggle().parents('.product-show').find('.item-title').not($(this)).removeClass('current').parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).slideUp();
-                    $(this).siblings('.item-body').on('click','a',function () {
-                      $('.item-body').slideUp();
-                    })
-                  });
-                }/*else{
-                  $('.product-show .item-body').show();
-                }*/
-            }
             
-              
-            if ($(window).width()<=767) {
-              ClassifyMenu(true);  
-            }else{
-              ClassifyMenu(false)
+            $.classifyMenu={
+              activate:function () {
+                var _this=this;
+                var $object=$('.product-show .item-title');
+                var $target=$('.product-show .item-body');
+
+                
+                _this.clickHide();
+                
+                //菜单收缩
+                //产品分类，行业分类一级菜单点击显示二级菜单
+                $object.click(function() {
+                  $(this).toggleClass('current').siblings('.item-body').fadeToggle().parents('.product-show').find('.item-title').not($(this)).removeClass('current').parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).fadeOut();
+                });
+                
+                $(window).resize(function () {
+                  _this.checkStatuForResize();
+                });
+              },
+              clickHide:function () {
+                var $object=$('.product-show .item-title');
+                var $target=$('.product-show .item-body');
+                $target.on('click',function (e) {
+                   $object.removeClass('current');
+                   $target.hide();
+                });
+              },
+              checkStatuForResize:function () {
+                var $body = $('body');
+                var width = $body.width();
+                var $object=$('.product-show .item-title');
+                var $target1=$('.product-show .item-body');
+                var $target2=$('.product-show .list-group');
+
+                if (width > 767) {
+                    $target1.fadeIn();
+                    $target2.fadeIn();
+                }else{
+                    $object.removeClass('current');
+                    $target1.fadeOut();
+                    $target2.fadeOut();
+                }
+
+              }
             }
 
-            $(window).resize(function(event) {
-              if ($(window).width()<=767) {
-                ClassifyMenu(true);  
-              }else{
-                ClassifyMenu(false)
-              }
-            });
+            $.classifyMenu.activate();
             
 
 
