@@ -247,7 +247,7 @@
                              </div>  
                          </div>
                      </div>
-                     <ul class="list-group">
+                     <ul class="list-group" is-pc="true">
                          <li class="list-group-item">
                             <h3 class="item-title align-center clearfix">洗衣粉</h3>
                               <div class="item-body clearfix">
@@ -314,7 +314,7 @@
                              </div>  
                          </div>
                      </div>
-                     <ul class="list-group">
+                     <ul class="list-group" is-pc="true">
                          <li class="list-group-item">
                             <h3 class="item-title align-center clearfix">工业清洗行业</h3>
                               <div class="item-body clearfix">
@@ -584,7 +584,7 @@
         </div>
         
         <article>
-          <div class="reason-wrap reasonbg">
+          <div class="reason-wrap reasonbg m-t-20">
             <div class="card banner-card z-depth-0">
               <div class="card-image">
                 <img src="../images/index/banner2.png">
@@ -1261,6 +1261,7 @@
             $(window).resize(function() {
                     $('[data-toggle="tooltip"]').tooltip('show');
             });
+            
 
             /*function IsPC() {
                 var userAgentInfo = navigator.userAgent;
@@ -1285,10 +1286,18 @@
             $('.item-body').on('click','a',function () {
               $(this).addClass('active').parents('.product-show').find('.item-body a').not($(this)).removeClass('active');
             })
+            /*产品分类，行业分类 标题点击显示菜单*/
+            $('.product-show').on('click','.title-sec',function () {
+                  $(this).parents('.card').siblings('.list-group').toggle().parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide();
+            })
 
             function ClassifyMenu(show) {
                 /*菜单收缩*/
                 /*产品分类，行业分类一级菜单点击显示二级菜单*/
+                if (!show) {
+                  $('.product-show .item-body').show();
+                  return;
+                }
                 if (show) {
                   $('.product-show .item-body').hide();
                   $('.product-show').on('click','.item-title',function () {
@@ -1297,11 +1306,9 @@
                       $('.item-body').slideUp();
                     })
                   });
-                }else{
+                }/*else{
                   $('.product-show .item-body').show();
-                }
-
-
+                }*/
             }
             
               

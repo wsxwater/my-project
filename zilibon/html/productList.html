@@ -244,7 +244,7 @@
                                     </div>  
                                 </div>
                             </div>
-                            <ul class="list-group">
+                            <ul class="list-group" is-pc="true">
                                 <li class="list-group-item">
                                      <div class="item-title menu-item clearfix">
                                          <a href="javascript:;"><span class="ico-shop ico-shop0"></span>洗衣粉<i class="material-icons pull-right">keyboard_arrow_right</i></a>
@@ -322,7 +322,7 @@
                                     </div>  
                                 </div>
                             </div>
-                            <ul class="list-group">
+                            <ul class="list-group" is-pc="true">
                                 <li class="list-group-item">
                                      <div class="item-title menu-item clearfix">
                                          <a href="javascript:;"><span class="ico-shop ico-shop5"></span>工业清洗行业<i class="material-icons pull-right">keyboard_arrow_right</i></a>
@@ -439,32 +439,6 @@
                                                     <a href="productDetail.html" class="btn col-white bg-grey">查看详情</a>
                                                   </div>
                                               </section>
-<<<<<<< HEAD
-=======
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
-                                    <ul class="list-group clearfix">
-                                        <li class="list-group-item clearfix" onclick="window.open('productDetail.html')">
-                                            <div class="col-xs-12 col-sm-4 p-l-0"><img src="../images/index/product.jpg"></div>
-                                            <div class="col-xs-12 col-sm-8 align-left p-r-0 p-l-0 font-14">
-                                              <h4 class="col-orange">强力洗衣粉</h4>
-                                              <section is-pc="true">
-                                                  <p class="col-blue">产品简介：</p>
-                                                  <p>涂料增稠剂为一聚氨酯成份的液体水性增稠剂，使用方便，并且在流平性、涂膜光泽及耐水性等方面均优于传统的纤维素类。</p>
-                                                    
-                                                  <p class="col-blue">产品特性：</p>
-                                                  <p>1、具有良好的高剪切粘度增稠效果，优异的流动性和流平性。</p>
-                                                  <p>2、良好的刷涂手感,优异的抗辊涂飞溅性,耐水性及抗出水性能。</p>
-
-                                                  <div>
-                                                    <a href="javascript:;" class="btn btn-warning">立即咨询</a>
-                                                    <a href="productDetail.html" class="btn col-white bg-grey">查看详情</a>
-                                                  </div>
-                                              </section>
->>>>>>> mergesMaster
                                             </div>
                                         </li>
                                     </ul>
@@ -538,7 +512,6 @@
                                         </li>
                                     </ul>
                                 </div>
-<<<<<<< HEAD
                                 <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
                                     <ul class="list-group clearfix">
                                         <li class="list-group-item clearfix" onclick="window.open('productDetail.html')">
@@ -562,8 +535,6 @@
                                         </li>
                                     </ul>
                                 </div>
-=======
->>>>>>> mergesMaster
                 
                             </div>
                         </div>
@@ -764,14 +735,14 @@
                     $('[data-toggle="tooltip"]').tooltip('show');
             });
 
-
-            //行业分类 产品分类 内容点击
+            //行业分类 产品分类 内容点击(二级菜单)
             $('.item-body').on('click','a',function () {
               $(this).addClass('active').parents('.product-show').find('.item-body a').not($(this)).removeClass('active');
             })
+
             /*产品分类，行业分类 标题点击显示菜单*/
             $('.product-show').on('click','.title-sec',function () {
-                  $(this).parents('.card').siblings('.list-group').toggle();
+                  $(this).parents('.card').siblings('.list-group').toggle().parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide();
             })
 
             function ClassifyMenu(show) {
@@ -784,6 +755,7 @@
                     $(this).siblings('.item-body').on('click','a',function () {
                       $('.item-body').slideUp();
                     })
+                    return false;
                   });
                 }else{
                   $('.product-show .item-body').show();
@@ -807,6 +779,8 @@
               }
             });
 
+            
+            
 
             setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 

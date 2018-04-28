@@ -259,7 +259,7 @@
                                     </div>  
                                 </div>
                             </div>
-                            <ul class="list-group">
+                            <ul class="list-group" is-pc="true">
                                 <li class="list-group-item">
                                      <div class="menu-item clearfix">
                                          <a href="javascript:;">公司动态<i class="material-icons pull-right">keyboard_arrow_right</i></a>
@@ -277,7 +277,7 @@
                                 </li>
                             </ul>    
                         </section>
-                        <div class="card call-card z-depth-0">
+                        <div class="card call-card z-depth-0 clearfix">
                             <div class="card-image">
                                 <img src="../images/list/call.jpg">
                             </div>
@@ -445,6 +445,7 @@
             $('.product-show').on('click','.title-sec',function () {
                   $(this).parents('.card').siblings('.list-group').toggle();
             })
+
 
 
             setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
