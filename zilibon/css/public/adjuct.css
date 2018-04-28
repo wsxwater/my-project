@@ -122,8 +122,8 @@
 
     .cart-title{font-size: 16px;}
 
-    [is-pc~=true]{display: none;}
-    [is-pc~=false]{display: block;}
+    [data-is-pc~=true]{display: none;}
+    [data-is-pc~=false]{display: block;}
 
     /* .popover-box .title div:first-child{font-size: 20px;}
     .popover-body{font-size: 12px;} */

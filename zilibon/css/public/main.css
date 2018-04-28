@@ -344,7 +344,7 @@ position: absolute;top:10px;}
 
 .product-classify.noborder{border:none;}
 
-[is-pc~=false]{display: none;}
+[data-is-pc~=false]{display: none;}
 
 
 
