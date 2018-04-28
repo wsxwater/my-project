@@ -226,7 +226,22 @@
         
         <section>
           <div class="container">
-            <div class="row vbtn-group align-center m-t-30">
+            <div class="row vbtn-group align-center m-t-30" data-ispc="true">
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <a href="#floor1" class="vbtn">中联邦简介</a>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <a href="#floor2" class="vbtn">中联邦实力</a>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <a href="#floor3" class="vbtn">中联邦文化</a>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                <a href="#floor4" class="vbtn">联系方式</a>
+              </div>
+            </div>
+
+            <div class="row vbtn-group align-center m-t-30 fix-top" data-ispc="false" id="fixTop">
               <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
                 <a href="#floor1" class="vbtn">中联邦简介</a>
               </div>
@@ -418,7 +433,7 @@
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/node-waves/waves.min.js"></script>
-    <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="../plugins/jquery.sticky-kit/jquery.sticky-kit.min.js"></script>
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
 
@@ -429,7 +444,7 @@
 
     <script>
        $(function(){
-            
+              $("#fixTop").stick_in_parent({parent:'.list-box'})
 
             // 百度地图API功能
               var map = new BMap.Map("allmap");   
