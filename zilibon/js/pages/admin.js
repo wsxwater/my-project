@@ -492,10 +492,10 @@ $.AdminBSB.rightSideBarM = {
     setMenuHeight: function () {
         if (typeof $.fn.slimScroll != 'undefined') {
             var height=$(window).height();
-            var $el = $('.my-right-sidebar .shop-list-box');
+            var $el = $('.my-right-sidebar .nav-wrap');
             console.log(height);
             $el.slimscroll({
-                height: $el.outerHeight()+"px"
+                height: height+"px"
             });
         }
     },
