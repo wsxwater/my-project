@@ -129,6 +129,7 @@
 
 
 /* 关于我们 */
+.about-us-box .vbtn-group>div{padding: 8px 0;}
 .about-us-box .vbtn-group .vbtn{background-color: #046abf;}
 .about-us-box .vbtn-group .vbtn.active,.about-us-box .vbtn-group .vbtn:hover,.about-us-box .vbtn-group .vbtn:focus{background-color: #ff5500;}
 .popover-box{border: 2px solid;padding:1.4% 4% 5%;color: #c6c6c6;margin: 20px 0;position: relative;background: url('../../images/aboutUs/intr-bg.png') bottom center repeat-x /100% auto;}
