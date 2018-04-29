@@ -299,18 +299,6 @@ border-radius: 0;-webkit-border-radius: 0;-moz-border-radius: 0;-o-border-radius
 .sample-box .operation img{display: inline-block;height: 38px;width: 100px;}
 .sample-box .btn-warning{font-size: 20px!important;background: #f8b62b!important;}
 
-.has-success .checkbox, 
-.has-success .checkbox-inline, 
-.has-success .control-label, 
-.has-success .help-block, 
-.has-success .radio, 
-.has-success .radio-inline, 
-.has-success.checkbox label, 
-.has-success.checkbox-inline label, 
-.has-success.radio label, 
-.has-success.radio-inline label,
-.has-success.radio-inline label{}
-
 
 /* 5大理由 */
 .circle{border-radius: 50%;}
