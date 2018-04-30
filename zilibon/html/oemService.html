@@ -93,9 +93,13 @@
                             </a>
                         </li>
                         <li class="align-center">
-                            <a href="javascript:;">
+                            <a href="javascript:;" class="hover-img">
                                 <div><span class="ico-navbar ico-navbar1"></span></div>
                                 <div><small>手机网站</small></div>
+                                <div class="card hover-img-box">
+                                  <span class="arrow"></span>
+                                  <img src="../images/qrcode.jpg">
+                                </div>
                             </a>
                         </li>
                         <li class="align-center">
@@ -105,9 +109,13 @@
                             </a>
                         </li>
                         <li class="align-center">
-                            <a href="javascript:;">
+                            <a href="javascript:;" class="hover-img">
                                 <div><span class="ico-navbar ico-navbar3"></span></div>
                                 <div><small>官方微信</small></div>
+                                <div class="card hover-img-box">
+                                  <span class="arrow"></span>
+                                  <img src="../images/qrcode.jpg">
+                                </div>
                             </a>
                         </li>
                         <li class="align-center">
@@ -117,7 +125,7 @@
                             </a>
                         </li>
                         
-                    </ul>  
+                    </ul> 
                 </div>
             </nav>
             <!-- logo end -->
@@ -491,6 +499,13 @@
 
     <script>
        $(function(){
+            $('.hover-img').mouseover(function(event) {
+              $(this).addClass('current');
+            }).mouseout(function(event) {
+              $(this).removeClass('current');
+            }).click(function () {
+              $(this).toggleClass('current');
+            });
 
             
             var now=0;

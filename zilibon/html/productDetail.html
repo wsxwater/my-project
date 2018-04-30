@@ -53,7 +53,7 @@
                     <div class="row clearfix">
                         <div class="col-md-10 col-sm-9 col-xs-12">欢迎访问广东中联邦精细化工有限公司网站！</div>
                         <div class="col-md-2 col-sm-3 col-xs-12 p-r-0">
-                                <a href="javascript:;">设为首页</a> 
+                                <a href="javascript:;" class="set-home" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://localhost:8888');">设为首页</a> 
                                 <span class="line"></span>
                                 <a href="javascript:;">网站地图</a> 
                         </div>
@@ -93,9 +93,13 @@
                             </a>
                         </li>
                         <li class="align-center">
-                            <a href="javascript:;">
+                            <a href="javascript:;" class="hover-img">
                                 <div><span class="ico-navbar ico-navbar1"></span></div>
                                 <div><small>手机网站</small></div>
+                                <div class="card hover-img-box">
+                                  <span class="arrow"></span>
+                                  <img src="../images/qrcode.jpg">
+                                </div>
                             </a>
                         </li>
                         <li class="align-center">
@@ -105,9 +109,13 @@
                             </a>
                         </li>
                         <li class="align-center">
-                            <a href="javascript:;">
+                            <a href="javascript:;" class="hover-img">
                                 <div><span class="ico-navbar ico-navbar3"></span></div>
                                 <div><small>官方微信</small></div>
+                                <div class="card hover-img-box">
+                                  <span class="arrow"></span>
+                                  <img src="../images/qrcode.jpg">
+                                </div>
                             </a>
                         </li>
                         <li class="align-center">
@@ -117,7 +125,7 @@
                             </a>
                         </li>
                         
-                    </ul>  
+                    </ul> 
                 </div>
             </nav>
             <!-- logo end -->
@@ -606,13 +614,13 @@
                                       <div class="form-group form-group-lg">
                                           <div class="form-line">
                                               <label class="control-label" for="uName">姓名</label>
-                                              <input type="text" class="form-control" id="uName" placeholder="Name">
+                                              <input type="text" class="form-control" id="uName" placeholder="Name"  check-type="required" />
                                           </div>
                                       </div>
-                                      <div class="form-group form-group-lg has-success">
+                                      <div class="form-group form-group-lg">
                                           <div class="form-line">
                                                <label class="control-label" for="uEmail">邮箱</label>
-                                               <input type="text" class="form-control" id="uEmail" placeholder="Your Email">
+                                               <input type="text" class="form-control" id="uEmail" placeholder="Your Email" check-type="required mail" />
                                           </div>
                                       </div>
 
@@ -624,7 +632,7 @@
                                           <div class="col-xs-6">
                                               <div class="form-group form-group-lg">
                                                   <div class="form-line">
-                                                      <input type="text" class="form-control" id="captchaOperation">
+                                                      <input type="text" class="form-control" id="captchaOperation" check-type="required" />
                                                   </div>
                                               </div>
                                           </div>
@@ -634,10 +642,10 @@
                                       <div class="form-group form-group-lg">
                                           <div class="form-line">
                                               <label class="control-label" for="uMessage">留言</label>
-                                              <textarea class="form-control" id="uMessage" placeholder="Your Message"></textarea>
+                                              <textarea class="form-control" id="uMessage" placeholder="Your Message" check-type="required"></textarea>
                                           </div>
                                       </div>
-                                      <button type="submit" class="btn btn-warning btn-block btn-lg">提交</button>
+                                      <button type="button" class="btn btn-warning btn-block btn-lg" onClick="Save()">提交</button>
                                     </div>
                                 </div>  
                             </form>
@@ -683,9 +691,32 @@
     <script src="../plugins/jquery.sticky-kit/jquery.sticky-kit.min.js"></script>
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
+    <script src="../js/fat-validate.js"></script>
 
     <script>
        $(function(){
+            $('.hover-img').mouseover(function(event) {
+              $(this).addClass('current');
+            }).mouseout(function(event) {
+              $(this).removeClass('current');
+            }).click(function () {
+              $(this).toggleClass('current');
+            });
+
+            /*function SetHome(url){
+                    if (document.all) {
+                        document.body.style.behavior='url(#default#homepage)';
+                        console.log(document.body.style.behavior);
+                          document.body.setHomePage(url);
+                    }else{
+                        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+                    }
+            }
+
+            $('.set-home').click(function () {
+              console.log(window.location);
+              SetHome(window.location.href)
+            })*/
 
             $("#fixTop").stick_in_parent({parent:'.list-box'});
 
@@ -775,12 +806,13 @@
                 var $target=$('.product-show .item-body');
 
                 
-                _this.clickHide();
+                //_this.clickHide();
                 
                 //菜单收缩
                 //产品分类，行业分类一级菜单点击显示二级菜单
-                $object.click(function() {
+                $object.click(function(e) {
                   $(this).toggleClass('current').siblings('.item-body').fadeToggle().parents('.product-show').find('.item-title').not($(this)).removeClass('current').parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).fadeOut();
+                  return false;
                 });
                 
                 $(window).resize(function () {
@@ -793,6 +825,7 @@
                 $target.on('click',function (e) {
                    $object.removeClass('current');
                    $target.hide();
+                   return false;
                 });
               },
               checkStatuForResize:function () {
@@ -817,11 +850,54 @@
             $.classifyMenu.activate();
 
 
+            /*validator=$('.sample-form').validate({
+                //debug:true,//表单不会提交，只进行检查，调试时十分方便。
+                rules:{
+                    username:{
+                        required:true,
+                        minlength:2,
+                        maxlength:10
+                    },
+                },
+                messages:{
+                    username:{
+                        required:'请输入用户名',
+                        minlength:'用户名最小长度为2',
+                        maxlength:'用户名最大长度为10',
+                        //remote:'用户名不存在'
+                    },
+                },
+                submitHandler: function(form) {
+                      alert("提交事件!");
+                      console.log($(form).serialize());
+                      //form.submit();
+                },
+                validClass:'has-success',
+                errorClass:'has-error',
+                errorElement:'em',
+                highlight: function (input) {
+                    $(input).parents('.form-group').addClass('has-error');
+                },
+                unhighlight: function (input) {
+                    $(input).parents('.form-group').removeClass('has-error');
+                },
+                errorPlacement: function (error, element) {
+                    $(element).parents('.form-group').append(error);
+                    console.log($(element));
+                }
+            });*/
+
+
 
             setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 
-
+            $(".sample-form").validation();
        });  
+            function Save(){
+                if($(".sample-form").valid()){
+                  alert('成功');
+                }
+            };
 
     </script>   
     

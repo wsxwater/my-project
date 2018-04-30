@@ -14,15 +14,15 @@
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 
 	<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
 	<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
 	
 	<link rel="stylesheet" type="text/css" href="../css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/private/list.css">
-    <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
+  <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
 </head>
 <body class="white">
     <!-- Page Loader -->
@@ -92,9 +92,13 @@
                             </a>
                         </li>
                         <li class="align-center">
-                            <a href="javascript:;">
+                            <a href="javascript:;" class="hover-img">
                                 <div><span class="ico-navbar ico-navbar1"></span></div>
                                 <div><small>手机网站</small></div>
+                                <div class="card hover-img-box">
+                                  <span class="arrow"></span>
+                                  <img src="../images/qrcode.jpg">
+                                </div>
                             </a>
                         </li>
                         <li class="align-center">
@@ -104,9 +108,13 @@
                             </a>
                         </li>
                         <li class="align-center">
-                            <a href="javascript:;">
+                            <a href="javascript:;" class="hover-img">
                                 <div><span class="ico-navbar ico-navbar3"></span></div>
                                 <div><small>官方微信</small></div>
+                                <div class="card hover-img-box">
+                                  <span class="arrow"></span>
+                                  <img src="../images/qrcode.jpg">
+                                </div>
                             </a>
                         </li>
                         <li class="align-center">
@@ -116,7 +124,7 @@
                             </a>
                         </li>
                         
-                    </ul>  
+                    </ul>   
                 </div>
             </nav>
             <!-- logo end -->
@@ -670,6 +678,13 @@
 
     <script>
        $(function(){
+            $('.hover-img').mouseover(function(event) {
+              $(this).addClass('current');
+            }).mouseout(function(event) {
+              $(this).removeClass('current');
+            }).click(function () {
+              $(this).toggleClass('current');
+            });
 
             var now=0;
             var disabled=true;
@@ -754,7 +769,7 @@
                 var $target=$('.product-show .item-body');
 
                 
-                _this.clickHide();
+                //_this.clickHide();
                 
                 //菜单收缩
                 //产品分类，行业分类一级菜单点击显示二级菜单

@@ -55,7 +55,7 @@
                   <div class="row clearfix">
                       <div class="col-md-10 col-sm-9 col-xs-12">欢迎访问广东中联邦精细化工有限公司网站！</div>
                       <div class="col-md-2 col-sm-3 col-xs-12 p-r-0">
-                              <a href="javascript:;">设为首页</a> 
+                              <a href="javascript:;" class="set-home">设为首页</a> 
                               <span class="line"></span>
                               <a href="javascript:;">网站地图</a> 
                       </div>
@@ -95,9 +95,13 @@
                           </a>
                       </li>
                       <li class="align-center">
-                          <a href="javascript:;">
+                          <a href="javascript:;" class="hover-img">
                               <div><span class="ico-navbar ico-navbar1"></span></div>
                               <div><small>手机网站</small></div>
+                              <div class="card hover-img-box">
+                                <span class="arrow"></span>
+                                <img src="../images/qrcode.jpg">
+                              </div>
                           </a>
                       </li>
                       <li class="align-center">
@@ -107,9 +111,13 @@
                           </a>
                       </li>
                       <li class="align-center">
-                          <a href="javascript:;">
+                          <a href="javascript:;" class="hover-img">
                               <div><span class="ico-navbar ico-navbar3"></span></div>
                               <div><small>官方微信</small></div>
+                              <div class="card hover-img-box">
+                                <span class="arrow"></span>
+                                <img src="../images/qrcode.jpg">
+                              </div>
                           </a>
                       </li>
                       <li class="align-center">
@@ -582,6 +590,7 @@
             </div>
           </div>
         </div>
+
         
         <article>
           <div class="reason-wrap reasonbg m-t-20">
@@ -687,7 +696,6 @@
             </div>
         </div>
 
-        
 
         <div class="introduct-box" data-ispc="true">
             <div class="container">
@@ -720,6 +728,7 @@
             </div>
         </div>
 
+
         <div class="card banner-card m-t-50" data-ispc="true">
           <div class="card-image">
             <img src="../images/index/banner1.jpg">
@@ -736,6 +745,7 @@
             </div>
           </div>
         </div>
+
 
         <div class="introduct-box" data-ispc="true">
             <div class="container">
@@ -787,6 +797,7 @@
         </div>
         
         <div class="more-box m-t-50 align-center"><img src="../images/index/more.png"></div>
+
 
         <div class="introduct-box">
             <div class="container">
@@ -1175,8 +1186,6 @@
         
 
     </div>
-
-    
     
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -1187,6 +1196,29 @@
 
     <script>
        $(function(){
+
+            $('.hover-img').mouseover(function(event) {
+              $(this).addClass('current');
+            }).mouseout(function(event) {
+              $(this).removeClass('current');
+            }).click(function () {
+              $(this).toggleClass('current');
+            });
+
+            function SetHome(url){
+                    if (document.all) {
+                        document.body.style.behavior='url(#default#homepage)';
+                        console.log(document.body.style.behavior);
+                          document.body.setHomePage(url);
+                    }else{
+                        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+                    }
+            }
+
+            $('.set-home').click(function () {
+              //console.log(window.location);
+              SetHome(window.location.href)
+            })
           
             var swiper = new Swiper('.swiper-box .swiper-container', {
                                 pagination : '.swiper-pagination',
@@ -1299,7 +1331,7 @@
                 var $target=$('.product-show .item-body');
 
                 
-                _this.clickHide();
+                //_this.clickHide();
                 
                 //菜单收缩
                 //产品分类，行业分类一级菜单点击显示二级菜单

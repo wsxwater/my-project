@@ -34,6 +34,10 @@
 .navbar-static .navbar-brand img{max-width: 100%;}
 .navbar-static .navbar-nav>li>a{margin-top: 0;}
 /* 头部小屏幕收缩内容 */
+.navbar-nav>li>a{color: #888;}
+/* .navbar-nav>li>a:hover,.navbar-nav>li>a:active{background-color: transparent;} */
+.navbar-nav>li{width: 74px;}
+.navbar-nav>li.service-hotline{width: auto;}
 .service-hotline img{display: block;width: 230px;height: 51px;}
 .service-hotline .info-box{height: auto;background-color: transparent;margin-bottom: 0;}
 .service-hotline .info-box .icon{width:auto;height: auto;background-color: transparent;}
@@ -43,7 +47,6 @@
 .service-hotline .info-box .content div{line-height: 26px;color: #ff5500;}
 .service-hotline .info-box.hotline-blue .content div{color: #00a7eb;}
 
-.index-box .navbar-nav>li>a{color: #888;}
 .divider{height: 3px;overflow: hidden;background-color: #2db6ed;}
 .ico-navbar{display: inline-block;vertical-align: middle;width: 34px;height: 34px;background: url('../../images/icon/navbar.png') no-repeat;}
 .ico-navbar1{background-position: 0 0px;}
@@ -51,6 +54,15 @@
 .ico-navbar3{background-position: 0 -68px;}
 .ico-navbar4{background-position: 0 -102px;}
 .ico-navbar.ico-qq{height: 18px;width: 18px;background-position: 0 -136px;margin-right: 10px;}
+/* 手机网站、官方微信 hover弹出二维码 */
+.hover-img{position: relative;}
+.hover-img-box{display: none;position: absolute;top:60px;left: 50%;margin-left: -70px;padding:5px;z-index: 3;margin-top: 12px;margin-bottom: 0;border: 1px solid #ddd;}
+.hover-img-box img{display: block;width: 128px;height: 128px;}
+.hover-img.current .hover-img-box{display: block;}
+.hover-img .arrow,.hover-img .arrow:after {position: absolute;display: block;width: 0;height: 0;border-color: transparent;border-style: solid;}
+.hover-img .arrow{border-width: 11px;top: -10px;left: 50%;margin-left: -11px;border-bottom-color: #ddd;border-top-width:0;}
+.hover-img .arrow:after {content: " ";top: 1px;margin-left: -10px;border-width: 10px;border-top-width: 0;border-bottom-color: #fff;}
+
 
 /*产品中心+导航*/
 .shop-list-box{/* height:60px; */color:#FFF;}
@@ -347,6 +359,8 @@ position: absolute;top:10px;}
 .product-classify.noborder{border:none;}
 
 [data-ispc~=false]{display: none;}
+
+
 
 
 
