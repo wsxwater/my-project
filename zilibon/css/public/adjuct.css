@@ -147,10 +147,10 @@
     .new-box .product-show .product-display .product-card .list-group-item p{display: none;}
  
 }
-@media screen and (max-width: 883px){
-	/* .navbar.navbar-static .navbar-nav{display: none;margin-right: 0;} */
+/* @media screen and (max-width: 883px){
+	.navbar.navbar-static .navbar-nav{display: none;margin-right: 0;}
 	.reason-txt-r:before{display: none; }
-}
+} */
 @media screen and (min-width: 768px) and (max-width: 992px) {
 	/* .navbar-static.navbar {padding: 20px 0;} */
 	.navbar-static .navbar-header{width: calc(62.7% - 25px);}
