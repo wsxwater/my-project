@@ -199,7 +199,7 @@
 	.shop-list-box .container{padding-right: 0;padding-left: 0;}
 
 	.search-box-left,.location-tip{float: none;width: 100%;text-align: left;}
-	.search-box-right{float: none;width: 100%;}
+	.search-box-right{float: none;width: 100%;} 
 
     /* 轮播图 */
     .swiper-box img{display: inline-block;min-height: 120px;object-fit: cover;max-width: 100%;}

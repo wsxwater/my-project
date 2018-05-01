@@ -35,7 +35,6 @@
 .navbar-static .navbar-nav>li>a{margin-top: 0;}
 /* 头部小屏幕收缩内容 */
 .navbar-nav>li>a{color: #888;}
-/* .navbar-nav>li>a:hover,.navbar-nav>li>a:active{background-color: transparent;} */
 .navbar-nav>li{width: 74px;}
 .navbar-nav>li.service-hotline{width: auto;}
 .service-hotline img{display: block;width: 230px;height: 51px;}
@@ -68,7 +67,7 @@
 .shop-list-box{/* height:60px; */color:#FFF;}
 .shop-list-box .container{padding-right: 0;padding-left: 0;}
 
-.shop-class{width:25%;position:relative;}
+.shop-class{width:22.34%;position:relative;}
 .shop-class h3{line-height:60px;background:#00a7eb;font-size:18px;margin: 0;padding-top: 0;font-weight: normal;}
 .shop-class h3 .material-icons{vertical-align: middle;margin-left: 15px;margin-right: 10px;position: relative;margin-top: -2px;}
 .shop-list-box .shop-class>a{text-decoration: none;color: #FFF;}
@@ -86,12 +85,12 @@
 .dropdown-menu>li>a:focus .ico-in,
 .dropdown-menu>li>a.current .ico-in{display: inline-block;}
 
-.shop-list-box .nav{line-height:36px;width: 75%;}
+.shop-list-box .nav{line-height:36px;width: 77.66%;}
 .shop-list-box .nav li{float:left;text-align:center;width: 14.2%;display: block;}
 .shop-list-box .nav li a{font:18px/36px "Microsoft YaHei","微软雅黑";display:block;padding: 11px 0 13px;color: #000;}
 
 
-.my-right-sidebar{top: 0px;/* height: 100%; */bottom:0;width: 280px;background-color: transparent;right: -280px;height: 100%;box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;-o-box-shadow: none;}
+.my-right-sidebar{top: 0px;bottom:0;width: 280px;background-color: transparent;right: -280px;height: 100%;box-shadow: none;-webkit-box-shadow: none;-moz-box-shadow: none;-o-box-shadow: none;}
 .nav-wrap{width: 100%;height: 100%;overflow-y: auto;}
 .my-right-sidebar .dropdown-menu{ position: static;margin-top: 50px !important;float: left;width: 160px;}
 .my-right-sidebar .shop-list-box{padding-left: 160px;}
@@ -106,16 +105,8 @@
 .my-right-sidebar .dropdown-menu.active{display: block;}
 .my-right-sidebar .dropdown-menu>li.current .ico{display: none;}
 .my-right-sidebar .dropdown-menu>li.current .ico-in{display: inline-block;}
-/* .my-right-sidebar .dropdown-menu>li>a .ico{display: inline-block;}
-.my-right-sidebar .dropdown-menu>li>a .ico-in{display: none;}
-.my-right-sidebar .dropdown-menu>li>a:hover .ico,
-.my-right-sidebar .dropdown-menu>li>a:focus .ico,
-.my-right-sidebar .dropdown-menu>li>a.current .ico{display: none;}
-.my-right-sidebar .dropdown-menu>li>a:hover .ico-in,
-.my-right-sidebar .dropdown-menu>li>a:focus .ico-in,
-.my-right-sidebar .dropdown-menu>li.current>a .ico-in{display: inline-block;} */
-
 /* .my-right-sidebar .shop-list-box .shop-class, .shop-list-box .nav{float: none;width: 100%;}*/
+
 .my-right-sidebar .shop-list-box .shop-class{width: 100%;}
 .my-right-sidebar .shop-list-box .nav{float: none;width: 100%;}
 .my-right-sidebar .shop-list-box .nav li{width: 100%;}
@@ -128,7 +119,7 @@
 /* 顶部搜索框 */
 .search-box{min-height: 50px;}
 .search-box .container{border:1px solid #dad7d7;padding-left: 0;padding-right: 0;}
-.search-box-left{width: 253px;float: left;font-size: 16px;text-align: center;height: 50px;line-height: 50px;position: relative;color: #FFF;font-weight: bold;padding-left: 15px;margin-top: -1px;margin-bottom: -1px;}
+.search-box-left{width: 22.34%;float: left;font-size: 16px;text-align: center;height: 50px;line-height: 50px;position: relative;color: #FFF;font-weight: bold;padding-left: 15px;margin-top: -1px;margin-bottom: -1px;}
 .search-box-left:before{content: '';display: block;position: absolute;top: 0;right: 0;bottom: 0;left: 0;background: #0798dc url('../../images/index/titbg.png') no-repeat 0 0 /100% 100%;z-index: -1;}
 
 .search-box-right{width:60%;float: right;padding:7px 10px;}
@@ -137,7 +128,7 @@
 .search-box-right .search-nav .nav-ctrl{position: absolute;top:7px;bottom: 0;right: -10px;}
 .search-box-right .search-nav a{border-bottom: 1px solid transparent;display: inline-block;padding: 0px 2px;font-size: 14px;text-decoration: none;margin:0 8px;color:#666;}
 .search-box-right .search-nav a.active{border-color: #00a7eb;}
-.search-box-right .search-nav .label{padding: 8px;background-color: #00a7eb;}
+.search-box-right .search-nav .label{padding: 8px;background-color: #00a7eb;cursor: pointer;}
 .search-box-right .search-nav .label.disabled{background-color: #E3E3E3;}
 .search-box-right .input-group{margin-bottom: 0;}
 .search-box-right .input-group .input-group-addon .material-icons{position: relative;margin-top: 2px;}
