@@ -452,45 +452,6 @@
             function searchTab() {
                 $('.search-nav a').eq(now).addClass('active').siblings('a').removeClass('active');
             }
-
-            function next() {
-                if(now==len-1){
-                    now=0;
-                }else{
-                    now++;
-                }
-                if ($('.search-nav a').last().hasClass('active')) {
-                    $('.nav-ctrl-r').addClass('disabled');
-                    $('.nav-ctrl-l').removeClass('disabled');
-                }else{
-                    $('.nav-ctrl-r').removeClass('disabled');
-                    $('.nav-ctrl-l').addClass('disabled');
-                }
-                searchTab();
-            }
-            function prev() {
-                if(now==0){
-                     now=len-1;
-                }else{
-                     now--;
-                }
-                if ($('.search-nav a').first().hasClass('active')) {
-                    $('.nav-ctrl-l').addClass('disabled');
-                    $('.nav-ctrl-r').removeClass('disabled');
-                }else{
-                    $('.nav-ctrl-l').removeClass('disabled');
-                    $('.nav-ctrl-r').addClass('disabled');
-                }
-                searchTab();
-            }
-            if($('.nav-ctrl').length==1){
-                $('.nav-ctrl-r').click(function () {
-                    next();
-                })
-                $('.nav-ctrl-l').click(function () {
-                    prev();
-                })
-            }
             
             /*产品中心下拉点击li*/
             $('.shop-list-box .dropdown-menu').on('click', '.menu-item', function(event) {
@@ -502,6 +463,11 @@
             $('.product-show').on('click','.title-sec',function () {
                   $(this).parents('.card').siblings('.list-group').toggle();
             })
+
+            $('.product-show').on('click','.menu-item',function() {
+                  $(this).toggleClass('current').parents('.product-show').find('.menu-item').not($(this)).removeClass('current');
+                  return false;
+            });
 
 
 

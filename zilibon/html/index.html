@@ -869,7 +869,7 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                <a href="javascript:;" class="thumbnail">
+                                <a href="javascript:;" class="thumbnail honor-zoom">
                                     <img src="../images/index/honor.jpg" alt="拨打137-1343638">
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书1</div>
@@ -877,7 +877,7 @@
                                 </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                <a href="javascript:;" class="thumbnail">
+                                <a href="javascript:;" class="thumbnail honor-zoom">
                                     <img src="../images/index/honor2.jpg" alt="拨打137-1343638">
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书2</div>
@@ -885,7 +885,7 @@
                                 </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                <a href="javascript:;" class="thumbnail">
+                                <a href="javascript:;" class="thumbnail honor-zoom">
                                     <img src="../images/index/honor.jpg" alt="拨打137-1343638">
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书3</div>
@@ -1234,10 +1234,13 @@
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
+    <script src="../plugins/jquery.zoombie/jquery.zoombie.js"></script>
 
     <script>
        $(function(){
-
+            
+            
+            /*顶部导航栏 的 手机网站、官方微信 hover click 弹出二维码*/  
             $('.hover-img').mouseover(function(event) {
               $(this).addClass('current');
             }).mouseout(function(event) {
@@ -1246,7 +1249,7 @@
               $(this).toggleClass('current');
             });
 
-            function SetHome(url){
+            /*function SetHome(url){
                     if (document.all) {
                         document.body.style.behavior='url(#default#homepage)';
                         console.log(document.body.style.behavior);
@@ -1259,7 +1262,7 @@
             $('.set-home').click(function () {
               //console.log(window.location);
               SetHome(window.location.href)
-            })
+            })*/
           
             var swiper = new Swiper('.swiper-box .swiper-container', {
                                 pagination : '.swiper-pagination',
@@ -1354,6 +1357,9 @@
             var flag = IsPC(); 
             console.log(flag)//true为PC端，false为手机端和ipad*/
 
+
+
+
             
             //行业分类 产品分类 内容(二级菜单)点击
             $('.item-body').on('click','a',function () {
@@ -1412,6 +1418,10 @@
             }
 
             $.classifyMenu.activate();
+
+
+            /*荣誉资质 放大镜效果*/
+            $('.honor-zoom').zoombie({ on: 'grab' });
             
 
 
