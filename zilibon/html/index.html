@@ -25,6 +25,7 @@
   <link rel="stylesheet" type="text/css" href="../css/private/index.css">
   <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
   <link href="../css/themes/all-themes.css" rel="stylesheet" />
+  <link href="../plugins/light-gallery/css/lightgallery.min.css" rel="stylesheet" />
 
 </head>
 <body class="white">
@@ -797,7 +798,7 @@
                 <div class="row">
                   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <a href="javascript:;" class="thumbnail">
-                      <img src="../images/index/intro1.jpg" alt="应用案例">
+                      <img data-original="../images/index/intro1.jpg" alt="应用案例">
                       <div class="caption font-bold font-16">
                         <p class="thumbnail-tit align-center">餐饮行业</p>
                         <p class="thumbnail-body">餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
@@ -806,7 +807,7 @@
                     </a>
                   </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <a href="javascript:;" class="thumbnail">
-                      <img src="../images/index/intro1.jpg" alt="应用案例">
+                      <img data-original="../images/index/intro1.jpg" alt="应用案例">
                       <div class="caption font-bold font-16">
                         <p class="thumbnail-tit align-center">餐饮行业</p>
                         <p class="thumbnail-body">餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
@@ -815,7 +816,7 @@
                     </a>
                   </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <a href="javascript:;" class="thumbnail">
-                      <img src="../images/index/intro1.jpg" alt="应用案例">
+                      <img data-original="../images/index/intro1.jpg" alt="应用案例">
                       <div class="caption font-bold font-16">
                         <p class="thumbnail-tit align-center">餐饮行业</p>
                         <p class="thumbnail-body">餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
@@ -824,7 +825,7 @@
                     </a>
                   </div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <a href="javascript:;" class="thumbnail">
-                      <img src="../images/index/intro1.jpg" alt="应用案例">
+                      <img data-original="../images/index/intro1.jpg" alt="应用案例">
                       <div class="caption font-bold font-16">
                         <p class="thumbnail-tit align-center">餐饮行业</p>
                         <p class="thumbnail-body">餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
@@ -867,26 +868,26 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row honor-body">
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                <a href="javascript:;" class="thumbnail honor-zoom">
-                                    <img src="../images/index/honor/IMG_3344.jpg" alt="拨打137-1343638"> 
+                                <a  href="../images/index/honor/IMG_3344.jpg"  class="thumbnail">
+                                    <img src="../images/index/honor/IMG_3344.jpg"> 
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书1</div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                <a href="javascript:;" class="thumbnail honor-zoom">
-                                    <img src="../images/index/honor/IMG_3345.jpg" alt="拨打137-1343638">
+                                <a  href="../images/index/honor/IMG_3345.jpg"  class="thumbnail">
+                                    <img src="../images/index/honor/IMG_3345.jpg">
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书2</div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                <a href="javascript:;" class="thumbnail honor-zoom">
-                                    <img src="../images/index/honor/IMG_3346.jpg" alt="拨打137-1343638">
+                                <a  href="../images/index/honor/IMG_3346.jpg"  class="thumbnail">
+                                    <img src="../images/index/honor/IMG_3346.jpg">
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书3</div>
                                     </div>
@@ -897,7 +898,7 @@
                     <div class="col-lg-4">
                         <div class="detail-box">
                             <div class="thumbnail">
-                                <img src="../images/index/call.jpg" alt="拨打137-1343638">
+                                <img src="../images/index/call.jpg">
                                 <div class="caption font-14">
                                     <p class="m-b-5 col-white">咨询热线：</p>
                                     <p class="font-16 m-b-15 col-orange col-white">137-1343638</p>
@@ -1234,7 +1235,9 @@
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
-    <script src="../plugins/jquery.zoombie/jquery.zoombie.js"></script>
+    <script src="../plugins/jquery-lazyload/jquery.lazyload.js"></script>
+    <!-- <script src="../plugins/jquery.zoombie/jquery.zoombie.js"></script> -->
+    <script src="../plugins/light-gallery/js/lightgallery.js"></script>
 
     <script>
        $(function(){
@@ -1419,10 +1422,15 @@
             }
 
             $.classifyMenu.activate();
-
+            $("img").lazyload({effect: "fadeIn"});
 
             /*“荣誉资质”放大镜效果*/
-            $('.honor-zoom').zoombie(/*{ on: 'grab' }*/);
+            /*$('.honor-zoom').zoombie({ on: 'grab' });*/
+
+            $('.honor-body').lightGallery({
+                thumbnail: true,
+                selector: 'a'
+            });
             
 
 
