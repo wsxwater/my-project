@@ -683,7 +683,8 @@
                 //菜单收缩
                 //产品分类，行业分类一级菜单点击显示二级菜单
                 $object.click(function() {
-                  $(this).toggleClass('current').siblings('.item-body').fadeToggle().parents('.product-show').find('.item-title').not($(this)).removeClass('current').parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).fadeOut();
+                  $(this).toggleClass('current').siblings('.item-body').fadeToggle().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
+                  return false;
                 });
                 
                 $(window).resize(function () {

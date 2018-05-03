@@ -870,7 +870,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                 <a href="javascript:;" class="thumbnail honor-zoom">
-                                    <img src="../images/index/honor.jpg" alt="拨打137-1343638">
+                                    <img src="../images/index/honor/IMG_3344.jpg" alt="拨打137-1343638"> 
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书1</div>
                                     </div>
@@ -878,7 +878,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                 <a href="javascript:;" class="thumbnail honor-zoom">
-                                    <img src="../images/index/honor2.jpg" alt="拨打137-1343638">
+                                    <img src="../images/index/honor/IMG_3345.jpg" alt="拨打137-1343638">
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书2</div>
                                     </div>
@@ -886,7 +886,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                 <a href="javascript:;" class="thumbnail honor-zoom">
-                                    <img src="../images/index/honor.jpg" alt="拨打137-1343638">
+                                    <img src="../images/index/honor/IMG_3346.jpg" alt="拨打137-1343638">
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书3</div>
                                     </div>
@@ -1383,7 +1383,8 @@
                 //菜单收缩
                 //产品分类，行业分类一级菜单点击显示二级菜单
                 $object.click(function() {
-                  $(this).toggleClass('current').siblings('.item-body').fadeToggle().parents('.product-show').find('.item-title').not($(this)).removeClass('current').parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).fadeOut();
+                  $(this).toggleClass('current').siblings('.item-body').fadeToggle().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
+                  return false;
                 });
                 
                 $(window).resize(function () {
@@ -1421,7 +1422,7 @@
 
 
             /*“荣誉资质”放大镜效果*/
-            $('.honor-zoom').zoombie({ on: 'grab' });
+            $('.honor-zoom').zoombie(/*{ on: 'grab' }*/);
             
 
 
