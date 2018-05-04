@@ -19,7 +19,7 @@
 .list-box .product-classify{background-color: transparent;}
 .list-box .product-classify .title .title-ch{font-size: 24px;margin-bottom: 2px;}
 .list-box .product-classify .list-group-item{background-color: #fff;padding: 0;border:none;margin-bottom: 5px;position: relative;}
-.list-box .product-classify .item-body{/* padding-right: 15px;padding-left: 15px; */padding-bottom: 0;}
+.list-box .product-classify .item-body{padding-bottom: 0;}
 .list-box .product-classify .item-body .line{color: #333;}
 .list-box .product-classify .item-body a{width:40%;}
 .list-box .product-classify .item-body a{color: #333;}
@@ -38,13 +38,24 @@
 .topbanner > img {position: absolute;width: 100%; height: 100%;left: 0; top: 0;}
 
 /* 详情 */
-.detail-box .row>div{padding-left: 7px;padding-right: 7px;/* padding-left: 0;padding-right: 0; */}
-.detail-box .detail-img {padding-bottom: 100%;position: relative;}
-.detail-box .detail-img > img {display: block;position: absolute;width: 100%; height: 100%;left: 0; top: 0;}
+.detail-box .row>div{padding-left: 7px;padding-right: 7px;}
+.detail-box .detail-img-wrap {padding-bottom: 100%;position: relative;}
+.detail-box .detail-img{display: block;position: absolute;width: 100%; height: 100%;left: 0; top: 0;}
+.pc-slide {display: block;width: 100%;background-color: #f8f8f8;border:1px solid #ddd;}
+.pc-slide .view{border-bottom: 1px solid #ddd;}
+.pc-slide .view .swiper-container {width: 100%;}
+.pc-slide .view .swiper-container img{display: block;max-width: 100%;max-height: 100%;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%); }
+.pc-slide .preview {width: 100%;position: relative;padding:15px 25px;border-top: 1px solid #fff;}
+.pc-slide .preview .swiper-container {height: 82px;width: 100%}
+.pc-slide .preview .swiper-slide {width: 82px;height: 100%;cursor:pointer;}
+.pc-slide .preview .arrow-left {background: url('../../images/list/picshopArr.png') no-repeat left center;position: absolute;top:15px;bottom:15px;left:4px;width: 17px;z-index: 4;}
+.pc-slide .preview .arrow-right {background: url('../../images/list/picshopArr.png') no-repeat right center;position: absolute;top:15px;bottom:15px;right:4px;width: 17px;z-index: 4;}
+.pc-slide .preview img {padding: 1px;display: block;width: 100%;height: 100%;object-fit: cover;}
+.pc-slide .preview .active-nav img {padding: 0;border: 1px solid #F00;}
 
 /* 产品列表 */
 p.ellipse{height: 40px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
-div.ellipse{height: 48px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+div.ellipse{height: 48px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height: 24px;}
 
 /* 在线咨询免费样品 按钮 */
 .vbtn{text-align: center;display: inline-block;line-height: 43px;color: #FFF;text-decoration: none;font-size: 18px;border-radius: 6px;-webkit-border-radius: 6px;-moz-border-radius: 6px;-o-border-radius: 6px;}
@@ -63,6 +74,7 @@ div.ellipse{height: 48px;overflow: hidden;text-overflow:ellipsis;display:-webkit
 .detail-box .product-title .title div{line-height: 38px;}
 
 .intr-img img{display: block;width: 100%;}
+.intr-content{font-size: 14px;}
 
 /* 产品详情适用范围 */
 .application-wrap{padding: 10px 40px 20px;}
@@ -185,18 +197,3 @@ div.ellipse{height: 48px;overflow: hidden;text-overflow:ellipsis;display:-webkit
 
 
 .fix-top.is_stuck{z-index: 5;}
-/* .list-box .tab-content{}
-.list-box .tab-content .product-show>.container{margin-top: 0;}
-.list-box .tab-content .product-show{padding-top: 0;}
-.list-box .tab-content .product-display{padding:0;}
-.list-box .tab-content .sample-box{padding: 0;}
-.list-box .tab-content .detail-box .row>div{padding: 0;}
-.product-detail-tabs .nav-pills{padding:15px 0;}
-.product-detail-tabs .nav-pills.is_stuck{background-color: #fff;z-index: 5;}
-.product-detail-tabs .nav-pills>li{width: 30%;margin:0 2.5%;}
-.product-detail-tabs .nav-pills>li:first-child{margin-left: 0;}
-.product-detail-tabs .nav-pills>li:last-child{margin-right: 0;}
-.product-detail-tabs .nav-pills>li a{color:#fff;font-size: 18px;text-align: center;padding: 0;height: 43px;line-height: 43px;background: url('../../images/list/vbg.jpg') 0 0 repeat-x;}
-.product-detail-tabs .nav-pills>li.active>a, 
-.product-detail-tabs .nav-pills>li.active>a:focus, 
-.product-detail-tabs .nav-pills>li.active>a:hover{background-color: transparent;color: #FF0;} */
