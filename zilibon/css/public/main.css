@@ -277,7 +277,7 @@ border-radius: 0;-webkit-border-radius: 0;-moz-border-radius: 0;-o-border-radius
 .sample-box .form-group {margin-bottom: 15px;}
 .sample-box .form-group .form-line{border:none;}
 .sample-box .form-control{border:1px solid #d0d0d0;padding-left:16px;font-size: 14px;}
-.sample-box textarea.form-control{height: 132px;}
+.sample-box textarea.form-control{height: 130px;}
 .sample-box .operation,.sample-box .operation .col-xs-6{padding-left: 0;padding-right: 0;margin-bottom: 0;}
 .sample-box .operation .form-group {margin-bottom: 0px;}
 .sample-box .operation img{display: inline-block;height: 38px;width: 100px;}

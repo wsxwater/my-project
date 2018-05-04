@@ -24,25 +24,6 @@
 	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/private/list.css">
   <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
-  <script type="text/javascript">
-    //设为首页
-    function SetHome(obj,url){
-         try{
-             obj.style.behavior='url(#default#homepage)';
-             obj.setHomePage(url);
-         }catch(e){
-             if(window.netscape){
-                 try{
-                     netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
-                 }catch(e){
-                     alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
-                 }
-             }else{
-                 alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
-             }
-         }
-    }
-  </script>
 </head>
 <body class="white">
     <!-- Page Loader -->
@@ -73,7 +54,7 @@
                     <div class="row clearfix">
                         <div class="col-md-10 col-sm-9 col-xs-12">欢迎访问广东中联邦精细化工有限公司网站！</div>
                         <div class="col-md-2 col-sm-3 col-xs-12 p-r-0">
-                                <a href="javascript:;" class="set-home" name="homepage" onClick="SetHome(this,'http://localhost:8888/my-project/my-project/zilibon/html/productDetail.html');">设为首页</a> 
+                                <a href="javascript:;">设为首页</a> 
                                 <span class="line"></span>
                                 <a href="javascript:;">网站地图</a> 
                         </div>
@@ -499,8 +480,8 @@
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="swiper-button-prev swiper-button-black"></div>
-                                          <div class="swiper-button-next swiper-button-black"></div>
+                                          <!-- <div class="swiper-button-prev swiper-button-black"></div>
+                                          <div class="swiper-button-next swiper-button-black"></div> -->
                                         </div>
                                       </div>
                                       <div class="preview">
@@ -921,8 +902,8 @@
             //轮播图片
             var viewSwiper = new Swiper('.pc-slide .view .swiper-container', {
               //autoHeight: true, //高度随内容变化
-              prevButton:'.swiper-button-prev',
-              nextButton:'.swiper-button-next',
+              // prevButton:'.swiper-button-prev',
+              // nextButton:'.swiper-button-next',
               onSlideChangeStart: function() {
                     updateNavPosition()
               }
