@@ -25,23 +25,6 @@
   <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
 </head>
 <body class="white">
-    <!-- Page Loader -->
-    <div class="page-loader-wrapper">
-        <div class="loader">
-            <div class="preloader">
-                <div class="spinner-layer pl-red">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-            </div>
-            <p>Please wait...</p>
-        </div>
-    </div>
-    <!-- #END# Page Loader -->
     
     <div class="list-box about-us-box">
 
@@ -496,27 +479,39 @@
     <script>
        $(function(){
 
-            $('.hover-img').mouseover(function(event) {
-              $(this).addClass('current');
-            }).mouseout(function(event) {
-              $(this).removeClass('current');
-            }).click(function () {
-              $(this).toggleClass('current');
-            });
-
 
               $("#fixTop").stick_in_parent({parent:'.list-box'})
 
-            // 百度地图API功能
-              var map = new BMap.Map("allmap");   
-              map.centerAndZoom(new BMap.Point(113.890634,22.931632), 19);  
+              // 百度地图API功能
+              // var map = new BMap.Map("allmap");   
+              // map.centerAndZoom(new BMap.Point(113.899858,22.964977), 19);  
+              // map.setCurrentCity("东莞");          // 设置地图显示的城市 此项是必须设置的
+              // map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+               
+              // var local = new BMap.LocalSearch(map, {   
+              //   renderOptions:{map: map}   
+              // });   
+              // local.search("东莞市松山湖光大WE谷B1栋1908室");
+              
+              var map = new BMap.Map("allmap");
+              var point = new BMap.Point(113.899858,22.964977);
+              var marker = new BMap.Marker(point);  // 创建标注
+              map.addOverlay(marker);              // 将标注添加到地图中
+              map.centerAndZoom(point, 19);
               map.setCurrentCity("东莞");          // 设置地图显示的城市 此项是必须设置的
               map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-               
-              var local = new BMap.LocalSearch(map, {   
-                renderOptions:{map: map}   
-              });   
-              local.search("广东中联邦精细化工有限公司");
+              var opts = {
+                width : 200,     // 信息窗口宽度
+                height: 40,     // 信息窗口高度
+                title : "<div class=\"col-red\">广东中联邦精细化工有限公司</div>" , // 信息窗口标题
+                // enableMessage:true,//设置允许信息窗发送短息
+              }
+              var infoWindow = new BMap.InfoWindow("<div class=\"font-12\">地址：东莞市松山湖光大WE谷B1栋1908室</div>", opts);  // 创建信息窗口对象 
+              map.openInfoWindow(infoWindow,point); //开启信息窗口
+              marker.addEventListener("click", function(){          
+                map.openInfoWindow(infoWindow,point); //开启信息窗口
+              });
+
 
 
             var now=0;
@@ -531,13 +526,6 @@
                 $('.search-nav a').eq(now).addClass('active').siblings('a').removeClass('active');
             }
 
-            $('.shop-list-box .dropdown-menu').on('click', '.menu-item', function(event) {
-                $(this).addClass('current').siblings('li.menu-item').removeClass('current');
-                event.preventDefault();
-            });
-
-
-            setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 
        });  
 

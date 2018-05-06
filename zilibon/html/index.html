@@ -30,7 +30,7 @@
 </head>
 <body class="white">
     <!-- Page Loader -->
-    <div class="page-loader-wrapper">
+    <!-- <div class="page-loader-wrapper">
         <div class="loader">
             <div class="preloader">
                 <div class="spinner-layer pl-red">
@@ -44,7 +44,7 @@
             </div>
             <p>Please wait...</p>
         </div>
-    </div>
+    </div> -->
     <!-- #END# Page Loader -->
     
     <div class="index-box">
@@ -1223,7 +1223,6 @@
             </ol>
         </div>
         
-
         <div is="foot"></div>
         
 
@@ -1242,15 +1241,6 @@
     <script>
        $(function(){
             
-            
-            /*顶部导航栏 的 手机网站、官方微信 hover click 弹出二维码*/  
-            $('.hover-img').mouseover(function(event) {
-              $(this).addClass('current');
-            }).mouseout(function(event) {
-              $(this).removeClass('current');
-            }).click(function () {
-              $(this).toggleClass('current');
-            });
 
             /*function SetHome(url){
                     if (document.all) {
@@ -1374,58 +1364,6 @@
                   $(this).parents('.card').siblings('.list-group').toggle().parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide();
             })
             
-            $.classifyMenu={
-              activate:function () {
-                var _this=this;
-                var $object=$('.product-show .item-title');
-                var $target=$('.product-show .item-body');
-
-                
-                //_this.clickHide();
-                
-                //菜单收缩
-                //产品分类，行业分类一级菜单点击显示二级菜单
-                $object.click(function() {
-                  $(this).toggleClass('current').siblings('.item-body').fadeToggle().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
-                  return false;
-                });
-                
-                $(window).resize(function () {
-                  _this.checkStatuForResize();
-                });
-              },
-              clickHide:function () {
-                var $object=$('.product-show .item-title');
-                var $target=$('.product-show .item-body');
-                $target.on('click',function (e) {
-                   $object.removeClass('current');
-                   $target.hide();
-                });
-              },
-              checkStatuForResize:function () {
-                var $body = $('body');
-                var width = $body.width();
-                var $object=$('.product-show .item-title');
-                var $target1=$('.product-show .item-body');
-                var $target2=$('.product-show .list-group');
-
-                if (width > 767) {
-                    $target1.fadeIn();
-                    $target2.fadeIn();
-                }else{
-                    $object.removeClass('current');
-                    $target1.fadeOut();
-                    $target2.fadeOut();
-                }
-
-              }
-            }
-
-            $.classifyMenu.activate();
-            /*$("img").lazyload({effect: "fadeIn"});*/
-
-            /*“荣誉资质”放大镜效果*/
-            /*$('.honor-zoom').zoombie({ on: 'grab' });*/
 
             $('.honor-body').lightGallery({
                 thumbnail: true,
@@ -1453,7 +1391,7 @@
 
 
 
-            setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
+            /*setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);*/
 
 
        });  

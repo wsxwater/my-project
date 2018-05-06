@@ -260,7 +260,8 @@ border-radius: 0;-webkit-border-radius: 0;-moz-border-radius: 0;-o-border-radius
 .footbox-b .telphone img{display: block;width: 254px;}
 .footbox-b .telphone>a{padding: 0;}
 .footbox-b .nav>li.telphone>a:focus, .footbox-b .nav>li.telphone>a:hover{background-color: transparent;}
-
+.icp-box a{color: #fff;text-decoration: none;}
+.icp-box a:link,.icp-box a:visited ,.icp-box a:hover,.icp-box a:active {color: #fff;text-decoration: none;}
 
 /* 列表 */
 .areabox{width: 100%;}

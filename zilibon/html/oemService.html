@@ -25,23 +25,6 @@
   <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
 </head>
 <body class="white">
-    <!-- Page Loader -->
-    <div class="page-loader-wrapper">
-        <div class="loader">
-            <div class="preloader">
-                <div class="spinner-layer pl-red">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-            </div>
-            <p>Please wait...</p>
-        </div>
-    </div>
-    <!-- #END# Page Loader -->
     
     <div class="list-box">
 
@@ -539,13 +522,6 @@
 
     <script>
        $(function(){
-            $('.hover-img').mouseover(function(event) {
-              $(this).addClass('current');
-            }).mouseout(function(event) {
-              $(this).removeClass('current');
-            }).click(function () {
-              $(this).toggleClass('current');
-            });
 
             
             var now=0;
@@ -561,12 +537,6 @@
                 $('.search-nav a').eq(now).addClass('active').siblings('a').removeClass('active');
             }
 
-            $('.shop-list-box .dropdown-menu').on('click', '.menu-item', function(event) {
-                $(this).addClass('current').siblings('li.menu-item').removeClass('current');
-                event.preventDefault();
-            });
-
-            setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 
 
        });  
