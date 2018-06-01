@@ -144,8 +144,8 @@ $.AdminBSB.rightSideBarM = {
 $.classifyMenu={
   activate:function () {
     var _this=this;
-    var $object=$('.product-show .item-title');
-    var $target=$('.product-show .item-body');
+    var $object=$('.product-show .product-classify .item-title');
+    var $target=$('.product-show .product-classify .item-body');
 
     
     //_this.clickHide();
@@ -158,6 +158,11 @@ $.classifyMenu={
       return false;
     });
     
+    $('.index-box .product-show').on('mouseenter','.item-title',function(e) {
+      $(this).addClass('current').siblings('.item-body').fadeIn().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
+    });
+    
+
     $(window).resize(function () {
       _this.checkStatuForResize();
     });
@@ -174,9 +179,9 @@ $.classifyMenu={
   checkStatuForResize:function () {
     var $body = $('body');
     var width = $body.width();
-    var $object=$('.product-show .item-title');
-    var $target1=$('.product-show .item-body');
-    var $target2=$('.product-show .list-group');
+    var $object=$('.product-show .product-classify .item-title');
+    var $target1=$('.product-show .product-classify  .item-body');
+    var $target2=$('.product-show .product-classify .list-group');
 
     if (width > 767) {
         $target1.fadeIn();
@@ -185,6 +190,7 @@ $.classifyMenu={
         $object.removeClass('current');
         $target1.fadeOut();
         $target2.fadeOut();
+
     }
 
   }
@@ -203,10 +209,7 @@ $(function () {
       $(this).toggleClass('current');
     });  
     
-    /*产品中心下拉点击li*/
-    $('.shop-list-box .dropdown-menu').on('click', '.menu-item', function(event) {
-        $(this).addClass('current').siblings('li.menu-item').removeClass('current');
-    });
+    
     
     $.AdminBSB.rightSideBarM.activate();
     $.classifyMenu.activate();

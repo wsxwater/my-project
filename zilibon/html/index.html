@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="pragma" content="no-cache">   
+  <meta http-equiv="Cache-Control" content="no-cache,must-revalidate">   
+  <meta http-equiv="expires" content="Wed,   26   Feb   1997   08:21:57   GMT">   
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -439,7 +442,10 @@
                                   <div class="card z-depth-0">
                                       <a href="javascript:;" class="btn-block">
                                           <div class="header">
-                                              <img src="../images/index/product.jpg">
+                                              <img src="../images/default.jpg">
+                                              <!-- <div class="img-wrap">
+                                                <img src="../images/index/product.jpg">
+                                              </div> -->
                                           </div>
                                           <div class="body">强力洗衣粉</div>
                                       </a>
@@ -570,7 +576,9 @@
                                   <div class="card z-depth-0">
                                       <a href="javascript:;" class="btn-block">
                                           <div class="header">
-                                              <img src="../images/index/product.jpg">
+                                              <div class="img-wrap">
+                                                <img src="../images/index/product.jpg">
+                                              </div>
                                           </div>
                                           <div class="body">强力洗衣粉</div>
                                       </a>
@@ -580,7 +588,9 @@
                                   <div class="card z-depth-0">
                                       <a href="javascript:;" class="btn-block">
                                           <div class="header">
-                                              <img src="../images/index/product.jpg">
+                                              <div class="img-wrap">
+                                                <img src="../images/index/product.jpg">
+                                              </div>
                                           </div>
                                           <div class="body">强力洗衣粉</div>
                                       </a>
@@ -590,7 +600,9 @@
                                   <div class="card z-depth-0">
                                       <a href="javascript:;" class="btn-block">
                                           <div class="header">
-                                              <img src="../images/index/product.jpg">
+                                              <div class="img-wrap">
+                                                <img src="../images/index/product.jpg">
+                                              </div>
                                           </div>
                                           <div class="body">强力洗衣粉</div>
                                       </a>
@@ -600,7 +612,9 @@
                                   <div class="card z-depth-0">
                                       <a href="javascript:;" class="btn-block">
                                           <div class="header">
-                                              <img src="../images/index/product.jpg">
+                                              <div class="img-wrap">
+                                                <img src="../images/index/product.jpg">
+                                              </div>
                                           </div>
                                           <div class="body">强力洗衣粉</div>
                                       </a>
@@ -1361,7 +1375,7 @@
 
             /*产品分类，行业分类 标题点击显示菜单*/
             $('.product-show').on('click','.title-sec',function () {
-                  $(this).parents('.card').siblings('.list-group').toggle().parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide();
+                  $(this).parents('.card').siblings('.list-group').toggle()/*.parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide()*/;
             })
             
 

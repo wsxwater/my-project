@@ -92,7 +92,7 @@
 	.list-box .product-display .product-card .list-group-item img{text-align: center;}
 	.list-box .product-display .product-card .list-group-item .col-xs-12{padding-right: 0;}
 	.list-box .product-display .product-card .list-group-item .col-xs-12 h4{text-align: center;}
-    .product-classify .menu-item a i.material-icons,
+    .product-classify .menu-item a .ico-arrow-l,
     .product-classify .menu-item .ico,
     .product-classify .menu-item.current .ico,
 	.product-classify .menu-item:hover .ico,
@@ -106,6 +106,7 @@
     .new-box .product-show .product-display .product-card .list-group-item h4 i{font-size: 16px;}
 
     .new-box .product-show .product-display .product-card .list-group-item span.time i{vertical-align: middle;margin-top: -1px;}
+    /* .product-classify .list-group{overflow-y:auto;max-height: 300px;} */
     /* 公司动态、行业资讯、常见问题 */
     .tab-show{display: block;}
     .tab-show-card{display: none;}
@@ -180,7 +181,7 @@
 	.product-classify .item-body a{padding: 5px;width: auto;}
 	.product-classify .item-body .line{display: none;}
 	.product-display/*, .list-box .product-display */{width: 100%;}
-	.product-card .card{margin-top: 0px;}
+	/* .product-card .card{margin-top: 0px;} */
 
 	/* 轮播图 */
 	.swiper-box img{display: inline-block;min-height: 120px;object-fit: cover;max-width: 100%;}
@@ -190,7 +191,7 @@
 	.rect-box{width: 150px;height: 150px;}
     .rect-txt{font-size: 20px;}
     .section-title{font-size: 24px;}
-
+    .product-classify .list-group{max-height: 491px;overflow-y: auto;}
 }
 
 @media screen and (min-width: 993px) and (max-width: 1199px) {
@@ -204,15 +205,20 @@
     /* 轮播图 */
     .swiper-box img{display: inline-block;min-height: 120px;object-fit: cover;max-width: 100%;}
     .footbox-b .logo-box .line{display: none;}
+    .product-classify .list-group{max-height: 700px;overflow-y: auto;}
+
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.navbar-static.navbar .navbar-nav>li.service-hotline{display: none;}
 	/* .navbar.navbar-static .navbar-nav{display: block;} */
 	.product-classify .item-body a{width: 80px;}
 	.product-classify .item-body .line {padding: 14px 5px 5px;margin-left: 10px;}
+
+	/* .product-classify .list-group{max-height: 828px;overflow-y: auto;} */
 }
 @media screen and (min-width: 1200px){
 	.contact-info-box{padding:0 8%;}
+	.product-classify .list-group{max-height: 828px;overflow-y: auto;}
 }
 /* @media screen and (min-width: 768px){
 	.my-right-sidebar{right: -300px!important;}
