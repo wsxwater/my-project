@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="pragma" content="no-cache">   
+  <meta http-equiv="Cache-Control" content="no-cache,must-revalidate">   
+  <meta http-equiv="expires" content="Wed,   26   Feb   1997   08:21:57   GMT">   
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -25,11 +28,12 @@
   <link rel="stylesheet" type="text/css" href="../css/private/index.css">
   <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
   <link href="../css/themes/all-themes.css" rel="stylesheet" />
+  <link href="../plugins/light-gallery/css/lightgallery.min.css" rel="stylesheet" />
 
 </head>
 <body class="white">
     <!-- Page Loader -->
-    <div class="page-loader-wrapper">
+    <!-- <div class="page-loader-wrapper">
         <div class="loader">
             <div class="preloader">
                 <div class="spinner-layer pl-red">
@@ -43,7 +47,7 @@
             </div>
             <p>Please wait...</p>
         </div>
-    </div>
+    </div> -->
     <!-- #END# Page Loader -->
     
     <div class="index-box">
@@ -54,8 +58,8 @@
               <div class="container">
                   <div class="row clearfix">
                       <div class="col-md-10 col-sm-9 col-xs-12">欢迎访问广东中联邦精细化工有限公司网站！</div>
-                      <div class="col-md-2 col-sm-3 col-xs-12 p-r-0">
-                              <a href="javascript:;">设为首页</a> 
+                      <div class="col-md-2 col-sm-3 col-xs-12 p-r-0 p-l-0">
+                              <a href="javascript:;" class="set-home">设为首页</a> 
                               <span class="line"></span>
                               <a href="javascript:;">网站地图</a> 
                       </div>
@@ -95,9 +99,13 @@
                           </a>
                       </li>
                       <li class="align-center">
-                          <a href="javascript:;">
+                          <a href="javascript:;" class="hover-img">
                               <div><span class="ico-navbar ico-navbar1"></span></div>
                               <div><small>手机网站</small></div>
+                              <div class="card hover-img-box">
+                                <span class="arrow"></span>
+                                <img src="../images/qrcode.jpg">
+                              </div>
                           </a>
                       </li>
                       <li class="align-center">
@@ -107,9 +115,13 @@
                           </a>
                       </li>
                       <li class="align-center">
-                          <a href="javascript:;">
+                          <a href="javascript:;" class="hover-img">
                               <div><span class="ico-navbar ico-navbar3"></span></div>
                               <div><small>官方微信</small></div>
+                              <div class="card hover-img-box">
+                                <span class="arrow"></span>
+                                <img src="../images/qrcode.jpg">
+                              </div>
                           </a>
                       </li>
                       <li class="align-center">
@@ -135,36 +147,76 @@
               
               <ul class="dropdown-menu">
                   <li class="menu-item">
-                      <a href="javascript:;"><span class="ico-shop ico-shop0"></span>洗衣粉<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                      <a href="javascript:;">
+                        <img src="../images/icoShop/ico_01.png" class="ico">
+                        洗衣粉
+                        <i class="material-icons pull-right">keyboard_arrow_right</i>
+                      </a>
                   </li><li class="divider"></li>
                   <li class="menu-item">
-                      <a href="javascript:;"><span class="ico-shop ico-shop1"></span>清洗粉<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                      <a href="javascript:;">
+                        <img src="../images/icoShop/ico_02.png" class="ico">
+                        清洗粉
+                        <i class="material-icons pull-right">keyboard_arrow_right</i>
+                      </a>
                   </li><li class="divider"></li>
                   <li class="menu-item">
-                      <a href="javascript:;"><span class="ico-shop ico-shop2"></span>洗洁精<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                      <a href="javascript:;">
+                        <img src="../images/icoShop/ico_03.png" class="ico">
+                        洗洁精
+                        <i class="material-icons pull-right">keyboard_arrow_right</i>
+                      </a>
                   </li><li class="divider"></li>
                   <li class="menu-item">
-                      <a href="javascript:;"><span class="ico-shop ico-shop3"></span>洗衣液<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                      <a href="javascript:;">
+                        <img src="../images/icoShop/ico_04.png" class="ico">
+                        洗衣液
+                        <i class="material-icons pull-right">keyboard_arrow_right</i>
+                      </a>
                   </li><li class="divider"></li>
                   <li class="menu-item">
-                      <a href="javascript:;"><span class="ico-shop ico-shop4"></span>清洗剂<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                      <a href="javascript:;">
+                        <img src="../images/icoShop/ico_05.png" class="ico">
+                        清洗剂
+                        <i class="material-icons pull-right">keyboard_arrow_right</i>
+                      </a>
                   </li><li class="divider"></li>
                   <li class="menu-item">
-                      <a href="javascript:;"><span class="ico-shop ico-shop5"></span>工业清洗行业<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                      <a href="javascript:;">
+                        <img src="../images/icoShop/ico_06.png" class="ico">
+                        工业清洗行业
+                        <i class="material-icons pull-right">keyboard_arrow_right</i>
+                      </a>
                   </li><li class="divider"></li>
                   <li class="menu-item">
-                      <a href="javascript:;"><span class="ico-shop ico-shop6"></span>酒店客房<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                      <a href="javascript:;">
+                        <img src="../images/icoShop/ico_07.png" class="ico">
+                        酒店客房
+                        <i class="material-icons pull-right">keyboard_arrow_right</i>
+                      </a>
                   </li><li class="divider"></li>
                   <li class="menu-item">
-                      <a href="javascript:;"><span class="ico-shop ico-shop7"></span>餐饮行业<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                      <a href="javascript:;">
+                        <img src="../images/icoShop/ico_08.png" class="ico">
+                        餐饮行业
+                        <i class="material-icons pull-right">keyboard_arrow_right</i>
+                      </a>
                   </li><li class="divider"></li>
                   <li class="menu-item">
-                      <a href="javascript:;"><span class="ico-shop ico-shop8"></span>洗衣房<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                      <a href="javascript:;">
+                        <img src="../images/icoShop/ico_09.png" class="ico">
+                        洗衣房
+                        <i class="material-icons pull-right">keyboard_arrow_right</i>
+                      </a>
                   </li><li class="divider"></li>
                   <li class="menu-item">
-                      <a href="javascript:;"><span class="ico-shop ico-shop9"></span>公共区域<i class="material-icons pull-right">keyboard_arrow_right</i></a>
+                      <a href="javascript:;">
+                        <img src="../images/icoShop/ico_10.png" class="ico">
+                        公共区域
+                        <i class="material-icons pull-right">keyboard_arrow_right</i>
+                      </a>
                   </li>
-              </ul>
+              </ul>  
               <div class="shop-list-box">
                   <div class="shop-class">
                       <a href="javascript:;" class="btn-block">
@@ -177,6 +229,7 @@
                         <li><a href="productList.html" target="_blank">洗衣粉</a></li>
                         <li><a href="productList.html" target="_blank">洗洁精</a></li>
                         <li><a href="productList.html" target="_blank">清洗剂</a></li>
+                        <li><a href="agentJoin.html" target="_blank">代理加盟</a></li>
                         <li><a href="oemService.html" target="_blank">OEM服务</a></li>
                         <li><a href="aboutUs.html" target="_blank">关于我们</a></li>
                   </ul>      
@@ -389,7 +442,10 @@
                                   <div class="card z-depth-0">
                                       <a href="javascript:;" class="btn-block">
                                           <div class="header">
-                                              <img src="../images/index/product.jpg">
+                                              <img src="../images/default.jpg">
+                                              <!-- <div class="img-wrap">
+                                                <img src="../images/index/product.jpg">
+                                              </div> -->
                                           </div>
                                           <div class="body">强力洗衣粉</div>
                                       </a>
@@ -520,7 +576,9 @@
                                   <div class="card z-depth-0">
                                       <a href="javascript:;" class="btn-block">
                                           <div class="header">
-                                              <img src="../images/index/product.jpg">
+                                              <div class="img-wrap">
+                                                <img src="../images/index/product.jpg">
+                                              </div>
                                           </div>
                                           <div class="body">强力洗衣粉</div>
                                       </a>
@@ -530,7 +588,9 @@
                                   <div class="card z-depth-0">
                                       <a href="javascript:;" class="btn-block">
                                           <div class="header">
-                                              <img src="../images/index/product.jpg">
+                                              <div class="img-wrap">
+                                                <img src="../images/index/product.jpg">
+                                              </div>
                                           </div>
                                           <div class="body">强力洗衣粉</div>
                                       </a>
@@ -540,7 +600,9 @@
                                   <div class="card z-depth-0">
                                       <a href="javascript:;" class="btn-block">
                                           <div class="header">
-                                              <img src="../images/index/product.jpg">
+                                              <div class="img-wrap">
+                                                <img src="../images/index/product.jpg">
+                                              </div>
                                           </div>
                                           <div class="body">强力洗衣粉</div>
                                       </a>
@@ -550,7 +612,9 @@
                                   <div class="card z-depth-0">
                                       <a href="javascript:;" class="btn-block">
                                           <div class="header">
-                                              <img src="../images/index/product.jpg">
+                                              <div class="img-wrap">
+                                                <img src="../images/index/product.jpg">
+                                              </div>
                                           </div>
                                           <div class="body">强力洗衣粉</div>
                                       </a>
@@ -582,6 +646,7 @@
             </div>
           </div>
         </div>
+
         
         <article>
           <div class="reason-wrap reasonbg m-t-20">
@@ -687,7 +752,6 @@
             </div>
         </div>
 
-        
 
         <div class="introduct-box" data-ispc="true">
             <div class="container">
@@ -720,6 +784,7 @@
             </div>
         </div>
 
+
         <div class="card banner-card m-t-50" data-ispc="true">
           <div class="card-image">
             <img src="../images/index/banner1.jpg">
@@ -728,7 +793,7 @@
                   <div class="table-cell font-bold col-white">
                     <div class="container align-center">
                       <div class="text-shadow">
-                        专业研发生产渡海厂家<a href="javascript:;" class="cbtn">·18年洗涤剂创新者·</a> 铸造成功合作基石
+                        专业研发生产洗涤剂厂家<a href="javascript:;" class="cbtn">·18年洗涤剂创新者·</a> 铸造成功合作基石
                       </div>
                     </div>
                   </div>
@@ -736,6 +801,7 @@
             </div>
           </div>
         </div>
+
 
         <div class="introduct-box" data-ispc="true">
             <div class="container">
@@ -749,7 +815,7 @@
                       <img src="../images/index/intro1.jpg" alt="应用案例">
                       <div class="caption font-bold font-16">
                         <p class="thumbnail-tit align-center">餐饮行业</p>
-                        <p>餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
+                        <p class="thumbnail-body">餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
                       </div>
                       <span class="label font-16">+</span>
                     </a>
@@ -758,7 +824,7 @@
                       <img src="../images/index/intro1.jpg" alt="应用案例">
                       <div class="caption font-bold font-16">
                         <p class="thumbnail-tit align-center">餐饮行业</p>
-                        <p>餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
+                        <p class="thumbnail-body">餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
                       </div>
                       <span class="label font-16">+</span>
                     </a>
@@ -767,7 +833,7 @@
                       <img src="../images/index/intro1.jpg" alt="应用案例">
                       <div class="caption font-bold font-16">
                         <p class="thumbnail-tit align-center">餐饮行业</p>
-                        <p>餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
+                        <p class="thumbnail-body">餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
                       </div>
                       <span class="label font-16">+</span>
                     </a>
@@ -776,7 +842,7 @@
                       <img src="../images/index/intro1.jpg" alt="应用案例">
                       <div class="caption font-bold font-16">
                         <p class="thumbnail-tit align-center">餐饮行业</p>
-                        <p>餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
+                        <p class="thumbnail-body">餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业餐饮行业</p>
                       </div>
                       <span class="label font-16">+</span>
                     </a>
@@ -787,6 +853,7 @@
         </div>
         
         <div class="more-box m-t-50 align-center"><img src="../images/index/more.png"></div>
+
 
         <div class="introduct-box">
             <div class="container">
@@ -815,26 +882,26 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row honor-body">
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                <a href="javascript:;" class="thumbnail">
-                                    <img src="../images/index/honor.jpg" alt="拨打137-1343638">
+                                <a  href="../images/index/honor/IMG_3344.jpg"  class="thumbnail">
+                                    <img src="../images/index/honor/IMG_3344_sm.jpg"> 
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书1</div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                <a href="javascript:;" class="thumbnail">
-                                    <img src="../images/index/honor2.jpg" alt="拨打137-1343638">
+                                <a  href="../images/index/honor/IMG_3345.jpg"  class="thumbnail">
+                                    <img src="../images/index/honor/IMG_3345_sm.jpg">
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书2</div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                <a href="javascript:;" class="thumbnail">
-                                    <img src="../images/index/honor.jpg" alt="拨打137-1343638">
+                                <a  href="../images/index/honor/IMG_3346.jpg"  class="thumbnail">
+                                    <img src="../images/index/honor/IMG_3346_sm.jpg">
                                     <div class="caption font-14">
                                         <div class="caption-title align-center">荣誉证书3</div>
                                     </div>
@@ -845,7 +912,7 @@
                     <div class="col-lg-4">
                         <div class="detail-box">
                             <div class="thumbnail">
-                                <img src="../images/index/call.jpg" alt="拨打137-1343638">
+                                <img src="../images/index/call.jpg">
                                 <div class="caption font-14">
                                     <p class="m-b-5 col-white">咨询热线：</p>
                                     <p class="font-16 m-b-15 col-orange col-white">137-1343638</p>
@@ -930,7 +997,7 @@
                         <a href="newList.html" class="pull-right" class="more">更多产品&gt;&gt;</a>
                     </div>
                     <div class="card-image">
-                        <img src="../images/index/cg1.jpg">
+                        <img src="../images/index/cg2.jpg">
                     </div>
                     <div class="body">
                         <ul class="nav">
@@ -1071,7 +1138,7 @@
                             <a href="newList.html" class="pull-right" class="more">更多产品&gt;&gt;</a>
                         </div>
                         <div class="card-image">
-                            <img src="../images/index/cg1.jpg">
+                            <img src="../images/index/cg2.jpg">
                         </div>
                         <div class="body">
                             <ul class="nav">
@@ -1157,36 +1224,52 @@
                 <a href="javascript:;" class="pull-right more">更多产品&gt;&gt;</a>
             </div> 
             <ol class="breadcrumb">
-                <li><a href="javascript:;"><span class="ico-shop ico-shop0"></span>洗衣粉</a></li>
-                <li class="active"><a href="javascript:;"><span class="ico-shop ico-shop1"></span>清洗粉</a></li>
-                <li><a href="javascript:;"><span class="ico-shop ico-shop2"></span>洗洁精</a></li>
-                <li><a href="javascript:;"><span class="ico-shop ico-shop3"></span>洗衣液</a></li>
-                <li><a href="javascript:;"><span class="ico-shop ico-shop4"></span>清洗剂</a></li>
-                <li><a href="javascript:;"><span class="ico-shop ico-shop5"></span>工业清洗行业</a></li>
-                <li><a href="javascript:;"><span class="ico-shop ico-shop6"></span>酒店客房</a></li>
-                <li><a href="javascript:;"><span class="ico-shop ico-shop7"></span>餐饮行业</a></li>
-                <li><a href="javascript:;"><span class="ico-shop ico-shop8"></span>洗衣房</a></li>
-                <li><a href="javascript:;"><span class="ico-shop ico-shop9"></span>公共区域</a></li>
+                <li><a href="javascript:;"><img src="../images/icoShop/ico_01.png" class="ico">洗衣粉</a></li>
+                <li class="active"><a href="javascript:;"><img src="../images/icoShop/ico_02.png" class="ico">清洗粉</a></li>
+                <li><a href="javascript:;"><img src="../images/icoShop/ico_03.png" class="ico">洗洁精</a></li>
+                <li><a href="javascript:;"><img src="../images/icoShop/ico_04.png" class="ico">洗衣液</a></li>
+                <li><a href="javascript:;"><img src="../images/icoShop/ico_05.png" class="ico">清洗剂</a></li>
+                <li><a href="javascript:;"><img src="../images/icoShop/ico_06.png" class="ico">工业清洗行业</a></li>
+                <li><a href="javascript:;"><img src="../images/icoShop/ico_07.png" class="ico">酒店客房</a></li>
+                <li><a href="javascript:;"><img src="../images/icoShop/ico_08.png" class="ico">餐饮行业</a></li>
+                <li><a href="javascript:;"><img src="../images/icoShop/ico_09.png" class="ico">洗衣房</a></li>
+                <li><a href="javascript:;"><img src="../images/icoShop/ico_10.png" class="ico">公共区域</a></li>
             </ol>
         </div>
         
-
         <div is="foot"></div>
         
 
     </div>
-
-    
     
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../plugins/node-waves/waves.min.js"></script>
+    <!-- <script src="../plugins/node-waves/waves.min.js"></script> -->
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
     <script src="../js/pages/admin.js"></script>
     <script src="../js/myroute.js"></script>
+    <!-- <script src="../plugins/jquery-lazyload/jquery.lazyload.js"></script> -->
+    <!-- <script src="../plugins/jquery.zoombie/jquery.zoombie.js"></script> -->
+    <script src="../plugins/light-gallery/js/lightgallery.js"></script>
 
     <script>
        $(function(){
+            
+
+            /*function SetHome(url){
+                    if (document.all) {
+                        document.body.style.behavior='url(#default#homepage)';
+                        console.log(document.body.style.behavior);
+                          document.body.setHomePage(url);
+                    }else{
+                        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+                    }
+            }
+
+            $('.set-home').click(function () {
+              //console.log(window.location);
+              SetHome(window.location.href)
+            })*/
           
             var swiper = new Swiper('.swiper-box .swiper-container', {
                                 pagination : '.swiper-pagination',
@@ -1218,13 +1301,13 @@
                 }else{
                     now++;
                 }
-                if ($('.search-nav a').last().hasClass('active')) {
+                /*if ($('.search-nav a').last().hasClass('active')) {
                     $('.nav-ctrl-r').addClass('disabled');
                     $('.nav-ctrl-l').removeClass('disabled');
                 }else{
                     $('.nav-ctrl-r').removeClass('disabled');
                     $('.nav-ctrl-l').addClass('disabled');
-                }
+                }*/
                 searchTab();
             }
             function prev() {
@@ -1233,13 +1316,13 @@
                 }else{
                      now--;
                 }
-                if ($('.search-nav a').first().hasClass('active')) {
+                /*if ($('.search-nav a').first().hasClass('active')) {
                     $('.nav-ctrl-l').addClass('disabled');
                     $('.nav-ctrl-r').removeClass('disabled');
                 }else{
                     $('.nav-ctrl-l').removeClass('disabled');
                     $('.nav-ctrl-r').addClass('disabled');
-                }
+                }*/
                 searchTab();
             }
             if($('.nav-ctrl').length==1){
@@ -1281,6 +1364,9 @@
             var flag = IsPC(); 
             console.log(flag)//true为PC端，false为手机端和ipad*/
 
+
+
+
             
             //行业分类 产品分类 内容(二级菜单)点击
             $('.item-body').on('click','a',function () {
@@ -1289,56 +1375,14 @@
 
             /*产品分类，行业分类 标题点击显示菜单*/
             $('.product-show').on('click','.title-sec',function () {
-                  $(this).parents('.card').siblings('.list-group').toggle().parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide();
+                  $(this).parents('.card').siblings('.list-group').toggle()/*.parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide()*/;
             })
             
-            $.classifyMenu={
-              activate:function () {
-                var _this=this;
-                var $object=$('.product-show .item-title');
-                var $target=$('.product-show .item-body');
 
-                
-                _this.clickHide();
-                
-                //菜单收缩
-                //产品分类，行业分类一级菜单点击显示二级菜单
-                $object.click(function() {
-                  $(this).toggleClass('current').siblings('.item-body').fadeToggle().parents('.product-show').find('.item-title').not($(this)).removeClass('current').parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).fadeOut();
-                });
-                
-                $(window).resize(function () {
-                  _this.checkStatuForResize();
-                });
-              },
-              clickHide:function () {
-                var $object=$('.product-show .item-title');
-                var $target=$('.product-show .item-body');
-                $target.on('click',function (e) {
-                   $object.removeClass('current');
-                   $target.hide();
-                });
-              },
-              checkStatuForResize:function () {
-                var $body = $('body');
-                var width = $body.width();
-                var $object=$('.product-show .item-title');
-                var $target1=$('.product-show .item-body');
-                var $target2=$('.product-show .list-group');
-
-                if (width > 767) {
-                    $target1.fadeIn();
-                    $target2.fadeIn();
-                }else{
-                    $object.removeClass('current');
-                    $target1.fadeOut();
-                    $target2.fadeOut();
-                }
-
-              }
-            }
-
-            $.classifyMenu.activate();
+            $('.honor-body').lightGallery({
+                thumbnail: true,
+                selector: 'a'
+            });
             
 
 
@@ -1361,7 +1405,7 @@
 
 
 
-            setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
+            /*setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);*/
 
 
        });  

@@ -23,6 +23,9 @@
 .introduct-box a.thumbnail.active .thumbnail-tit, 
 .introduct-box a.thumbnail:focus .thumbnail-tit, 
 .introduct-box a.thumbnail:hover .thumbnail-tit{color: #337ab7;}
+.introduct-box .thumbnail-tit{height: 20px;overflow: hidden;text-overflow:ellipsis; white-space: nowrap;}
+.introduct-box .thumbnail-body{height: 40px;overflow: hidden;display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+
 /* 关于 */
 .more-box img{display: inline-block;width: 93px;margin-bottom: -42px;}
 .more-box ~ .introduct-box{background-color: #f6f6f6;padding:100px 0 50px;}
