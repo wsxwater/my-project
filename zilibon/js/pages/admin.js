@@ -162,9 +162,9 @@ $.classifyMenu={
         $('.product-show .product-classify .item-title').removeClass('current').siblings('.item-body').fadeOut();
     })
 
-    // $(window).resize(function () {
-    //   _this.checkStatuForResize();
-    // });
+    $(window).resize(function () {
+      _this.checkStatuForResize();
+    });
   },
   clickHide:function () {
     var $object=$('.product-show .item-title');
@@ -178,9 +178,9 @@ $.classifyMenu={
   checkStatuForResize:function () {
     var $body = $('body');
     var width = $body.width();
-    var $object=$('.product-show .product-classify .item-title');
-    var $target1=$('.product-show .product-classify .item-body');
-    var $target2=$('.product-show .product-classify .list-group');
+    var $object=$('.product-show .product-classify-v1 .item-title');
+    var $target1=$('.product-show .product-classify-v1 .item-body');
+    var $target2=$('.product-show .product-classify-v1 .list-group-wrap');
 
     if (width > 767) {
         $target1.fadeIn();

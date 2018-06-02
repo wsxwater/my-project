@@ -186,9 +186,11 @@
 .product-classify .menu-item.current .ico-arrow-l,
 .product-classify .menu-item:hover .ico-arrow-l{background-position: 0 -11px;}
 
-.product-classify .item-body{display: none;background-color: #f6f6f6;}
+.product-classify .item-body{background-color: #f6f6f6;}
+.product-classify-v2 .item-body{display: none;}
 .product-show .product-classify .item-title{position: relative;}
 .list-box .product-classify .item-body{background-color: #fff;}
+
 
 /* 产品展示标题 */
 .product-display{width: 64%;float: right;}
