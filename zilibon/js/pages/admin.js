@@ -147,25 +147,29 @@ $.classifyMenu={
     var $object=$('.product-show .product-classify .item-title');
     var $target=$('.product-show .product-classify .item-body');
 
-    
     //_this.clickHide();
+    //debugger;
     
     //菜单收缩
     //产品分类，行业分类一级菜单点击显示二级菜单
-    $('.product-show').on('click','.item-title',function(e) {
+    $('.product-show .product-classify').on('click mouseover','.item-title',function(e) {
       /*$(this).toggleClass('current').siblings('.item-body').fadeToggle().parents('.product-show').find('.item-title').not($(this)).removeClass('current').parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).fadeOut();*/
       $(this).toggleClass('current').siblings('.item-body').fadeToggle().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
-      return false;
     });
-    
-    $('.index-box .product-show').on('mouseenter','.item-title',function(e) {
-      $(this).addClass('current').siblings('.item-body').fadeIn().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
-    });
+
     
 
-    $(window).resize(function () {
-      _this.checkStatuForResize();
-    });
+
+    // if (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        
+    // }
+    
+
+    
+
+    // $(window).resize(function () {
+    //   _this.checkStatuForResize();
+    // });
   },
   clickHide:function () {
     var $object=$('.product-show .item-title');
@@ -180,7 +184,7 @@ $.classifyMenu={
     var $body = $('body');
     var width = $body.width();
     var $object=$('.product-show .product-classify .item-title');
-    var $target1=$('.product-show .product-classify  .item-body');
+    var $target1=$('.product-show .product-classify .item-body');
     var $target2=$('.product-show .product-classify .list-group');
 
     if (width > 767) {
@@ -190,7 +194,6 @@ $.classifyMenu={
         $object.removeClass('current');
         $target1.fadeOut();
         $target2.fadeOut();
-
     }
 
   }

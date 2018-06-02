@@ -162,15 +162,15 @@
 .product-classify .title .title-ch{font-size: 30px;font-weight: bold;line-height: 1;}
 .product-classify .title .title-en{font-size: 12px;line-height: 1;text-transform: uppercase;}
 /* 分类列表 */
-.product-classify{width: 34%;float: left;border: 1px solid #0d7ad7;margin-bottom: 20px;}
-.product-classify .item-title{color: #ff7802;margin:0px 0 14px;padding:16px;font-weight: normal;}
+.product-classify{width: 34%;float: left;border: 1px solid #0d7ad7;margin-bottom: 20px;position: relative;}
+.product-classify .item-title{color: #ff7802;/* margin:0px 0 14px; */margin: 0;padding:16px;font-weight: normal;}
 
 .product-classify .list-group{margin-bottom: 0;}
-.product-classify .list-group-item{/* padding:10px;padding-bottom: 13px; */position: relative;;padding:0;border: none;background: #f6f6f6;
+.product-classify .list-group-item{/* padding:10px;padding-bottom: 13px; */ padding:0;border: none;background: #f6f6f6;
 	border-top: 1px dashed #0797dd;border-bottom:1px dashed #0797dd;}
 .product-classify .list-group-item:first-child{border-top: none;}
 .product-classify .list-group-item:last-child{border-bottom: none;}
-.product-classify .item-body{color: #ff5500;padding:0;padding-bottom:10px;}
+.product-classify .item-body{color: #ff5500;padding:0 10px;padding-bottom:10px;}
 .product-classify .item-body a{text-decoration: none;text-align:center;font-size:14px;display: inline-block;width:90px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;vertical-align: middle;color: #888;padding:11px 0;}
 .product-classify .item-body a.active,.product-classify .item-body a:focus,.product-classify .item-body a:hover{color: #ff7802;background-color: transparent;border:none;}
 
@@ -185,6 +185,12 @@
 /* .product-classify .menu-item .ico-arrow-l{margin-top: 8px;} */
 .product-classify .menu-item.current .ico-arrow-l,
 .product-classify .menu-item:hover .ico-arrow-l{background-position: 0 -11px;}
+
+.index-box .product-classify .item-body{display: none;}
+
+.index-box .product-show .product-classify .item-title{position: relative;}
+/* .index-box .product-show .product-classify .item-title.current:after{content: '';display: block;position: absolute;top: 0px;bottom: 0px;left:97%;width:10px;overflow: hidden;background: #f6f6f6;z-index: 5;}
+ */
 
 /* 产品展示标题 */
 .product-display{width: 64%;float: right;}
