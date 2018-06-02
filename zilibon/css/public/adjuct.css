@@ -214,7 +214,7 @@
 	.product-classify .item-body .line {padding: 14px 5px 5px;margin-left: 10px;}
 
 	.product-classify .list-group{max-height: 828px;overflow-y: auto;}
-	.list-box .product-classify .list-group{max-height: 860px;overflow-y: auto;}
+	.list-box .product-classify .list-group{max-height: 900px;overflow-y: auto;}
 	.product-show .product-classify-v2 .list-group-item{position: static;}
 	.product-show .product-classify-v2 .item-body{
 		position:absolute;left:98%;top:-1px;bottom:-1px;width:100%;/* height: 100%; */
@@ -227,7 +227,7 @@
 	.contact-info-box{padding:0 8%;}
 	.product-classify .list-group{max-height: 828px;overflow-y: auto;}
 
-	.list-box .product-classify .list-group{max-height: 860px;overflow-y: auto;}
+	.list-box .product-classify .list-group{max-height: 900px;overflow-y: auto;}
 	.product-show .product-classify .list-group-item{position: static;}
 	.product-show .product-classify .item-body{
 		position:absolute;left:98%;top:-1px;bottom:-1px;width:100%;/* height: 100%; */

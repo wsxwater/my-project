@@ -185,8 +185,10 @@ $.classifyMenu={
     if (width > 767) {
         $target1.fadeIn();
         $target2.fadeIn();
+        $('.product-show .product-classify-v2 .item-body').fadeOut();
     }else{
         $object.removeClass('current');
+        $('.product-show .product-classify-v2 .item-body').fadeOut();
         $target1.fadeOut();
         $target2.fadeOut();
     }
