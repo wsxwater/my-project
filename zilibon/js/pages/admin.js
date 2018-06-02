@@ -152,20 +152,15 @@ $.classifyMenu={
     
     //菜单收缩
     //产品分类，行业分类一级菜单点击显示二级菜单
-    $('.product-show .product-classify').on('click mouseover','.item-title',function(e) {
+    $('.product-show .product-classify').on('click mouseenter','.item-title',function(e) {
       /*$(this).toggleClass('current').siblings('.item-body').fadeToggle().parents('.product-show').find('.item-title').not($(this)).removeClass('current').parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).fadeOut();*/
-      $(this).toggleClass('current').siblings('.item-body').fadeToggle().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
+        $(this).addClass('current').siblings('.item-body').fadeIn().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
+        return false;
     });
 
-    
-
-
-    // if (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-        
-    // }
-    
-
-    
+    $('.product-show .product-classify .list-group-wrap').mouseleave(function (e) {
+        $('.product-show .product-classify .item-title').removeClass('current').siblings('.item-body').fadeOut();
+    })
 
     // $(window).resize(function () {
     //   _this.checkStatuForResize();

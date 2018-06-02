@@ -258,8 +258,11 @@
         <div class="product-show"><!--  listbg -->
             <div class="container">
                 <div class="clearfix white">
-                    <div class="product-classify">
-                        
+                    <div class="product-classify product-classify-v2">
+                        <!-- 
+                          product-classify-v1：上下显示
+                          product-classify-v2：左右显示 
+                        -->
                         <section class="clearfix">
                             <div class="card">
                                 <div class="card-image">
@@ -275,67 +278,69 @@
                                     </div>  
                                 </div>
                             </div>
-                            <ul class="list-group" data-ispc="true">
-                                <li class="list-group-item">
-                                     <div class="item-title menu-item clearfix">
-                                         <a href="javascript:;"><img src="../images/icoShop/ico_01.png" class="ico">洗衣粉<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
-                                     </div>
-                                     <div class="item-body clearfix">
-                                             <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
-                                             <a href="javascript:;">增白洗衣粉</a>
-                                             <a href="javascript:;">低温洗衣粉</a><span class="line"></span>
-                                             <a href="javascript:;">低泡洗衣粉</a>
-                                             <a href="javascript:;">通用洗衣粉</a><span class="line"></span>
-                                             <a href="javascript:;">无磷洗衣粉</a>
-                                             <a href="javascript:;">黄碱洗衣粉</a><span class="line"></span>
-                                     </div> 
-                                </li>
-                                <li class="list-group-item">
-                                     <div class="item-title menu-item clearfix">
-                                         <a href="javascript:;"><img src="../images/icoShop/ico_02.png" class="ico">清洗粉<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
-                                     </div>
-                                     <div class="item-body clearfix">
-                                             <a href="javascript:;">强力除油粉</a><span class="line"></span>
-                                             <a href="javascript:;">地毯清洁粉</a>
-                                             <a href="javascript:;">去渍粉</a><span class="line"></span>
-                                             <a href="javascript:;">通渠粉</a>
-                                     </div> 
-                                </li>
-                                <li class="list-group-item">
-                                     <div class="item-title menu-item clearfix">
-                                         <a href="javascript:;"><img src="../images/icoShop/ico_03.png" class="ico">洗洁精<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
-                                     </div>
-                                     <div class="item-body clearfix">
-                                             <a href="javascript:;">通用洗洁精</a><span class="line"></span>
-                                             <a href="javascript:;">易过水洗洁精</a>
-                                             <a href="javascript:;">低泡洗洁精</a><span class="line"></span>
-                                             <a href="javascript:;">餐具洗洁精</a>
-                                     </div> 
-                                </li>
-                                <li class="list-group-item">
-                                     <div class="item-title menu-item clearfix">
-                                         <a href="javascript:;"><img src="../images/icoShop/ico_04.png" class="ico">洗衣液<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
-                                     </div>
-                                     <div class="item-body clearfix">
-                                             <a href="javascript:;">工业洗衣液</a><span class="line"></span>
-                                             <a href="javascript:;">去油洗衣液</a>
-                                             <a href="javascript:;">浓缩洗衣液</a><span class="line"></span>
-                                     </div> 
-                                </li>
-                                <li class="list-group-item">
-                                     <div class="item-title menu-item clearfix">
-                                         <a href="javascript:;"><img src="../images/icoShop/ico_05.png" class="ico">清洗剂<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
-                                     </div>
-                                     <div class="item-body clearfix">
-                                             <a href="javascript:;">除油洗涤剂</a><span class="line"></span>
-                                             <a href="javascript:;">除蜡洗涤剂</a>
-                                             <a href="javascript:;">强力洗涤剂</a><span class="line"></span>
-                                             <a href="javascript:;">液晶洗涤剂</a>
-                                             <a href="javascript:;">洗手液</a><span class="line"></span>
-                                             <a href="javascript:;">全能洗涤剂</a>
-                                     </div> 
-                                </li>
-                            </ul>
+                            <div class="list-group-wrap" data-ispc="true">
+                              <ul class="list-group"><!--  data-ispc="true" -->
+                                  <li class="list-group-item">
+                                       <div class="item-title menu-item clearfix">
+                                           <a href="javascript:;"><img src="../images/icoShop/ico_01.png" class="ico">洗衣粉<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
+                                       </div>
+                                       <div class="item-body clearfix">
+                                               <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
+                                               <a href="javascript:;">增白洗衣粉</a>
+                                               <a href="javascript:;">低温洗衣粉</a><span class="line"></span>
+                                               <a href="javascript:;">低泡洗衣粉</a>
+                                               <a href="javascript:;">通用洗衣粉</a><span class="line"></span>
+                                               <a href="javascript:;">无磷洗衣粉</a>
+                                               <a href="javascript:;">黄碱洗衣粉</a><span class="line"></span>
+                                       </div> 
+                                  </li>
+                                  <li class="list-group-item">
+                                       <div class="item-title menu-item clearfix">
+                                           <a href="javascript:;"><img src="../images/icoShop/ico_02.png" class="ico">清洗粉<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
+                                       </div>
+                                       <div class="item-body clearfix">
+                                               <a href="javascript:;">强力除油粉</a><span class="line"></span>
+                                               <a href="javascript:;">地毯清洁粉</a>
+                                               <a href="javascript:;">去渍粉</a><span class="line"></span>
+                                               <a href="javascript:;">通渠粉</a>
+                                       </div> 
+                                  </li>
+                                  <li class="list-group-item">
+                                       <div class="item-title menu-item clearfix">
+                                           <a href="javascript:;"><img src="../images/icoShop/ico_03.png" class="ico">洗洁精<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
+                                       </div>
+                                       <div class="item-body clearfix">
+                                               <a href="javascript:;">通用洗洁精</a><span class="line"></span>
+                                               <a href="javascript:;">易过水洗洁精</a>
+                                               <a href="javascript:;">低泡洗洁精</a><span class="line"></span>
+                                               <a href="javascript:;">餐具洗洁精</a>
+                                       </div> 
+                                  </li>
+                                  <li class="list-group-item">
+                                       <div class="item-title menu-item clearfix">
+                                           <a href="javascript:;"><img src="../images/icoShop/ico_04.png" class="ico">洗衣液<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
+                                       </div>
+                                       <div class="item-body clearfix">
+                                               <a href="javascript:;">工业洗衣液</a><span class="line"></span>
+                                               <a href="javascript:;">去油洗衣液</a>
+                                               <a href="javascript:;">浓缩洗衣液</a><span class="line"></span>
+                                       </div> 
+                                  </li>
+                                  <li class="list-group-item">
+                                       <div class="item-title menu-item clearfix">
+                                           <a href="javascript:;"><img src="../images/icoShop/ico_05.png" class="ico">清洗剂<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
+                                       </div>
+                                       <div class="item-body clearfix">
+                                               <a href="javascript:;">除油洗涤剂</a><span class="line"></span>
+                                               <a href="javascript:;">除蜡洗涤剂</a>
+                                               <a href="javascript:;">强力洗涤剂</a><span class="line"></span>
+                                               <a href="javascript:;">液晶洗涤剂</a>
+                                               <a href="javascript:;">洗手液</a><span class="line"></span>
+                                               <a href="javascript:;">全能洗涤剂</a>
+                                       </div> 
+                                  </li>
+                              </ul>
+                            </div>
                         </section>
                         <section class="clearfix">
                             
@@ -353,69 +358,71 @@
                                     </div>  
                                 </div>
                             </div>
-                            <ul class="list-group" data-ispc="true">
-                                <li class="list-group-item">
-                                     <div class="item-title menu-item clearfix">
-                                         <a href="javascript:;"><img src="../images/icoShop/ico_06.png" class="ico">工业清洗行业<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
-                                     </div>
-                                     <div class="item-body clearfix">
-                                             <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
-                                             <a href="javascript:;">通用洗衣粉</a>
-                                             <a href="javascript:;">工业洗衣液</a><span class="line"></span>
-                                             <a href="javascript:;">除油清洗剂</a>
-                                             <a href="javascript:;">液晶清洗剂</a><span class="line"></span>
-                                             <a href="javascript:;">除锈清洗剂</a>
-                                     </div> 
-                                </li>
-                                <li class="list-group-item">
-                                     <div class="item-title menu-item clearfix">
-                                         <a href="javascript:;"><img src="../images/icoShop/ico_07.png" class="ico">酒店客房<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
-                                     </div>
-                                     <div class="item-body clearfix">
-                                             <a href="javascript:;">地毯清洁粉</a><span class="line"></span>
-                                             <a href="javascript:;">去渍粉</a>
-                                             <a href="javascript:;">通渠粉</a><span class="line"></span>
-                                             <a href="javascript:;">强力洗衣粉</a>
-                                             <a href="javascript:;">增白洗衣粉</a><span class="line"></span>
-                                             <a href="javascript:;">黄碱洗衣粉</a>
-                                             <a href="javascript:;">洗手液</a><span class="line"></span>
-                                             <a href="javascript:;">全能清洗剂</a>
-                                     </div> 
-                                </li>
-                                <li class="list-group-item">
-                                     <div class="item-title menu-item clearfix">
-                                         <a href="javascript:;"><img src="../images/icoShop/ico_08.png" class="ico">餐饮行业<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
-                                     </div>
-                                     <div class="item-body clearfix">
-                                             <a href="javascript:;">餐具洗洁精</a><span class="line"></span>
-                                             <a href="javascript:;">强力除油粉</a>
-                                             <a href="javascript:;">低泡洗衣粉</a><span class="line"></span>
-                                             <a href="javascript:;">通用洗衣粉</a>
-                                             <a href="javascript:;">去渍粉</a><span class="line"></span>
-                                             <a href="javascript:;">通渠粉</a>
-                                     </div> 
-                                </li>
-                                <li class="list-group-item">
-                                     <div class="item-title menu-item clearfix">
-                                         <a href="javascript:;"><img src="../images/icoShop/ico_09.png" class="ico">洗衣房<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
-                                     </div>
-                                     <div class="item-body clearfix">
-                                             <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
-                                             <a href="javascript:;">无磷洗衣粉</a>
-                                             <a href="javascript:;">增白洗衣粉</a><span class="line"></span>
-                                             <a href="javascript:;">去油污洗衣液</a>
-                                             <a href="javascript:;">浓缩洗衣液</a><span class="line"></span>
-                                     </div> 
-                                </li>
-                                <li class="list-group-item">
-                                     <div class="item-title menu-item clearfix">
-                                         <a href="javascript:;"><img src="../images/icoShop/ico_10.png" class="ico">公共区域<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
-                                     </div>
-                                     <div class="item-body clearfix align-center">
-                                             <a href="javascript:;">全部</a>
-                                     </div> 
-                                </li>
-                            </ul>
+                            <div class="list-group-wrap" data-ispc="true">
+                              <ul class="list-group"><!--  data-ispc="true" -->
+                                  <li class="list-group-item">
+                                       <div class="item-title menu-item clearfix">
+                                           <a href="javascript:;"><img src="../images/icoShop/ico_06.png" class="ico">工业清洗行业<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
+                                       </div>
+                                       <div class="item-body clearfix">
+                                               <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
+                                               <a href="javascript:;">通用洗衣粉</a>
+                                               <a href="javascript:;">工业洗衣液</a><span class="line"></span>
+                                               <a href="javascript:;">除油清洗剂</a>
+                                               <a href="javascript:;">液晶清洗剂</a><span class="line"></span>
+                                               <a href="javascript:;">除锈清洗剂</a>
+                                       </div> 
+                                  </li>
+                                  <li class="list-group-item">
+                                       <div class="item-title menu-item clearfix">
+                                           <a href="javascript:;"><img src="../images/icoShop/ico_07.png" class="ico">酒店客房<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
+                                       </div>
+                                       <div class="item-body clearfix">
+                                               <a href="javascript:;">地毯清洁粉</a><span class="line"></span>
+                                               <a href="javascript:;">去渍粉</a>
+                                               <a href="javascript:;">通渠粉</a><span class="line"></span>
+                                               <a href="javascript:;">强力洗衣粉</a>
+                                               <a href="javascript:;">增白洗衣粉</a><span class="line"></span>
+                                               <a href="javascript:;">黄碱洗衣粉</a>
+                                               <a href="javascript:;">洗手液</a><span class="line"></span>
+                                               <a href="javascript:;">全能清洗剂</a>
+                                       </div> 
+                                  </li>
+                                  <li class="list-group-item">
+                                       <div class="item-title menu-item clearfix">
+                                           <a href="javascript:;"><img src="../images/icoShop/ico_08.png" class="ico">餐饮行业<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
+                                       </div>
+                                       <div class="item-body clearfix">
+                                               <a href="javascript:;">餐具洗洁精</a><span class="line"></span>
+                                               <a href="javascript:;">强力除油粉</a>
+                                               <a href="javascript:;">低泡洗衣粉</a><span class="line"></span>
+                                               <a href="javascript:;">通用洗衣粉</a>
+                                               <a href="javascript:;">去渍粉</a><span class="line"></span>
+                                               <a href="javascript:;">通渠粉</a>
+                                       </div> 
+                                  </li>
+                                  <li class="list-group-item">
+                                       <div class="item-title menu-item clearfix">
+                                           <a href="javascript:;"><img src="../images/icoShop/ico_09.png" class="ico">洗衣房<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
+                                       </div>
+                                       <div class="item-body clearfix">
+                                               <a href="javascript:;">强力洗衣粉</a><span class="line"></span>
+                                               <a href="javascript:;">无磷洗衣粉</a>
+                                               <a href="javascript:;">增白洗衣粉</a><span class="line"></span>
+                                               <a href="javascript:;">去油污洗衣液</a>
+                                               <a href="javascript:;">浓缩洗衣液</a><span class="line"></span>
+                                       </div> 
+                                  </li>
+                                  <li class="list-group-item">
+                                       <div class="item-title menu-item clearfix">
+                                           <a href="javascript:;"><img src="../images/icoShop/ico_10.png" class="ico">公共区域<!-- <i class="material-icons pull-right">keyboard_arrow_right</i> --> <span class="ico-arrow-l pull-right"></span></a>
+                                       </div>
+                                       <div class="item-body clearfix align-center">
+                                               <a href="javascript:;">全部</a>
+                                       </div> 
+                                  </li>
+                              </ul>
+                            </div>
                         </section>
                     </div>
                     <div class="product-display">
@@ -640,7 +647,7 @@
 
             /*产品分类，行业分类 标题点击显示菜单*/
             $('.product-show').on('click','.title-sec',function () {
-                  $(this).parents('.card').siblings('.list-group').toggle()/*.parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide()*/;
+                  $(this).parents('.card').siblings('.list-group-wrap').toggle()/*.parents('.product-show').find('.title-sec').parents('.card').siblings('.list-group').not($(this).parents('.card').siblings('.list-group')).hide()*/;
             })
             
 
