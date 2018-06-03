@@ -163,8 +163,8 @@ $.classifyMenu={
         return false;
     });
 
-    $('.product-show .product-classify .list-group-wrap').mouseleave(function (e) {
-        $('.product-show .product-classify .item-title').removeClass('current').siblings('.item-body').fadeOut();
+    $('.product-show .product-classify-v2 .list-group-wrap').mouseleave(function (e) {
+        $('.product-show .product-classify-v2 .item-title').removeClass('current').siblings('.item-body').fadeOut();
     })
 
     $(window).resize(function () {
