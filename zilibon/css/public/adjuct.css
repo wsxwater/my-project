@@ -228,8 +228,8 @@
 	.product-classify .list-group{max-height: 828px;overflow-y: auto;}
 
 	.list-box .product-classify .list-group{max-height: 900px;overflow-y: auto;}
-	.product-show .product-classify .list-group-item{position: static;}
-	.product-show .product-classify .item-body{
+	.product-show .product-classify-v2 .list-group-item{position: static;}
+	.product-show .product-classify-v2 .item-body{
 		position:absolute;left:98%;top:-1px;bottom:-1px;width:100%;/* height: 100%; */
 		border:1px solid #0d7ad7;z-index:2;
 	}

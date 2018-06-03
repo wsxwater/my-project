@@ -152,8 +152,13 @@ $.classifyMenu={
     
     //菜单收缩
     //产品分类，行业分类一级菜单点击显示二级菜单
-    $('.product-show .product-classify').on('click mouseenter','.item-title',function(e) {
+    $('.product-show .product-classify-v1').on('click','.item-title',function(e) {
       /*$(this).toggleClass('current').siblings('.item-body').fadeToggle().parents('.product-show').find('.item-title').not($(this)).removeClass('current').parents('.product-show').find('.item-body').not($(this).siblings('.item-body')).fadeOut();*/
+        $(this).toggleClass('current').siblings('.item-body').fadeToggle().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
+        return false;
+    });
+
+    $('.product-show .product-classify-v2').on('mouseenter','.item-title',function(e) {
         $(this).addClass('current').siblings('.item-body').fadeIn().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
         return false;
     });
