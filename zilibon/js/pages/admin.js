@@ -163,7 +163,7 @@ $.classifyMenu={
         return false;
     });
 
-    $('.product-show .product-classify .item-body').on('click','a',function(e) {
+    $('.product-show .product-classify-v2 .item-body').on('click','a',function(e) {
         $(this).parent().fadeOut()
                         .siblings().removeClass('current');
     });
