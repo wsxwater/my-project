@@ -158,7 +158,7 @@ $.classifyMenu={
         return false;
     });
 
-    $('.product-show .product-classify-v2').on('mouseenter','.item-title',function(e) {
+    $('.product-show .product-classify-v2').on('click mouseenter','.item-title',function(e) {
         $(this).addClass('current').siblings('.item-body').fadeIn().parent().siblings().find('.item-title').not($(this)).removeClass('current').parent().siblings().find('.item-body').not($(this).siblings('.item-body')).fadeOut();
         return false;
     });

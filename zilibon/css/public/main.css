@@ -163,14 +163,15 @@
 .product-classify .title .title-en{font-size: 12px;line-height: 1;text-transform: uppercase;}
 /* 分类列表 */
 .product-classify{width: 34%;float: left;border: 1px solid #0d7ad7;margin-bottom: 20px;}
-.product-classify .item-title{color: #ff7802;/* margin:0px 0 14px; */margin: 0;padding:16px;font-weight: normal;}
+.product-classify .item-title{color: #ff7802;margin:0px 0 14px;padding:16px;font-weight: normal;}
+.product-classify-v2 .item-title{margin: 0;}
 .product-classify .list-group-wrap{position: relative;}
 .product-classify .list-group{margin-bottom: 0;}
 .product-classify .list-group-item{/* padding:10px;padding-bottom: 13px; */ padding:0;border: none;background: #f6f6f6;
 	border-top: 1px dashed #0797dd;border-bottom:1px dashed #0797dd;}
 .product-classify .list-group-item:first-child{border-top: none;}
 .product-classify .list-group-item:last-child{border-bottom: none;}
-.product-classify .item-body{color: #ff5500;/* padding:0 10px; */padding-bottom:10px;}
+.product-classify .item-body{color: #ff5500;padding-left:5px;padding-bottom:10px;}
 .product-classify .item-body a{text-decoration: none;text-align:center;font-size:14px;display: inline-block;width:90px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;vertical-align: middle;color: #888;padding:11px 0;}
 .product-classify .item-body a.active,.product-classify .item-body a:focus,.product-classify .item-body a:hover{color: #ff7802;background-color: transparent;border:none;}
 
