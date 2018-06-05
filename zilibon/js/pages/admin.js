@@ -163,6 +163,13 @@ $.classifyMenu={
         return false;
     });
 
+    $('.product-show .product-classify .item-body').on('click','a',function(e) {
+        $(this).parent().fadeOut()
+                        .siblings().removeClass('current');
+    });
+
+
+
     $('.product-show .product-classify-v2 .list-group-wrap').mouseleave(function (e) {
         $('.product-show .product-classify-v2 .item-title').removeClass('current').siblings('.item-body').fadeOut();
     })
