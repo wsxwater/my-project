@@ -217,6 +217,7 @@ padding-left: 0;padding-right: 0; }
 	content: '';display: block;width:50px;height: 1px;overflow: hidden;background: #626262;}
 .introduct-box .title-e:before{right: 100%;}
 .introduct-box .title-e:after{left: 100%;}
+.introduct-box .thumbnail a>img, .introduct-box .thumbnail>img{height: 214px;}
 
 /* 友情链接 */
 .links-box{position: relative;}
@@ -299,6 +300,7 @@ border-radius: 0;-webkit-border-radius: 0;-moz-border-radius: 0;-o-border-radius
 .banner-box h4{border:1px dashed #fff;border-right: none;border-left: none;padding: 10px 0;font-weight: normal;}
 
 .banner-card{margin-bottom: 50px;}
+.banner-card.m-b-0{margin-bottom: 0;}
 .banner-card .theme-col-orge{color: #ff7a03;}
 .cbtn{display: inline-block;color: #FFF;text-decoration: none;background-color: #fd940b;padding: 2px 10px;margin:0 2px;}
 .cbtn:focus,.cbtn:hover{text-decoration: none;color: #FFF;}
