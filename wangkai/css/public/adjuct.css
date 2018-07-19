@@ -30,7 +30,7 @@
 	.card-box .card-classify .list-group-item-info{display: none;}
 	.card-box .card-classify .list-group-item img{display: none;}
 	.card-box .card-classify .list-group .card-cata-title{padding: 2% 0;}
-	
+
 	.card-box .card-list .row{margin:0 -7px;}
 	.list-box .card-box .card-list .row{margin:0 -15px;}
 	.index-box .card-list .row>div{padding: 0 7px;}
@@ -59,7 +59,9 @@
 
     [data-ispc~=true]{display: none;}
     [data-ispc~=false]{display: block;}
-
+    
+    .footbox-row>div{padding-left: 15px;padding-right: 15px}
+    .footbox-row>div>div{padding-left: 0;padding-right: 0;}
     .footbox-b .nav>li{min-width: 30px;}
     .footbox .logo-box{text-align: center;}
     .tel-number{font-size: 14px;}
