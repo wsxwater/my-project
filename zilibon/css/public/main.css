@@ -34,15 +34,15 @@
 .navbar-static .navbar-brand img{max-width: 100%;}
 .navbar-static .navbar-nav>li>a{margin-top: 0;}
 /* 头部小屏幕收缩内容 */
-.navbar-nav>li>a{color: #888;}
-.navbar-nav>li{width: 74px;}
+.navbar-nav>li>a{color: #888;margin-left: 0;padding: 7px 2px 2px;}
+.navbar-nav>li{width: 60px;}
 .navbar-nav>li.service-hotline{width: auto;}
 .service-hotline img{display: block;width: 230px;height: 51px;}
 .service-hotline .info-box{height: auto;background-color: transparent;margin-bottom: 0;}
 .service-hotline .info-box .icon{width:auto;height: auto;background-color: transparent;}
 .service-hotline .info-box .icon span{display: block;width: 40px;height: 40px;margin-top: 5px;background: url('../../images/icon/ico-phone.png') 0 0 no-repeat;}
 .service-hotline .info-box.hotline-blue .icon span{background-position: 0 -39px;margin-top: 8px;}
-.service-hotline .info-box .content{padding-top: 0;padding-bottom: 0;}
+.service-hotline .info-box .content{padding: 0 2px;}
 .service-hotline .info-box .content div{line-height: 26px;color: #ff5500;}
 .service-hotline .info-box.hotline-blue .content div{color: #00a7eb;}
 
@@ -53,6 +53,7 @@
 .ico-navbar3{background-position: 0 -68px;}
 .ico-navbar4{background-position: 0 -102px;}
 .ico-navbar.ico-qq{height: 18px;width: 18px;background-position: 0 -136px;margin-right: 10px;}
+.ico-navbar5{background-position: 0 -154px;}
 /* 手机网站、官方微信 hover弹出二维码 */
 .hover-img{position: relative;}
 .hover-img-box{display: none;position: absolute;top:60px;left: 50%;margin-left: -70px;padding:5px;z-index: 3;margin-top: 12px;margin-bottom: 0;border: 1px solid #ddd;}
@@ -62,6 +63,8 @@
 .hover-img .arrow{border-width: 11px;top: -10px;left: 50%;margin-left: -11px;border-bottom-color: #ddd;border-top-width:0;}
 .hover-img .arrow:after {content: " ";top: 1px;margin-left: -10px;border-width: 10px;border-top-width: 0;border-bottom-color: #fff;}
 
+/* qq咨询 */
+.online-qq{position: fixed;bottom: 300px;right: 10px;z-index: 10;display: block;width: 70px;}
 
 /*产品中心+导航*/
 .shop-list-box{/* height:60px; */color:#FFF;}

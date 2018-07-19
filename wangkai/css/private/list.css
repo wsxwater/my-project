@@ -1,0 +1,12 @@
+.list-box .card-list .list-group{margin:12px 0;padding: 0 7px;}
+.list-box .card-list .list-group-item{border: none;padding: 0 7px;}
+p.ellipse{height: 60px;line-height: 20px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
+p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
+
+
+/* 新闻 */
+/* 常见问题 */
+.card-list-title{border-bottom:1px solid #f8b62b;margin-top: 10px;padding: 10px 0;}
+.card-list-title h3{font-size: 24px;line-height: 1;position: relative;float: left;}
+.card-list-title .line{margin-left: 5px;border-width: 8px;padding:20px 5px 4px;}
+.card-list-title .navbar-form{margin: 0;padding: 0;padding-top: 2px;}

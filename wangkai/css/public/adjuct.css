@@ -1,0 +1,119 @@
+
+@media screen and (max-width: 320px){
+}
+@media screen and (max-width: 767px){
+	.navbar-nav{display: none;}
+
+	.index-box .vbtn-info{font-size: 18px;}
+
+	.shortcut dt{float: none;width: 100%;}
+	.shortcut-list{padding-left: 0;}
+	.shortcut-list li{width: 49%;}
+	.shortcut-list li a{padding:5px 0;}
+
+	/* 公司动态、行业资讯、常见问题 */
+	.tab-show{display: block;}
+	.tab-show-card{display: none;}
+
+	.card-box .card-cata,.card-box .card-classify{width: 100%;float: none;}
+	.card-box .card-list{width: 100%;float: none;}
+	.card-box .card-show{width: 100%;float: none;}
+	.product-list-group .product-list{width: 50%;float: left;}
+	.product-list-group .product-list.product-list-one{width: 100%;float: none;}
+	.product-list-group .product-list.product-list-one a{width: 48%;}
+	.card-cata-title{font-size: 20px;}
+	.card-show-body .btn-more{line-height: 1;}
+
+	.card-box .card-classify .list-group-item{width: 50%;float: left;border-left: 1px dashed #FFF;}
+	.card-box .card-classify .list-group-item.item-more{width: 100%;float: none;border-left-color: transparent;}
+    .card-box .card-classify .list-group-item:nth-of-type(odd){border-left-color: transparent;}
+	.card-box .card-classify .list-group-item-info{display: none;}
+	.card-box .card-classify .list-group-item img{display: none;}
+	.card-box .card-classify .list-group .card-cata-title{padding: 2% 0;}
+	
+	.card-box .card-list .row{margin:0 -7px;}
+	.list-box .card-box .card-list .row{margin:0 -15px;}
+	.index-box .card-list .row>div{padding: 0 7px;}
+	.list-box .card-list .list-group-item>div{padding-right: 0;}
+	.list-box .card-list .list-group-item h4{text-align: center;}
+
+	.product-list-group a{width: 100%;padding:5px 10px;}
+
+	.index-box .itembox .leftarea{width: 100%;float: none;}
+	.index-box .itembox .rightarea{padding-left: 0;}
+	.index-box .itembox .title{font-size: 24px;padding: 5% 0;}
+
+	.product-list-group .card-show-body{display: none;}
+	.product-list-group:before,.product-list-group:after{display: none;}
+
+	/* 关于万凯页面 */
+	.swiper-slide-title{font-size: 12px;}
+	.card-box .alert{font-size: 13px;}
+
+	/* 表单 */
+	.sample-form p{font-size: 15px;}
+
+	/* 新闻 */
+	/* 常见问题 */
+	.card-list-title .navbar-form{float: none;width: 100%;padding-top: 10px;}
+
+    [data-ispc~=true]{display: none;}
+    [data-ispc~=false]{display: block;}
+
+    .footbox-b .nav>li{min-width: 30px;}
+    .footbox .logo-box{text-align: center;}
+    .tel-number{font-size: 14px;}
+    .tel-number i{font-size:16px;}
+}
+@media screen and (min-width: 768px) and (max-width: 786px){
+	.card-box .card-cata, .card-box .card-classify{width: 100%;float: none;}
+	.card-box .card-list{width: 100%;float: none;}
+	.card-box .card-show{width: 100%;float: none;}
+    .product-list-group .product-list{width: 50%;float: left;}
+    .product-list-group .product-list.product-list-one{width: 100%;float: none;}
+    .card-show-body .btn-more{line-height: 1;}
+    .product-list-group a{width: 48%;padding:5px 10px;}
+    .product-list-group .product-list.product-list-one a{width: 48%;}
+    .product-list-group .card-show-body{display: none;}
+    .product-list-group:before,.product-list-group:after{display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.navbar-nav{display: none;}
+
+	.nav-box .nav-list.nav>li{width: 18%;}
+    
+    .card-cata-title{font-size: 20px;} 
+	.index-box .itembox .title{font-size: 24px;padding: 5% 0;}
+
+	.card-box .card-classify{width: 100%;float: none;}
+	.card-box .card-list{width: 100%;float: none;}
+	
+	.card-box .card-classify .list-group-item{width: 50%;float: left;border-left: 1px dashed #FFF;}
+	.card-box .card-classify .list-group-item.item-more{width: 100%;float: none;border-left-color: transparent;}
+	.card-box .card-classify .list-group-item:nth-of-type(odd){border-left-color: transparent;}
+	.card-box .card-classify .list-group-item-info{display: none;}
+	.card-box .card-list .row{margin: 0 -15px;}
+	
+	.tel-number{font-size: 16px;}
+	.tel-number i{font-size:18px;}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+	.nav-box .nav-list.nav>li{width: 16%;}
+
+	.card-box .card-classify{width: 100%;float: none;}
+	.card-box .card-list{width: 100%;float: none;}
+	/* .card-box .card-classify .list-group-item:not(.item-more){width: 50%;float: left;border-left: 1px dashed #FFF;} */
+	.card-box .card-classify .list-group-item{width: 50%;float: left;border-left: 1px dashed #FFF;}
+	.card-box .card-classify .list-group-item.item-more{width: 100%;float: none;border-left-color: transparent;}
+	.card-box .card-classify .list-group-item:nth-of-type(odd){border-left-color: transparent;}
+	.card-box .card-classify .list-group-item-info{display: none;}
+
+	.case-box .card-list .row{margin: 0 -15px;}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.card-box .card-classify .list-group .card-cata-title{padding: 1.6% 0;}
+}
+@media screen and (min-width: 1200px){
+
+}
