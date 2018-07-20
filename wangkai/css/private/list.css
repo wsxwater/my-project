@@ -55,12 +55,13 @@ p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsi
 /* .reread-box img{max-height: 150px;} */
 /* .reread-box .swiper-slide{max-height: 150px;} */
 
-.looked-body{position: relative;padding-bottom: 300%;overflow: hidden;}
+.looked-body{position: relative;padding-bottom: 273%;overflow: hidden;width: 91%;}
 .looked-cell{position: absolute;top:0;left:0;width: 99.9999%;height: 100%;}
 .looked-cell p{margin:0;height: 33.3333%;padding:2px;}
 .looked-cell p img{background: #EEEEEE url('../../images/default.png') center center no-repeat;}
-.looked-ico .ico{width: 25px;height: 15px;}
-
+.looked-ico .ico{width: 25px;height: 15px;background: url('../../images/icon/ico-arrow.png') 0 0 no-repeat;}
+.looked-ico .ico-down{background-position: 0 -78px;}
+.looked-ico .ico-up{background-position: 0 -93px;}
 /*新闻详情 */
 .new-article-card .header{color: #52b6d0;border-color: #52b6d0;}
 .new-article-card.card .header,.new-article-card.card .body{padding:10px 0;}

@@ -64,7 +64,7 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 /* nav-list */
 .nav-box{border-bottom:4px solid #f8b62a;background-color: #52b6d0;}
 .nav-list.nav>li>a{display: block;font: 14px/14px "Microsoft YaHei", 微软雅黑;}
-.nav-box .nav-list.nav>li{display: inline-block;width: 12%;white-space:nowrap;font-size: 0;}
+.nav-box .nav-list.nav>li{display: inline-block;width: 10.6%;white-space:nowrap;font-size: 0;}
 .nav-box .nav-list.nav>li>a{padding: 24px 0;text-align: center;color: #FFF;}
 
 .nav-list.nav>li>a:hover,.nav-list.nav>li>a.active{background: #f49800;color: #FFF;

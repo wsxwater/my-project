@@ -178,6 +178,26 @@ $(function () {
 
     $.AdminBSB.rightSideBarM.activate();
     $.classifyMenu.activate();
+    
+    highlightPage();
+    function highlightPage() {
+        /**
+         * highlightPage():顶部导航高亮
+         */
+        var nav=$('.nav-list');
+        var links=$('.nav-list li');
+        console.log('test');
+
+        for (var i = 0; i < links.length; i++) {
+            var link_url=links.eq(i).children().attr('href');
+            var cur_url =window.location.href;
+            if (cur_url.indexOf(link_url)!=-1) {
+                links.eq(i).children().addClass('active')
+            }
+
+        }
+    } 
+    
 
 
 });
