@@ -50,6 +50,11 @@
 	.swiper-slide-title{font-size: 12px;}
 	.card-box .alert{font-size: 13px;}
 
+	/* 案例视频 */
+	.case-box .card-list .card.card-video .body{padding:10px 0;}
+	.case-video-box .leftarea{width: 30%;}
+	.case-video-box .rightarea{width: 70%;}
+
 	/* 表单 */
 	.sample-form p{font-size: 15px;}
 

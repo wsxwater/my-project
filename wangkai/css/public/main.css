@@ -106,19 +106,19 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 .title .title-divider:after{right: 25px;}
 
 .card-box .card-cata,
-.card-box .card-classify{width: 13%;float: left;margin-bottom: 10px;}
+.card-box .card-classify{width: 13%;float: left;/* margin-bottom: 10px; */}
 .card-box .card-show{width: 74%;float: left;padding: 0 5px;}
 .card-box .card-list{width: 87%;float: right;}
 .product-list-group{border-bottom:1px solid;position: relative;}
-.product-list-group:after,.product-list-group:before{content: '';position: absolute;top: 0;bottom: 0;width: 1px;background-color: #fff;width: 1px;}
+.product-list-group:after,.product-list-group:before{content: '';position: absolute;top: 0;bottom: 0;width: 1px;background-color: #fff;}
 .product-list-group:before{left: 13%;}
 .product-list-group:after{right: 13%;}
 .card-cata-title{font-size: 24px;}
 .product-list-group .product-list{padding: 2% 0;}
 .product-list-group a{color: #FFF;display: inline-block;width: 16%;text-align: center;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 0.4% 0;}
 .product-list-group a.btn-more{width: 100%;display: block;line-height: 34px;}
-.card-box .card-classify .list-group{ max-height: 595px; overflow-y: auto;}
-.card-box .card-classify .list-group-item{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;padding:10px;border-style: dashed;border-width: 1px;border-left: none;border-right: none;}
+.card-box .card-classify .list-group{ max-height: 590px; overflow-y: auto;}
+.card-box .card-classify .list-group-item{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;padding:8px 10px;border-style: dashed;border-width: 1px;border-left: none;border-right: none;}
 .card-box .card-classify .list-group-item img{display: inline-block;width: 18px;height: 18px;vertical-align: middle;margin-right: 5px;}
 .card-box .card-classify .list-group-item-warning{background-color: #f8b62b;}
 .card-box .card-classify .list-group-item-info{background-color: #52b6d0;margin-top: -1px;}
@@ -128,7 +128,8 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 /* .card-box .card-list .row>div{padding:0 7px;} */
 .case-box .card-list .card{margin-bottom: 10px;}
 .case-box .card-list .card .body{padding: 10px 0;}
-.case-box .card-list .card .body div{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+/* .case-box .card-list .card .body div{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+ */
 
 /* 公司资质 */
 .qualification{padding: 4% 0;}
