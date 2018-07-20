@@ -139,9 +139,12 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 
 
 /* 按钮控制 */
-.btn-ctrl{position: absolute;top:50%;width: 25px;height:45px;margin-top: -22px;color: #EFEFEF;z-index: 2;text-align: center;background-color: #fff;background: url('../../images/icon/ico-arrow.png') 0 0 no-repeat;}
+.btn-ctrl{position: absolute;top:50%;width: 25px;height:39px;margin-top: -22px;color: #EFEFEF;z-index: 2;text-align: center;background: #fff url('../../images/icon/ico-arrow.png') 0 0 no-repeat;}
 .btn-ctrl-l{left: 0;background-position: 0 0;}
-.btn-ctrl-r{right: 0;background-position: 0 -45px;}
+.btn-ctrl-r{right: 0;background-position: 0 -39px;}
+.product-show-item .btn-ctrl{width: 39px;border-radius: 50%;-o-border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;background-color: rgba(255,255,255,0.8);}
+.product-show-item .btn-ctrl-l{background-position: center 0;}
+.product-show-item .btn-ctrl-r{background-position: center -39px;}
 
 /* 公司动态 */
 .more{font-size:12px;padding:0 5px;display: inline-block;position: relative;color: #00a7eb;}

@@ -142,6 +142,7 @@
           </div>
           <div class="divider bg-default"></div>
         </div>
+
         
         <div class="card-box recommend-box">
           <div class="container">
@@ -255,38 +256,23 @@
               </div>
               <div class="col-xs-12 col-sm-2 col-md-2">
                 <section>
-                  <!-- <div class="reread-box">
-                    <p class="reread-title font-16">看了又看</p>
-                    <div class="reread-cell">
-                      <div class="reread-body">
-                          <div class="rectbox">
-                            <div class="rect">
-                              <img src="../images/list/reread1.jpg" class="btn-block" />
-                            </div>
-                          </div>
-                          <div class="rectbox">
-                            <div class="rect">
-                              <img src="../images/list/reread1.jpg" class="btn-block" />
-                            </div>
-                          </div>
-                          <div class="rectbox">
-                            <div class="rect">
-                              <img src="../images/list/reread1.jpg" class="btn-block" />
-                            </div>
-                          </div>
-                          <div class="rectbox">
-                            <div class="rect">
-                              <img src="../images/list/reread1.jpg" class="btn-block" />
-                            </div>
-                          </div>
+                  <div class="looked-box" data-ispc="true">
+                    <p class="looked-title font-16">看了又看</p>
+                    <div class="looked-body">
+                      <div class="looked-cell">
+                        <p><img src="../images/list/p1.jpg" class="btn-block" /></p>
+                        <p><img src="../images/list/reread1.jpg" class="btn-block" /></p>
+                        <p><img src="../images/list/p1.jpg" class="btn-block" /></p>
+                        <p><img src="../images/list/reread1.jpg" class="btn-block" /></p>
                       </div>
                     </div>
-                    <p class="reread-ico align-center m-t-10">
+                    <p class="looked-ico align-center m-t-10">
                       <a href="javascript:;" class="ico ico-down">&darr;</a>
                       <a href="javascript:;" class="ico ico-up">&uarr;</a>
                     </p>
-                  </div> -->
-                  <div class="reread-box">
+                  </div>
+                  
+                  <!-- <div class="reread-box">
                       <p class="reread-title font-16">看了又看</p>
                       <div class="reread-body">
                         <div class="reread-cell">
@@ -336,7 +322,7 @@
                         <a class="ico ico-down" href="javascript:;">&darr;</a>
                         <a class="ico ico-up" href="javascript:;">&uarr;</a>
                       </p>
-                  </div>
+                  </div> -->
                 </section>
               </div>
             </div>
@@ -457,24 +443,16 @@
                                 <div class="swiper-container gallery-right">
                                   <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                      <video src="../video/movie.ogg" controls="controls">
-                                      your browser does not support the video tag
-                                      </video>
+                                      <video src="../video/movie.ogg">your browser does not support the video tag</video>
                                     </div>
                                     <div class="swiper-slide">
-                                      <video src="../video/movie.ogg" controls="controls">
-                                      your browser does not support the video tag
-                                      </video>
+                                      <video src="../video/movie.ogg">your browser does not support the video tag</video>
                                     </div>
                                     <div class="swiper-slide">
-                                      <video src="../video/movie.ogg" controls="controls">
-                                      your browser does not support the video tag
-                                      </video>
+                                      <video src="../video/movie.ogg">your browser does not support the video tag</video>
                                     </div>
                                     <div class="swiper-slide">
-                                      <video src="../video/movie.ogg" controls="controls">
-                                      your browser does not support the video tag
-                                      </video>
+                                      <video src="../video/movie.ogg">your browser does not support the video tag</video>
                                     </div>
                                   </div>
                                 </div>
@@ -718,7 +696,6 @@
                 // centeredSlides: true,
                 // slidesPerView: 'auto',
                 // direction:'vertical',
-                // touchRatio: 0.2,
                 slideToClickedSlide: true
             });
             galleryRight.params.control = galleryThumbs;
@@ -736,8 +713,6 @@
             //轮播图片
             var viewSwiper = new Swiper('.pc-slide .view .swiper-container', {
               //autoHeight: true, //高度随内容变化
-              // prevButton:'.swiper-button-prev',
-              // nextButton:'.swiper-button-next',
               onSlideChangeStart: function() {
                     updateNavPosition();
               }
@@ -788,60 +763,45 @@
             })  
 
             /* 看了又看 */
-            function switchRereadTab() {
-              var $height=parseInt($('.reread-cell .rectbox').outerHeight());
-              $('.reread-cell').height($height*3);
-              var page=1;
-              var i=3;   //每版放3张图片
-              var $prev=$('.reread-ico .ico-up');
-              var $next=$('.reread-ico .ico-down');
-              var $body=$('.reread-body');
-              var len=$('.reread-body .rectbox').length;
-              var page_count=Math.ceil(len/i);
-
-              //获取.reread-body的高度
-              //var $height= $('.reread-cell').outerHeight();
-              console.log($height);
-
-              $next.on('click',function () {
-                  if (!$body.is(':animated')) {
-                      if (page==page_count) {
-                          page=1;
-                          $body.animate({top:'0px'},'slow');
-                      } else {
-                          $body.animate({top:'-='+$height},'slow');
-                          page++;
-                      }
+            var length=$('.looked-body p').length;
+            var $param=33.3333;
+            var $down=$('.looked-ico .ico-down');
+            var $up=$('.looked-ico .ico-up');
+            var $object=$('.looked-cell');
+            var now=0;
+            $down.click(function () {
+              if (!$object.is(':animated')) {
+                  if (now==length-1) {
+                      now=0;
+                      $object.animate({top:0},'slow');
+                  } else {
+                      now++;
+                      $object.animate({top:-now*$param+'%'},'slow');
                   }
-              });
-              $prev.on('click',function () {
-                  if (!$body.is(':animated')) {
-                      if (page==1) {
-                          page=page_count;
-                          $body.animate({top:'-='+$height*(page_count-1)},'slow');
-                      } else {
-                          $body.animate({top:'+='+$height},'slow');
-                          page--;
-                      }
-                  }
-              });
-            }
-            
-
-            // switchRereadTab(); 
-            // $(window).on('resize',function () {
-            //   switchRereadTab();
-            // });
-            // $('.reread-box .swiper-container').height($('.reread-cell .rectbox').outerHeight()*3)
-            var swswiper = new Swiper('.reread-box .swiper-container',{
-                prevButton:'.ico-down',
-                nextButton:'.ico-up',
-                //direction : 'vertical',
-                spaceBetween: 2,
-                //autoHeight:true,
-                //slidesPerColumn: 3,
-                //height:$('.reread-box .rectbox img').outerHeight(),
+                  console.log('down:'+now);
+              }
             });
+            $up.on('click',function () {
+                if (!$object.is(':animated')) {
+                    now--;
+                    if (now==-1) {
+                      now=length-1;
+                    }
+                    $object.animate({top:-Math.abs(now)*$param+'%'},'slow');
+                }
+                console.log('up:'+now);
+            });
+
+            
+            // var swswiper = new Swiper('.reread-box .swiper-container',{
+            //     prevButton:'.reread-box .ico-down',
+            //     nextButton:'.reread-box .ico-up',
+            //     //direction : 'vertical',
+            //     spaceBetween: 2,
+            //     //autoHeight:true,
+            //     //slidesPerColumn: 3,
+            //     //height:$('.reread-box .rectbox img').outerHeight(),
+            // });
 
 
             // $(window).on('resize',function () {
