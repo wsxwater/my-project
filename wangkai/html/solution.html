@@ -563,12 +563,16 @@
     
     <script>
        $(function(){
-            
+            /*公司资质*/
+            $('.qualification ').lightGallery({
+                thumbnail: true,
+                selector: '.card a'
+            });
+
+
             // var videoSwiper = new Swiper('.case-video-box .swiper-container',{
             //     spaceBetween : 2,
             // });
-
-
             var galleryRight = new Swiper('.gallery-right', {
                 spaceBetween: 2,
             });

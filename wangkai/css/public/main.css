@@ -67,6 +67,8 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 .nav-box .nav-list.nav>li{display: inline-block;width: 10.6%;white-space:nowrap;font-size: 0;}
 .nav-box .nav-list.nav>li>a{padding: 24px 0;text-align: center;color: #FFF;}
 
+.nav-list.nav>li>a:active{background: none;}
+.nav-list.nav>li>a:link{background: none;}
 .nav-list.nav>li>a:hover,.nav-list.nav>li>a.active{background: #f49800;color: #FFF;
 	background: -moz-linear-gradient(bottom,  #f49800 75%, #f4d300 100%);
 	background: -webkit-gradient(linear, left bottom, left top, color-stop(75%,#f49800), color-stop(100%,#f4d300)); 
