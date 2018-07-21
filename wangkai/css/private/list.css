@@ -92,5 +92,11 @@ p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsi
 
 
 /* 产品详情 */
-.floor-btns .btn{padding:10px 0;font-size: 16px!important;width: 100%;}
-.card-detail{float: left;width: 74%;}
+.fix-top{z-index: 20;}
+.floor-btns .btn{padding:10px 0;font-size: 16px!important;margin:10px 5px 10px 0;width: 100%;}
+.floor-btns .btn .ico-circle{margin-left: 0!important;}
+.card-floor-box .floor-btns .btn{width: auto;padding: 10px 6px;margin: 5px 2px;}
+.card-floor-box .floor-btns .btn .ico-circle{display: none;}
+.card-floor-box{float: left;width: 85%;padding:0 15px;}
+.card-floor-btns{float: left;width: 15%;}
+.card-floor-box img{display: block;width: 100%;}

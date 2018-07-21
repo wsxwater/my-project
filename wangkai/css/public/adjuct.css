@@ -55,6 +55,10 @@
 	.case-video-box .leftarea{width: 30%;}
 	.case-video-box .rightarea{width: 70%;}
 
+	/* 产品详情 */
+	.card-floor-box{padding: 0;width: 100%;float: none;}
+	.card-floor-box .floor-btns .btn{font-size: 12px!important;}
+
 	/* 表单 */
 	.sample-form p{font-size: 15px;}
 
