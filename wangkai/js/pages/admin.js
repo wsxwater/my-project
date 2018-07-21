@@ -179,7 +179,7 @@ $(function () {
     $.AdminBSB.rightSideBarM.activate();
     $.classifyMenu.activate();
     
-    //highlightPage();
+    highlightPage();
     function highlightPage() {
         /**
          * highlightPage():顶部导航高亮
