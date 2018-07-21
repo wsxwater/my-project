@@ -68,7 +68,7 @@ p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsi
 .card-video{border:1px solid #e2e2e2;}
 
 .case-box .card-list .card.card-video .body{padding:10px;}
-.case-video-box video{object-fit: contain;width: 100%;}
+.case-video-box video{/* object-fit: contain; */width: 100%;}
 .case-box .swiper-container.gallery-top{margin:0;}
 .case-box .swiper-container.gallery-thumbs{margin:10px 28px 0;}
 .gallery-top {width: 100%;}

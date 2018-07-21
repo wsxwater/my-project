@@ -191,6 +191,8 @@ $(function () {
         for (var i = 0; i < links.length; i++) {
             var link_url=links.eq(i).children().attr('href');
             var cur_url =window.location.href;
+            // console.log(cur_url);
+            // console.log(link_url);
             if (cur_url.indexOf(link_url)!=-1) {
                 links.eq(i).children().addClass('active')
             }
