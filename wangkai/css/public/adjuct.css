@@ -43,7 +43,7 @@
 	.index-box .itembox .rightarea{padding-left: 0;}
 	.index-box .itembox .title{font-size: 24px;padding: 5% 0;}
 
-	.product-list-group .card-show-body{display: none;}
+	.product-list-group .card-show-body{display: none;margin-top: 10px;}
 	.product-list-group:before,.product-list-group:after{display: none;}
 
 	/* 关于万凯页面 */
