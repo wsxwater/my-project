@@ -186,8 +186,8 @@
                       </div>
                     </div>
                     <div class="preview">
-                      <a class="arrow-left" href="#"></a>
-                      <a class="arrow-right" href="#"></a>
+                      <a class="arrow-left" href="javascript:;"></a>
+                      <a class="arrow-right" href="javascript:;"></a>
                       <div class="swiper-container">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide active-nav">
@@ -737,8 +737,8 @@
             var galleryThumbs = new Swiper('.gallery-thumbs', {
                 // spaceBetween: 2,
                 slidesPerView: 'auto',
-                allowTouchMove: false,
-                onTap: function() {
+                slideToClickedSlide: true,
+                onClick: function() {
                       galleryTop.slideTo(galleryThumbs.clickedIndex);
                 }
             });
@@ -770,7 +770,6 @@
 
             //轮播图片
             var viewSwiper = new Swiper('.pc-slide .view .swiper-container', {
-              //autoHeight: true, //高度随内容变化
               onSlideChangeStart: function() {
                     updateNavPosition();
               }
@@ -793,8 +792,9 @@
             });
             var previewSwiper = new Swiper('.pc-slide .preview .swiper-container', {
               slidesPerView: 'auto',
-              allowTouchMove: false,
-              onTap: function() {
+              centeredSlides: true,
+              slideToClickedSlide: true,
+              onClick: function(swiper) {
                     viewSwiper.slideTo(previewSwiper.clickedIndex)
               }
             });

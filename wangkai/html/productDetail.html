@@ -184,8 +184,8 @@
                       </div>
                     </div>
                     <div class="preview">
-                      <a class="arrow-left" href="#"></a>
-                      <a class="arrow-right" href="#"></a>
+                      <a class="arrow-left" href="javascript:;"></a>
+                      <a class="arrow-right" href="javascript:;"></a>
                       <div class="swiper-container">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide active-nav">
@@ -643,8 +643,9 @@
             });
             var previewSwiper = new Swiper('.pc-slide .preview .swiper-container', {
               slidesPerView: 'auto',
-              allowTouchMove: false,
-              onTap: function() {
+              //allowTouchMove: false,
+              slideToClickedSlide: true,
+              onClick: function() {
                     viewSwiper.slideTo(previewSwiper.clickedIndex)
               }
             });
@@ -699,24 +700,6 @@
                 console.log('up:'+now);
             });
 
-            
-            // var swswiper = new Swiper('.reread-box .swiper-container',{
-            //     prevButton:'.reread-box .ico-down',
-            //     nextButton:'.reread-box .ico-up',
-            //     //direction : 'vertical',
-            //     spaceBetween: 2,
-            //     //autoHeight:true,
-            //     //slidesPerColumn: 3,
-            //     //height:$('.reread-box .rectbox img').outerHeight(),
-            // });
-
-
-            // $(window).on('resize',function () {
-            //   //swswiper.onResize();
-            //   swswiper.height=$('.reread-box .rectbox img').outerHeight();
-            //   console.log(swswiper.height); 
-            // });
-            // 
             
 
        });  

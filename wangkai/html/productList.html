@@ -183,8 +183,8 @@
                       </div>
                     </div>
                     <div class="preview">
-                      <a class="arrow-left" href="#"></a>
-                      <a class="arrow-right" href="#"></a>
+                      <a class="arrow-left" href="javascript:;"></a>
+                      <a class="arrow-right" href="javascript:;"></a>
                       <div class="swiper-container">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide active-nav">
@@ -665,7 +665,8 @@
             var previewSwiper = new Swiper('.pc-slide .preview .swiper-container', {
               slidesPerView: 'auto',
               allowTouchMove: false,
-              onTap: function() {
+              slideToClickedSlide: true,
+              onClick: function() {
                     viewSwiper.slideTo(previewSwiper.clickedIndex)
               }
             });
@@ -719,29 +720,6 @@
                 }
                 console.log('up:'+now);
             });
-            
-
-            // switchRereadTab(); 
-            // $(window).on('resize',function () {
-            //   switchRereadTab();
-            // });
-            // $('.reread-box .swiper-container').height($('.reread-cell .rectbox').outerHeight()*3)
-            // var swswiper = new Swiper('.reread-box .swiper-container',{
-            //     prevButton:'.ico-down',
-            //     nextButton:'.ico-up',
-            //     //direction : 'vertical',
-            //     spaceBetween: 2,
-            //     //autoHeight:true,
-            //     //slidesPerColumn: 3,
-            //     //height:$('.reread-box .rectbox img').outerHeight(),
-            // });
-
-            // $(window).on('resize',function () {
-            //   //swswiper.onResize();
-            //   swswiper.height=$('.reread-box .rectbox img').outerHeight();
-            //   console.log(swswiper.height); 
-            // });
-
             
             
 
