@@ -54,6 +54,12 @@
 	.case-box .card-list .card.card-video .body{padding:10px 0;}
 	.case-video-box .leftarea{width: 30%;}
 	.case-video-box .rightarea{width: 70%;}
+	.sp-bottom-thumbnails.sp-has-pointer{margin-top: 13px;}
+	.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail{border:1px solid #52b6d0;}
+	.sp-bottom-thumbnails.sp-has-pointer .sp-thumbnail{position: static;}
+	.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:after{}
+	.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:before,
+	.sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:after{display: none;}
 
 	/* 产品详情 */
 	.card-floor-box{padding: 0;width: 100%;float: none;}

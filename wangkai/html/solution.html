@@ -376,7 +376,7 @@
                     <a href="javascript:;" class="list-group-item align-center list-group-item-info">24小时服务热线： <br />137-2838-4412</a>
                   </div>
                   <content>
-                    <div class="link-box font-12 bg-default col-white">
+                    <div class="linkbox font-12 bg-default col-white">
                       <p class="m-b-0"><span class="ico ico-user"></span>联系人：李生</p>
                       <p class="m-b-0"><span class="ico ico-phone"></span>手机：137-2838-4412</p>
                       <p class="m-b-0"><span class="ico ico-mail"></span>邮箱：wankaihuanbao@163.com</p>
@@ -412,54 +412,26 @@
                         <div class="body">
                           <div class="case-video-wrap">
                           <div class="case-video-box clearfix">
-                            <div class="leftarea">
-                              <div class="swiper-container gallery-thumbs">
+                            <!-- Swiper video-->
+                            <div class="swiper-container gallery-top">
                                 <div class="swiper-wrapper">
-                                  <div class="swiper-slide">
-                                    <img src="../images/list/reread1.jpg">
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="../images/list/reread1.jpg">
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="../images/list/reread1.jpg">
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="../images/list/reread1.jpg">
-                                  </div><div class="swiper-slide">
-                                    <img src="../images/list/reread1.jpg">
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="../images/list/reread1.jpg">
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="../images/list/reread1.jpg">
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="../images/list/reread1.jpg">
-                                  </div>
+                                   <div class="swiper-slide"><img src="../images/caseVideo/cv1.jpg"></div>
+                                   <div class="swiper-slide"><img src="../images/caseVideo/cv1.jpg"></div>
+                                   <div class="swiper-slide"><img src="../images/caseVideo/cv1.jpg"></div>
                                 </div>
-                              </div>
                             </div>
-                            <div class="rightarea">
-                                <div class="swiper-container gallery-right">
+                            <div class="gallery-thumbs-box">
+                              <div class="swiper-container gallery-thumbs">
                                   <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                      <video src="../video/movie.ogg">your browser does not support the video tag</video>
-                                    </div>
-                                    <div class="swiper-slide">
-                                      <video src="../video/movie.ogg">your browser does not support the video tag</video>
-                                    </div>
-                                    <div class="swiper-slide">
-                                      <video src="../video/movie.ogg">your browser does not support the video tag</video>
-                                    </div>
-                                    <div class="swiper-slide">
-                                      <video src="../video/movie.ogg">your browser does not support the video tag</video>
-                                    </div>
+                                      <div class="swiper-slide current-nav"><img src="../images/caseVideo/cv1_thumb.jpg"></div>
+                                      <div class="swiper-slide"><img src="../images/caseVideo/cv1_thumb.jpg"></div>
+                                      <div class="swiper-slide"><img src="../images/caseVideo/cv1_thumb.jpg"></div>
                                   </div>
-                                </div>
-
+                              </div>
+                              <a class="arrow-left" href="javascript:;"></a>
+                              <a class="arrow-right" href="javascript:;"></a>
                             </div>
+                            <!-- Swiper video-->
                           </div>
                           </div>
                         </div>
@@ -571,21 +543,50 @@
             });
 
 
-            // var videoSwiper = new Swiper('.case-video-box .swiper-container',{
-            //     spaceBetween : 2,
-            // });
-            var galleryRight = new Swiper('.gallery-right', {
-                spaceBetween: 2,
+            var galleryTop = new Swiper('.gallery-top', {
+                  spaceBetween: 2,
+                  onSlideChangeStart: function() {
+                      updateNavPos();
+                  }
+            });
+            $('.gallery-thumbs-box .arrow-left').on('click', function(e) {
+              e.preventDefault();
+              if (galleryTop.activeIndex == 0) {
+                galleryTop.slideTo(galleryTop.slides.length - 1, 1000);
+                return
+              }
+              galleryTop.slidePrev();
+            });
+            $('.gallery-thumbs-box .arrow-right').on('click', function(e) {
+              e.preventDefault();
+              if (galleryTop.activeIndex == galleryTop.slides.length - 1) {
+                galleryTop.slideTo(0, 1000);
+                return;
+              }
+              galleryTop.slideNext();
             });
             var galleryThumbs = new Swiper('.gallery-thumbs', {
-                spaceBetween: 2,
-                // centeredSlides: true,
-                // slidesPerView: 'auto',
-                // direction:'vertical',
-                slideToClickedSlide: true
+                // spaceBetween: 2,
+                slidesPerView: 'auto',
+                allowTouchMove: false,
+                onTap: function() {
+                      galleryTop.slideTo(galleryThumbs.clickedIndex);
+                }
             });
-            galleryRight.params.control = galleryThumbs;
-            galleryThumbs.params.control = galleryRight;
+            function updateNavPos() {
+                //$('.gallery-thumbs .current-nav').removeClass('current-nav')
+                //debugger;
+                var currentNav = $('.gallery-thumbs .swiper-slide').eq(galleryTop.activeIndex).addClass('current-nav').siblings().removeClass('current-nav')
+                if (!currentNav.hasClass('swiper-slide-visible')) {
+                  if (currentNav.index() > galleryThumbs.activeIndex) {
+                    var thumbsGalleryNav = Math.floor(galleryThumbs.width / currentNav.width()) - 1
+                    console.log('thumbsGalleryNav:'+thumbsGalleryNav);
+                    galleryThumbs.slideTo(currentNav.index() - thumbsGalleryNav)
+                  } else {
+                    galleryThumbs.slideTo(currentNav.index())
+                  }
+                }
+            }
             
             
 

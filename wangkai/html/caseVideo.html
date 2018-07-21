@@ -29,6 +29,8 @@
   <link rel="stylesheet" type="text/css" href="../css/private/list.css">
   <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
 
+
+
 </head>
 <body class="white">
 
@@ -376,7 +378,7 @@
                     <a href="javascript:;" class="list-group-item align-center list-group-item-info">24小时服务热线： <br />137-2838-4412</a>
                   </div>
                   <content>
-                    <div class="link-box font-12 bg-default col-white">
+                    <div class="linkbox font-12 bg-default col-white">
                       <p class="m-b-0"><span class="ico ico-user"></span>联系人：李生</p>
                       <p class="m-b-0"><span class="ico ico-phone"></span>手机：137-2838-4412</p>
                       <p class="m-b-0"><span class="ico ico-mail"></span>邮箱：wankaihuanbao@163.com</p>
@@ -412,7 +414,27 @@
                         <div class="body">
                           <div class="case-video-wrap">
                           <div class="case-video-box clearfix">
-                            <div class="leftarea">
+                            <!-- Swiper -->
+                            <div class="swiper-container gallery-top">
+                                <div class="swiper-wrapper">
+                                   <div class="swiper-slide"><img src="../images/caseVideo/cv1.jpg"></div>
+                                   <div class="swiper-slide"><img src="../images/caseVideo/cv1.jpg"></div>
+                                   <div class="swiper-slide"><img src="../images/caseVideo/cv1.jpg"></div>
+                                </div>
+                            </div>
+                            <div class="gallery-thumbs-box">
+                              <div class="swiper-container gallery-thumbs">
+                                  <div class="swiper-wrapper">
+                                      <div class="swiper-slide current-nav"><img src="../images/caseVideo/cv1_thumb.jpg"></div>
+                                      <div class="swiper-slide"><img src="../images/caseVideo/cv1_thumb.jpg"></div>
+                                      <div class="swiper-slide"><img src="../images/caseVideo/cv1_thumb.jpg"></div>
+                                  </div>
+                              </div>
+                              <a class="arrow-left" href="javascript:;"></a>
+                              <a class="arrow-right" href="javascript:;"></a>
+                            </div>
+
+                            <!-- <div class="leftarea">
                               <div class="swiper-container gallery-thumbs">
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
@@ -460,7 +482,8 @@
                                   </div>
                                 </div>
 
-                            </div>
+                            </div> -->
+                            
                           </div>
                           </div>
                         </div>
@@ -470,7 +493,7 @@
                   <section class="row">
                     <div class="col-xs-6 col-sm-4">
                       <div class="card z-depth-0">
-                        <a href="http://www.baidu.com" class="btn-block">
+                        <a href="solution.html" class="btn-block">
                           <div class="card-image"><img src="../images/index/default.jpg" alt="case"></div>
                           <div class="body">
                             <div class="text-ellipsis1">公司名称：佛山某湘菜大排档</div>
@@ -482,7 +505,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4">
                       <div class="card z-depth-0">
-                        <a href="javascript:;" class="btn-block">
+                        <a href="solution.html" class="btn-block">
                           <div class="card-image"><img src="../images/index/case1.jpg" alt="case"></div>
                           <div class="body">
                             <div class="text-ellipsis1">公司名称：佛山某湘菜大排档</div>
@@ -494,7 +517,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4">
                       <div class="card z-depth-0">
-                        <a href="javascript:;" class="btn-block">
+                        <a href="solution.html" class="btn-block">
                           <div class="card-image"><img src="../images/index/case1.jpg" alt="case"></div>
                           <div class="body">
                             <div class="text-ellipsis1">公司名称：佛山某湘菜大排档</div>
@@ -506,7 +529,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4">
                       <div class="card z-depth-0">
-                        <a href="http://www.baidu.com" class="btn-block">
+                        <a href="solution.html" class="btn-block">
                           <div class="card-image"><img src="../images/index/default.jpg" alt="case"></div>
                           <div class="body">
                             <div class="text-ellipsis1">公司名称：佛山某湘菜大排档</div>
@@ -518,7 +541,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4">
                       <div class="card z-depth-0">
-                        <a href="javascript:;" class="btn-block">
+                        <a href="solution.html" class="btn-block">
                           <div class="card-image"><img src="../images/index/case1.jpg" alt="case"></div>
                           <div class="body">
                             <div class="text-ellipsis1">公司名称：佛山某湘菜大排档</div>
@@ -530,7 +553,7 @@
                     </div>
                     <div class="col-xs-6 col-sm-4">
                       <div class="card z-depth-0">
-                        <a href="javascript:;" class="btn-block">
+                        <a href="solution.html" class="btn-block">
                           <div class="card-image"><img src="../images/index/case1.jpg" alt="case"></div>
                           <div class="body">
                             <div class="text-ellipsis1">公司名称：佛山某湘菜大排档</div>
@@ -685,30 +708,57 @@
     <script src="../js/pages/admin.js"></script>
     <script src="../plugins/light-gallery/js/lightgallery.js"></script>
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
-    
+
     <script>
        $(function(){
-            
-            // var videoSwiper = new Swiper('.case-video-box .swiper-container',{
-            //     spaceBetween : 2,
-            // });
 
-
-            var galleryRight = new Swiper('.gallery-right', {
-                spaceBetween: 2,
+            var galleryTop = new Swiper('.gallery-top', {
+                  spaceBetween: 2,
+                  onSlideChangeStart: function() {
+                      updateNavPos();
+                  }
+            });
+            $('.gallery-thumbs-box .arrow-left').on('click', function(e) {
+              e.preventDefault();
+              if (galleryTop.activeIndex == 0) {
+                galleryTop.slideTo(galleryTop.slides.length - 1, 1000);
+                return
+              }
+              galleryTop.slidePrev();
+            });
+            $('.gallery-thumbs-box .arrow-right').on('click', function(e) {
+              e.preventDefault();
+              if (galleryTop.activeIndex == galleryTop.slides.length - 1) {
+                galleryTop.slideTo(0, 1000);
+                return;
+              }
+              galleryTop.slideNext();
             });
             var galleryThumbs = new Swiper('.gallery-thumbs', {
-                spaceBetween: 2,
-                // centeredSlides: true,
-                // slidesPerView: 'auto',
-                // direction:'vertical',
-                slideToClickedSlide: true
+                // spaceBetween: 2,
+                slidesPerView: 'auto',
+                allowTouchMove: false,
+                onTap: function() {
+                      galleryTop.slideTo(galleryThumbs.clickedIndex);
+                }
             });
-            galleryRight.params.control = galleryThumbs;
-            galleryThumbs.params.control = galleryRight;
-            
-            
+            function updateNavPos() {
+                //$('.gallery-thumbs .current-nav').removeClass('current-nav')
+                //debugger;
+                var currentNav = $('.gallery-thumbs .swiper-slide').eq(galleryTop.activeIndex).addClass('current-nav').siblings().removeClass('current-nav')
+                if (!currentNav.hasClass('swiper-slide-visible')) {
+                  if (currentNav.index() > galleryThumbs.activeIndex) {
+                    var thumbsGalleryNav = Math.floor(galleryThumbs.width / currentNav.width()) - 1
+                    console.log('thumbsGalleryNav:'+thumbsGalleryNav);
+                    galleryThumbs.slideTo(currentNav.index() - thumbsGalleryNav)
+                  } else {
+                    galleryThumbs.slideTo(currentNav.index())
+                  }
+                }
+            }
 
+            
+          
             var mySwiper = new Swiper('.qual-body .swiper-container',{
                 slidesPerView : 3,
                 spaceBetween : 5,
@@ -716,14 +766,15 @@
                 nextButton:'.swiper-button-next',
             });
 
+
+
             //轮播图片
             var viewSwiper = new Swiper('.pc-slide .view .swiper-container', {
               //autoHeight: true, //高度随内容变化
               onSlideChangeStart: function() {
                     updateNavPosition();
               }
-            })
-
+            });
             $('.pc-slide .preview .arrow-left').on('click', function(e) {
               e.preventDefault()
               if (viewSwiper.activeIndex == 0) {
@@ -799,26 +850,7 @@
             });
 
             
-            // var swswiper = new Swiper('.reread-box .swiper-container',{
-            //     prevButton:'.reread-box .ico-down',
-            //     nextButton:'.reread-box .ico-up',
-            //     //direction : 'vertical',
-            //     spaceBetween: 2,
-            //     //autoHeight:true,
-            //     //slidesPerColumn: 3,
-            //     //height:$('.reread-box .rectbox img').outerHeight(),
-            // });
 
-
-            // $(window).on('resize',function () {
-            //   //swswiper.onResize();
-            //   swswiper.height=$('.reread-box .rectbox img').outerHeight();
-            //   console.log(swswiper.height); 
-            // });
-            // 
-            
-
-            
             
 
        });  

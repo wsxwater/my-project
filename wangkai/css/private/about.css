@@ -15,10 +15,5 @@
 .linkbox p{line-height: 28px;margin: 0;padding: 3% 0;}
 .linkbox .ico-circle{width: 20px;height: 20px;vertical-align: middle;margin-left: 0px;margin-top: -5px;margin-left: 10px;}
 .linkbox{padding: 20px 0;}
-.linkbox .ico{width: 27px;height: 27px;margin-top: -2px;background: url('../../images/icon/ico-link.png') 0 0 no-repeat;margin-right: 10px;}
-.linkbox .ico-user{background-position: 0 0;}
-.linkbox .ico-phone{background-position: 0 -27px;}
-.linkbox .ico-mail{background-position: 0 -54px;}
-.linkbox .ico-add{background-position: 0 -81px;}
 
 

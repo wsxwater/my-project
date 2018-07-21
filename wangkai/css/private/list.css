@@ -45,16 +45,6 @@ p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsi
 .choose-box .divider{height: 2px;margin-bottom: 10px;}
 .choose-box p span{display: inline-block;padding-right: 6.7%;line-height: 1;}
 /* 看了又看轮播图 */
-.reread-cell{max-width: 150px;}
-/* .reread-box{position: relative;}
-.reread-cell{overflow-y: hidden;position: relative;}
-.reread-cell .reread-body{position: absolute;top:0;left: 0;right: 0;}
-.reread-cell .rectbox{margin-bottom: 2px;} */
-/* .reread-box .swiper-slide{max-height: 150px;height: 150px;width: 150px;} */
-.reread-ico .ico{width: 25px;height: 15px;}
-/* .reread-box img{max-height: 150px;} */
-/* .reread-box .swiper-slide{max-height: 150px;} */
-
 .looked-body{position: relative;padding-bottom: 273%;overflow: hidden;width: 91%;}
 .looked-cell{position: absolute;top:0;left:0;width: 99.9999%;height: 100%;}
 .looked-cell p{margin:0;height: 33.3333%;padding:2px;}
@@ -78,18 +68,21 @@ p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsi
 .card-video{border:1px solid #e2e2e2;}
 
 .case-box .card-list .card.card-video .body{padding:10px;}
-.case-video-box .leftarea,
-.case-video-box .rightarea{float: left;padding:0 5px;height: 100%;}
-.case-video-box .leftarea{width: 16%;}
-.case-video-box .rightarea{width: 84%;}
-.case-video-box video{object-fit: contain;width: 100%;/* height: 100%; */}
-.case-box .case-video-box .swiper-container{margin: 0;}
-/* .case-video-wrap{padding-bottom: 47.562%;position: relative;}
-.case-video-box{position: absolute;top: 0;left: 0;right: 0;bottom: 0;overflow: hidden;} */
-
-.case-box .gallery-thumbs .swiper-slide{width: 100%;/* height: 5%;background: #000; */}
-/* .case-box .gallery-thumbs .swiper-slide img{max-width: 100%;margin:0 auto;} */
-
+.case-video-box video{object-fit: contain;width: 100%;}
+.case-box .swiper-container.gallery-top{margin:0;}
+.case-box .swiper-container.gallery-thumbs{margin:10px 28px 0;}
+.gallery-top {width: 100%;}
+.gallery-thumbs {position: relative;}
+.gallery-thumbs .swiper-slide {width: 25%;max-width: 150px;}
+.gallery-top img,.gallery-thumbs img{display: block;width: 100%;}
+.gallery-thumbs img {padding: 1px;opacity: 0.5;}
+.gallery-thumbs .current-nav img {padding: 0;border: 1px solid #52b6d0;opacity: 1;}
+.gallery-thumbs-box{position: relative;}
+.gallery-thumbs-box .arrow-left ,.gallery-thumbs-box .arrow-right {background: url('../../images/icon/ico-arrow.png') no-repeat 0 0;position: absolute;top:50%;width: 25px;height: 39px;z-index: 4;margin-top: -19px;}
+.gallery-thumbs-box .arrow-left {left: 0px;background-position: 0 0;}
+.gallery-thumbs-box .arrow-right {right: 0px;background-position: 0 -39px;}
+.gallery-thumbs-box .arrow-left.swiper-button-disabled,
+.gallery-thumbs-box .arrow-right.swiper-button-disabled{opacity: 0.4;}
 
 /* 产品详情 */
 .fix-top{z-index: 20;}
@@ -100,3 +93,5 @@ p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsi
 .card-floor-box{float: left;width: 85%;padding:0 15px;}
 .card-floor-btns{float: left;width: 15%;}
 .card-floor-box img{display: block;width: 100%;}
+
+

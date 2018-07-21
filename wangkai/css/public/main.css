@@ -191,9 +191,21 @@ width: 20px;height: 20px;vertical-align: middle;margin-top: -4px;}
 .card-classify .sample-form .form-group{margin-bottom: 10px;margin-top: 0;}
 .card-classify .sample-form .form-group .form-control{font-size: 12px;padding: 6px 10px;}
 .card-classify .list-group{margin-bottom: 5px;}
-.card-classify .link-box p{border-top: 1px dashed;padding: 5px 0 5px 5px;}
-.card-classify .link-box p:first-child{border-top: none;}
-.card-classify .link-box .btnwrap a{width: 50%;float: left;display: block;margin-top: 20px;padding: 4px 0;text-align: center;}
+.card-classify .linkbox p{border-top: 1px dashed;padding: 5px 0 5px 5px;}
+.card-classify .linkbox p:first-child{border-top: none;}
+.card-classify .linkbox .btnwrap a{width: 50%;float: left;display: block;margin-top: 20px;padding: 4px 0;text-align: center;}
+
+.linkbox .ico{width: 27px;height: 27px;margin-top: -2px;background: url('../../images/icon/ico-link.png') 0 0 no-repeat;margin-right: 10px;}
+.linkbox .ico-user{background-position: 0 0;}
+.linkbox .ico-phone{background-position: 0 -27px;}
+.linkbox .ico-mail{background-position: 0 -54px;}
+.linkbox .ico-add{background-position: 0 -81px;}
+.card-classify .linkbox .ico{width: 17px;height: 17px;margin-right: 5px;}
+.card-classify .linkbox .ico-user{background-position: 0 -108px;}
+.card-classify .linkbox .ico-phone{background-position: 0 -125px;}
+.card-classify .linkbox .ico-mail{background-position: 0 -142px;}
+.card-classify .linkbox .ico-add{background-position: 0 -159px;}
+
 
 .vrow{padding-left: 7px;padding-right: 7px; }
 .vrow>div{padding-left: 7px;padding-right: 7px;}
