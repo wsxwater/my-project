@@ -672,7 +672,7 @@
             });
             var previewSwiper = new Swiper('.pc-slide .preview .swiper-container', {
               slidesPerView: 'auto',
-              allowTouchMove: false,
+              centeredSlides: true,
               slideToClickedSlide: true,
               onClick: function() {
                     viewSwiper.slideTo(previewSwiper.clickedIndex)
