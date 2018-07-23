@@ -171,6 +171,10 @@ width: 20px;height: 20px;vertical-align: middle;margin-top: -4px;}
 .ico-fly{background-position: 0 -60px;}
 
 /* 环保验收成功案例 */
+/* 环保验收成功案例导航 */
+.nav-limit li{width: 16.6666%;display: block;text-align: center; float: left;}
+.nav-limit li>a{color: #333;padding: 10px 2px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+/* 环保验收成功案例轮播 */
 .case-box{position: relative;}
 .case-box .swiper-container{margin: 10px 15px 0;}
 .case-box img{display: block;width: 100%;}

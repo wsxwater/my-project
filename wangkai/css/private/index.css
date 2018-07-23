@@ -31,14 +31,17 @@
 .ico-sol0.ico-sol-arrow:before{left: 0;}
 .ico-sol1.ico-sol-arrow:before{right: 0;}
 
-.product-show{position: relative;}
+/* .product-show{position: relative;} */
 .product-show-item{background-color: #52b6d0;display: none;}
 .product-show-item.current{display: block;}
 
 .itemwrap .itembox{background-color: #52b6d0;}
 .index-box .itembox .leftarea{width: 32.0833%;float: left;max-height: 536px;overflow-y: auto;}
-.index-box .itembox .rightarea{padding-left: 32.0833%;}
+.index-box .itembox .rightarea{padding-left: 32.0833%;position: relative;}
+.index-box .itembox .rightarea .areabox{}
 .index-box .itembox .leftarea .areabox{padding: 0 10px;} 
+.index-box .itembox .rightarea .areabox .btn-ctrl-l{left: 32.0833%;}
+
 
 .itembox img{display: block;width: 100%;}
 .itembox .btn-group-wrap{padding:10px 15px;}
