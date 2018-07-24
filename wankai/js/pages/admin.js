@@ -147,8 +147,8 @@ $.classifyMenu={
     
     //菜单收缩
     //产品分类，行业分类一级菜单点击显示二级菜单
-    $('.product-list-group').on('click','.card-cata-title',function(e) {
-        $(this).siblings().children('.card-show-body').fadeToggle();
+    $('.product-list-group').on('click','.product-list-tit',function(e) {
+        $(this).parent().siblings().children('.product-list-cell').fadeToggle();
         return false;
     });
 
@@ -160,7 +160,7 @@ $.classifyMenu={
   checkStatuForResize:function () {
     var $body = $('body');
     var width = $body.outerWidth();
-    var $target1=$('.product-list-group .card-show-body');
+    var $target1=$('.product-list-group .product-list-cell');
 
     if (width > 767) {
         $target1.fadeIn();
@@ -171,6 +171,36 @@ $.classifyMenu={
   }
 }
 
+function lookedSlider(class_name,params) {
+  var length=$(class_name+' .looked-body p').length;
+  var $param=parseFloat(params);
+  var $down=$(class_name+' .looked-ico .ico-down');
+  var $up=$(class_name+' .looked-ico .ico-up');
+  var $object=$(class_name+' .looked-cell');
+  var now=0;
+  $down.click(function () {
+    if (!$object.is(':animated')) {
+        if (now==length-1) {
+            now=0;
+            $object.animate({top:0},'slow');
+        } else {
+            now++;
+            $object.animate({top:-now*$param+'%'},'slow');
+        }
+        console.log('down:'+now);
+    }
+  });
+  $up.on('click',function () {
+      if (!$object.is(':animated')) {
+          now--;
+          if (now==-1) {
+            now=length-1;
+          }
+          $object.animate({top:-Math.abs(now)*$param+'%'},'slow');
+      }
+      console.log('up:'+now);
+  });
+}
 
 //==========================================================================================================================
 
@@ -186,7 +216,6 @@ $(function () {
          */
         var nav=$('.nav-list');
         var links=$('.nav-list li');
-        console.log('test');
 
         for (var i = 0; i < links.length; i++) {
             var link_url=links.eq(i).children().attr('href');
@@ -199,6 +228,9 @@ $(function () {
 
         }
     } 
+
+
+
     
 
 

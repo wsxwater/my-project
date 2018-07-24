@@ -1,13 +1,15 @@
-.list-box .card-list .list-group{margin:12px 0;padding: 0 7px;}
-.list-box .card-list .list-group-item{border: none;padding: 0 7px;}
-p.ellipse{height: 60px;line-height: 20px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
-p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
+.list-box .card-list .list-group{margin:12px 0;/* padding: 0 7px; */}
+.list-box .card-list .list-group-item{/* border: none; */padding: 7px;}
+.list-box .card-list .list-group-item h4{font-size: 24px;}
+.list-box .card-list .list-group-item p{font-size: 20px;}
+p.ellipse{height: 90px;line-height: 30px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
+p.ellipse4{height: 120px;line-height: 30px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
 
 
 /* 新闻 */
 /* 常见问题 */
-.card-list-title{/* border-bottom:1px solid #f8b62b; */margin-top: 10px;padding: 10px 0;}
-.card-list-title h3{font-size: 24px;line-height: 1;position: relative;float: left;max-width: 100%;}
+.card-list-title{/* border-bottom:1px solid #f8b62b; *//* margin-top: 10px;*/padding-bottom: 10px; }
+.card-list-title h3{font-size: 36px;line-height: 1;position: relative;float: left;max-width: 100%;}
 .card-list-title .line{margin-left: 5px;border-width: 8px;padding:20px 5px 4px;}
 .card-list-title .navbar-form{margin: 0;padding: 0;padding-top: 2px;}
 
@@ -18,7 +20,7 @@ p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsi
 .recommend-box .detail-img-wrap {padding-bottom: 100%;position: relative;}
 .recommend-box .detail-img{display: block;position: absolute;width: 100%; height: 100%;left: 0; top: 0;}
 /* 小凯推荐轮播图 */
-.pc-slide {display: block;width: 100%;max-width: 350px;margin: 0 auto;}
+.pc-slide {display: block;width: 100%;max-width: 350px;}
 .pc-slide .view{border-bottom: 1px solid #ddd;}
 .pc-slide .view .swiper-container {width: 100%;}
 .pc-slide .view .swiper-container img{display: block;width: 100%;height: 100%;object-fit: cover; }
@@ -44,45 +46,30 @@ p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsi
 .ico-online{margin-right: 5px;width: 100%;background: #fff url('../../images/icon/ico-phone.png') 0 -107px no-repeat;width: 45px;height: 45px;vertical-align: middle;}
 .choose-box .divider{height: 2px;margin-bottom: 10px;}
 .choose-box p span{display: inline-block;padding-right: 6.7%;line-height: 1;}
-/* 看了又看轮播图 */
-.looked-body{position: relative;padding-bottom: 273%;overflow: hidden;width: 91%;}
-.looked-cell{position: absolute;top:0;left:0;width: 99.9999%;height: 100%;}
-.looked-cell p{margin:0;height: 33.3333%;padding:2px;}
-.looked-cell p img{background: #EEEEEE url('../../images/default.png') center center no-repeat;}
-.looked-ico .ico{width: 25px;height: 15px;background: url('../../images/icon/ico-arrow.png') 0 0 no-repeat;}
-.looked-ico .ico-down{background-position: 0 -78px;}
-.looked-ico .ico-up{background-position: 0 -93px;}
+
+
 /*新闻详情 */
-.new-article-card .header{color: #52b6d0;border-color: #52b6d0;}
+.new-article-card .header{color: #52b6d0;border-color: #52b6d0;border-width: 2px;}
+.new-article-card.card{margin-top: -8px;}
 .new-article-card.card .header,.new-article-card.card .body{padding:10px 0;}
-.new-article-card.card .body{line-height: 24px;font-size: 14px;}
+.new-article-card.card .header{padding-top: 0;}
+.new-article-card.card .body{line-height: 24px;font-size: 16px;}
 .new-article-card img{display: inline-block;max-width: 100%;margin: 3px;vertical-align: bottom;}
-.new-info{font-size: 12px;}
+.new-info{font-size: 16px;}
 .new-info span{display: inline-block;margin-right: 10px;}
+
+.contact-list{margin-right: -15px;border:1px solid #CCC;}
+.contact-list h3{line-height: 42px;font-size: 22px;margin-bottom: 5px;padding-left: 15px;margin-top: 0;}
+.contact-list .nav{border-top: 2px solid #52b6d0;}
+.contact-list .nav .ico-circle{width: 12px;height: 12px;margin-left: 0;background-color: #ADADAD;}
+.contact-list .nav>li{float: left;width: 50%;}
+.contact-list .nav>li>a{color: #ADADAD;}
 
 .new-box .reread-cell {}
 .new-box .reread-box .rectbox{margin:2px auto;}
 
 
-/* 案例视频 */
-.card-video{border:1px solid #e2e2e2;}
 
-.case-box .card-list .card.card-video .body{padding:10px;}
-.case-video-box video{/* object-fit: contain; */width: 100%;}
-.case-box .swiper-container.gallery-top{margin:0;}
-.case-box .swiper-container.gallery-thumbs{margin:10px 28px 0;}
-.gallery-top {width: 100%;}
-.gallery-thumbs {position: relative;}
-.gallery-thumbs .swiper-slide {width: 25%;max-width: 150px;}
-.gallery-top img,.gallery-thumbs img{display: block;width: 100%;}
-.gallery-thumbs img {padding: 1px;opacity: 0.5;}
-.gallery-thumbs .current-nav img {padding: 0;border: 1px solid #52b6d0;opacity: 1;}
-.gallery-thumbs-box{position: relative;}
-.gallery-thumbs-box .arrow-left ,.gallery-thumbs-box .arrow-right {background: url('../../images/icon/ico-arrow.png') no-repeat 0 0;position: absolute;top:50%;width: 25px;height: 39px;z-index: 4;margin-top: -19px;}
-.gallery-thumbs-box .arrow-left {left: 0px;background-position: 0 0;}
-.gallery-thumbs-box .arrow-right {right: 0px;background-position: 0 -39px;}
-.gallery-thumbs-box .arrow-left.swiper-button-disabled,
-.gallery-thumbs-box .arrow-right.swiper-button-disabled{opacity: 0.4;}
 
 /* 产品详情 */
 .fix-top{z-index: 20;}
@@ -90,8 +77,8 @@ p.ellipse4{height: 80px;line-height: 20px;overflow: hidden;text-overflow:ellipsi
 .floor-btns .btn .ico-circle{margin-left: 0!important;}
 .card-floor-box .floor-btns .btn{width: auto;padding: 10px 6px;margin: 5px 2px;}
 .card-floor-box .floor-btns .btn .ico-circle{display: none;}
-.card-floor-box{float: left;width: 85%;padding:0 15px;}
-.card-floor-btns{float: left;width: 15%;}
+.card-floor-box{float: left;width: 82.9%;padding:0 15px;}
+.card-floor-btns{float: left;width: 17.1%;}
 .card-floor-box img{display: block;width: 100%;}
 
 

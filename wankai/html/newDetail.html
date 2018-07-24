@@ -28,26 +28,85 @@
   <link rel="stylesheet" type="text/css" href="../css/public/main.css">
   <link rel="stylesheet" type="text/css" href="../css/private/list.css">
   <link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
-  <script>
-    window._bd_share_config = {
-      common : {
-        bdText : '自定义分享内容', 
-        bdDesc : '自定义分享摘要', 
-        bdUrl : '自定义分享url地址',   
-        bdPic : '自定义分享图片'
-      },
-      share : [{
-        "bdSize" : 16
-      }]
-    }
-    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
-  </script>
 </head>
 <body class="white">
 
     <div class="list-box new-box">
         <!-- 头部 -->
-        <div is="head"></div> 
+        <div class="headbox">
+          <!-- topbox -->
+          <div class="topbox" data-ispc="true">
+            <div class="container font-12">
+              <div class="row clearfix">
+                    <div class="col-md-7 col-sm-6 col-xs-12">欢迎来到东莞市万凯环保科技有限公司</div>
+                    <div class="col-md-5 col-sm-6 col-xs-12">
+                        <a href="javascript:;">二维码</a> 
+                        <a href="javascript:;">收藏本站</a> 
+                        <a href="javascript:;">网站地图</a> 
+                        <a href="javascript:;">联系万凯</a> 
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- logo start -->
+          <nav class="navbar z-depth-0 navbar-static">
+              <div class="container">
+                  <div class="navbar-header">
+                     <a href="javascript:;" class="navbar-toggle open-sidebar-btn" id="openSidebar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </a>
+
+                      <a class="navbar-brand" href="index.html">
+                        <img src="../images/logo1.jpg">
+                      </a>
+                  </div>
+                  <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="想要什么环保设备？告诉小凯">
+                      <i class="material-icons">search</i>
+                    </div>
+                  </form>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li class="service-hotline">
+                          <a href="javascript:;" class="btn-block">
+                              <div class="info-box z-depth-0">
+                                  <div class="icon">
+                                      <span class="ico-phone"></span>
+                                  </div>
+                                  <div class="content">
+                                      <div class="font-16 col-black">服务热线：</div>
+                                      <div class="number font-bold">137-2838-4412</div>
+                                  </div>
+                              </div>
+                          </a>
+                      </li>
+                  </ul>  
+              </div>
+          </nav>
+          <!-- logo end -->
+
+          <!-- nav start-->
+          <div class="nav-box" data-ispc="true">
+            <div class="container">
+              <ul class="nav nav-list">
+                    <li><a href="index.html" target="_blank">首页</a></li>
+                    <li><a href="productList.html" target="_blank">油烟净化器</a></li>
+                    <li><a href="productList.html" target="_blank">UV光解设备</a></li>
+                    <li><a href="productList.html" target="_blank">等离子废气处理</a></li>
+                    <li><a href="productList.html" target="_blank">各行业净化器</a></li>
+                    <li><a href="caseVideo.html" target="_blank">案例视频</a></li>
+                    <li><a href="qualification.html" target="_blank">公司资质</a></li>
+                    <li><a href="solution.html" target="_blank">解决方案</a></li>
+                    <li><a href="about.html" target="_blank">关于万凯</a></li>
+              </ul>   
+            </div>
+          </div>
+          <!-- nav end-->
+        </div>
 
         <!-- banner -->
         <div class="banner">
@@ -76,7 +135,7 @@
                     <a href="javascript:;" class="list-group-item align-center list-group-item-info">24小时服务热线： <br />137-2838-4412</a>
                   </div>
                   <content>
-                    <div class="linkbox font-12 bg-default col-white">
+                    <div class="linkbox font-14 bg-default col-white">
                       <p class="m-b-0"><span class="ico ico-user"></span>联系人：李生</p>
                       <p class="m-b-0"><span class="ico ico-phone"></span>手机：137-2838-4412</p>
                       <p class="m-b-0"><span class="ico ico-mail"></span>邮箱：wankaihuanbao@163.com</p>
@@ -86,10 +145,10 @@
                         <a href="javascript:;" class="col-white font-16 font-bold bg-light-orange">技术顾问</a>
                       </div>
                     </div>
-                    <div class="title align-center">
-                      <div class="font-12">万凯&nbsp;&middot;&nbsp;想您所想<br />1分钟就能解决您的烦恼</div>
-                    </div>
                     <form class="sample-form">
+                        <div class="title align-center">
+                          <div class="font-14">万凯&nbsp;&middot;&nbsp;想您所想<br />1分钟就能解决您的烦恼</div>
+                        </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="您的名字">
                         </div>
@@ -106,96 +165,91 @@
                   </content>
                 </div>
                 <div class="card-list">
-                  <section class="card-list-title clearfix">
-                      <form class="navbar-form right">
-                        <div class="form-group">
-                          <input type="text" class="form-control" placeholder="遇到问题？问问小凯！">
-                          <i class="material-icons">search</i>
-                        </div>
-                      </form>
-                  </section>
-
-                  <section class="row">
-                    <div class="col-xs-12 col-sm-10">
-                      <div class="card new-article-card z-depth-0">
-                          <div class="header align-center">
-                              <h3 class="m-t-0">如何选择合适油烟净化的关键？</h3>
-                              <div class="new-info">
-                                  <span>文章出处：万凯环保</span>   
-                                  <span>责任编辑：小凯</span>      
-                                  <span>人气：100  </span>
-                                  <span>发表时间：2018-7-19</span> 
-                              </div>
+                  <div class="card-list-body card-list-body1">
+                    <section class="clearfix">
+                        <form class="navbar-form right m-t-0">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="遇到问题？问问小凯！">
+                            <i class="material-icons">search</i>
                           </div>
-                          <div class="body">
-                              <div>如何选择合适油烟净化的关键？</div>
-                              <div>如何选择合适油烟净化的关键？如何选择合适油烟净化的关键？如何选择合适油烟净化的关键？如何选择合适油烟净化的关键？</div>
-                              <div>如何选择合适油烟净化的关键？</div>
-                              <p>
-                                  <img src="../images/list/p1.jpg"><img src="../images/list/reread1.jpg">
-                              </p>
-                              <div>如何选择合适油烟净化的关键？</div>
-                              <div>如何选择合适油烟净化的关键？</div>
-                          </div>
-                          
-                          <section>
-                              <div class="row col-grey">
-                                  <div class="col-xs-12 col-sm-8">
-                                      <p><span>上一篇：<a href="javascript:;" class="text-orange">如何选择合适油烟净化的关键？</a></span></p>
-                                      <p>
-                                        <span>下一篇：<a href="javascript:;" class="text-orange">如何选择合适油烟净化的关键？</a></span>
-                                      </p>
-                                  </div>
-                                  <div class="col-xs-12 col-sm-4 m-b-20">
-                                      <!-- 百度分享 -->
-                                      <div class="bdsharebuttonbox">
-                                        <a href="#" class="bds_more" data-cmd="more">分享到</a>
-                                        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-                                        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-                                        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-                                        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-                                        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-                                      </div>
-                                      
-                                      <!-- 百度分享 -->
-                                  </div>
-                              </div>
-                          </section>
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-2" data-ispc="true">
-                      <div class="reread-box">
-                        <p class="reread-title font-16 bg-default col-white align-center">小凯推荐</p>
-                        <div class="reread-body">
-                          <div class="clearfix reread-cell">
-                              <div class="rectbox">
-                                <a href="javascript:;" class="rect btn-block"><img src="../images/list/reread1.jpg" class="btn-block"></a>
-                              </div>
-                              <div class="rectbox">
-                                <a href="javascript:;" class="rect btn-block"><img src="../images/list/reread1.jpg" class="btn-block"></a>
-                              </div>
-                              <div class="rectbox">
-                                <a href="javascript:;" class="rect btn-block"><img src="../images/list/reread1.jpg" class="btn-block"></a>
-                              </div>
-                          </div>
+                        </form>
+                    </section>
+                    <section class="row card-list-group">
+                      <div class="col-xs-12 col-sm-10">
+                        <div class="card new-article-card z-depth-0">
+                            <div class="header align-center">
+                                <h3 class="m-t-0 font-30">如何选择合适油烟净化的关键？</h3>
+                                <div class="new-info">
+                                    <span>文章出处：万凯环保</span>   
+                                    <span>责任编辑：小凯</span>      
+                                    <span>人气：100  </span>
+                                    <span>发表时间：2018-7-19</span> 
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div>如何选择合适油烟净化的关键？</div>
+                                <div>如何选择合适油烟净化的关键？如何选择合适油烟净化的关键？如何选择合适油烟净化的关键？如何选择合适油烟净化的关键？</div>
+                                <div>如何选择合适油烟净化的关键？</div>
+                                <p>
+                                    <img src="../images/list/p1.jpg"><img src="../images/list/reread1.jpg">
+                                </p>
+                                <div>如何选择合适油烟净化的关键？</div>
+                                <div>如何选择合适油烟净化的关键？</div>
+                            </div>
+                            <div class="body">
+                                <p class="font-bold font-22">上一篇：<a href="javascript:;" class="col-black font-bold font-22">如何选择合适油烟净化的关键？</a></p>
+                                <p class="font-bold font-22">下一篇：<a href="javascript:;" class="col-black font-bold font-22">如何选择合适油烟净化的关键？</a>
+                                </p>
+                            </div>
                         </div>
                       </div>
-                    </div>
-                      
-                  </section>
-
-                  <div class="row m-l-0 m-r-0">
-                    <div class="col-xs-12">
+                      <div class="col-xs-12 col-sm-2 p-r-0" data-ispc="true">
+                        <section>
+                          <div class="looked-box" data-ispc="true">
+                            <p class="looked-title font-16 bg-default col-white align-center">小凯推荐</p>
+                            <div class="looked-body">
+                              <div class="looked-cell">
+                                <p><img src="../images/list/p1.jpg" class="btn-block" /></p>
+                                <p><img src="../images/list/reread1.jpg" class="btn-block" /></p>
+                                <p><img src="../images/list/p1.jpg" class="btn-block" /></p>
+                                <p><img src="../images/list/reread1.jpg" class="btn-block" /></p>
+                                <p><img src="../images/list/p1.jpg" class="btn-block" /></p>
+                                <p><img src="../images/list/reread1.jpg" class="btn-block" /></p>
+                                <p><img src="../images/list/p1.jpg" class="btn-block" /></p>
+                                <p><img src="../images/list/reread1.jpg" class="btn-block" /></p>
+                              </div>
+                            </div>
+                            <p class="looked-ico align-center m-t-10">
+                              <a href="javascript:;" class="ico ico-down"></a>
+                              <a href="javascript:;" class="ico ico-up"></a>
+                            </p>
+                          </div>
+                        </section>
+                      </div>
+                        
+                    </section>
+                    <section>
+                      <div class="contact-list">
+                        <h3 class="bg-default col-white">相关资讯</h3>
+                        <ul class="nav">
+                          <li><a href="javascript:;" class="text-ellipsis1"><span class="ico-circle"></span>如何选择合适油烟净化的关键？如何选择合适油烟净化的关键？</a></li>
+                          <li><a href="javascript:;" class="text-ellipsis1"><span class="ico-circle"></span>如何选择合适油烟净化的关键？如何选择合适油烟净化的关键？</a></li>
+                          <li><a href="javascript:;" class="text-ellipsis1"><span class="ico-circle"></span>如何选择合适油烟净化的关键？如何选择合适油烟净化的关键？</a></li>
+                          <li><a href="javascript:;" class="text-ellipsis1"><span class="ico-circle"></span>如何选择合适油烟净化的关键？如何选择合适油烟净化的关键？</a></li>
+                        </ul>
+                      </div>
+                    </section>  
+                    <section class="clearfix">
                       <div class="title align-center">
-                        <div class="font-36 col-default">环保验收成功案例</div>
+                        <div class="font-48 col-default">环保验收成功案例</div>
                       </div>
                       <ul class="nav nav-limit clearfix">
                         <li><a href="productList.html">餐饮油烟净化</a></li>          
-                        <li><a href="productList.html">酒店油烟净化</a></li>          
-                        <li><a href="productList.html">食堂油烟净化</a></li>          
-                        <li><a href="productList.html">塑料废气处理</a></li>         
-                        <li><a href="productList.html">印染废气处理</a></li>         
-                        <li><a href="productList.html">化工废气处理</a></li>
+                        <li><a href="productList.html">塑料废气处理</a></li>          
+                        <li><a href="productList.html">印染废气处理</a></li>          
+                        <li><a href="productList.html">化工废气处理</a></li>         
+                        <li><a href="productList.html">喷漆废气处理</a></li>         
+                        <li><a href="productList.html">更多</a></li>
                       </ul>
                       <div class="case-box qual-body">
                           <div class="swiper-container">
@@ -221,49 +275,47 @@
                           <div class="swiper-button-prev swiper-button-black"></div>
                           <div class="swiper-button-next swiper-button-black"></div>
                       </div>
-                    </div>
-                    <div class="col-xs-12">
-                      <!-- 表单 -->
-                      <section class="clearfix">
-                        <div class="title align-center">
-                          <div class="font-36 col-default">万凯&nbsp;&middot;&nbsp;想您所想</div>
-                          <div class="title-divider font-36 align-center"><span class="ico ico-circle"></span><span class="ico ico-circle"></span><span class="ico ico-circle"></span></div>
-                          <div class="font-24">只需留下您的信息，技术工程师给您全方面的解决方案</div>
-                        </div>
-                        <form class="sample-form">
-                          <div class="row clearfix">
-                                <div class="col-xs-12 col-sm-7 col-sm-offset-5">
-                                  <div class="align-center m-b-10">
-                                    <a href="javascript:;" class="btn btn-info col-black btn-lg">万凯环保</a>
-                                  </div>
+                    </section>
+                    <!-- 表单 -->
+                    <section class="clearfix">
+                      <div class="title align-center">
+                        <div class="font-48 col-default">万凯&nbsp;&middot;&nbsp;想您所想</div>
+                        <div class="title-divider font-36 align-center"><span class="ico ico-circle"></span><span class="ico ico-circle"></span><span class="ico ico-circle"></span></div>
+                        <div class="font-36 sub-title">只需留下您的信息，技术工程师给您全方面的解决方案</div>
+                      </div>
+                      <form class="sample-form">
+                        <div class="row clearfix card-list-group">
+                              <div class="col-xs-12 col-sm-5 col-sm-offset-6">
+                                <div class="align-center m-b-10">
+                                  <a href="javascript:;" class="btn btn-info col-black btn-lg">万凯环保</a>
                                 </div>
-                                <div class="col-xs-12 col-sm-4 m-b-0">
-                                  <div class="form-group form-group-lg form-group-uname">
-                                      <input type="text" class="form-control" placeholder="您的名字">
-                                  </div>
-                                  <div class="form-group form-group-lg">
-                                      <input type="text" class="form-control" placeholder="您的手机">
-                                  </div>
-                                  <div class="form-group form-group-lg">
-                                      <textarea class="form-control" placeholder="您要处理的环保问题"></textarea>
-                                  </div>
-                                  <div class="align-center">
-                                    <a href="javascript:;" class="vbtn col-white">获取解决方案</a>
-                                  </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-4 col-sm-offset-2 m-b-0">
+                                <div class="form-group form-group-lg form-group-uname">
+                                    <input type="text" class="form-control" placeholder="您的名字">
                                 </div>
-                                <div class="col-xs-12 col-sm-7 col-sm-offset-1">
-                                  <p><span class="ico-radic">&radic;</span>专注油烟净化器与废气处理设备研发生产</p>
-                                  <p><span class="ico-radic">&radic;</span>强大的研发团队</p>
-                                  <p><span class="ico-radic">&radic;</span>一站式服务，不过环评，包退换</p>
-                                  <p><span class="ico-radic">&radic;</span>完善的售前售后服务</p>
-                                  <p class="align-center font-bold"><span class="col-red">咨询热线：</span>137-2838-4412</p>
+                                <div class="form-group form-group-lg">
+                                    <input type="text" class="form-control" placeholder="您的手机">
                                 </div>
-                            </div>  
-                        </form>
-                      </section>
-                    </div>
-
+                                <div class="form-group form-group-lg">
+                                    <textarea class="form-control" placeholder="您要处理的环保问题"></textarea>
+                                </div>
+                                <div class="align-center">
+                                  <a href="javascript:;" class="vbtn col-white">获取解决方案</a>
+                                </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-5">
+                                <p><span class="ico-radic">&radic;</span>专注油烟净化器与废气处理设备研发生产</p>
+                                <p><span class="ico-radic">&radic;</span>强大的研发团队</p>
+                                <p><span class="ico-radic">&radic;</span>一站式服务，不过环评，包退换</p>
+                                <p><span class="ico-radic">&radic;</span>完善的售前售后服务</p>
+                                <p class="align-center font-bold"><span class="col-red">咨询热线：</span>137-2838-4412</p>
+                              </div>
+                          </div>  
+                      </form>
+                    </section>
                   </div>
+
                 </div>
               </section>
             </div>
@@ -290,6 +342,9 @@
                 prevButton:'.swiper-button-prev',
                 nextButton:'.swiper-button-next',
             })
+
+
+            lookedSlider('.recommend-box',16.66665); //小凯推荐
           
        });  
 
