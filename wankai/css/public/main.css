@@ -1,5 +1,4 @@
-body{font-family:"方正兰亭特黑_GBK";word-break:break-all; 
-word-wrap:break-word; }
+body{font-family:"方正兰亭特黑_GBK";word-break:break-all; word-wrap:break-word; }
 .white{background-color: #fff;}
 a:link,a:visited,a:hover,a:active{text-decoration: none;}
 
@@ -19,6 +18,7 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 .rect{position: absolute;top:0;left: 0;right: 0;bottom: 0;height: 100%;width: 100%;}
 
 /* .container {padding-right: 0;padding-left: 0;} */
+.my-container{width: 100%;margin-right: auto;margin-left: auto;max-width: 1200px;}
 
 /* 省略 */
 .text-ellipsis1{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
@@ -118,11 +118,7 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 .card-box .card-show{width: 70.84%;float: left;padding: 0 5px;}
 .card-box .card-list{width: 85.42%;float: right;}
 .product-list-group{border-bottom:1px solid;position: relative;}
-.product-list-group:after,.product-list-group:before{content: '';position: absolute;top: 0;bottom: 0;width: 1px;background-color: #fff;}
-.product-list-group:before{left: 14.58%;}
-.product-list-group:after{right: 14.58%;}
 .card-cata-title{font-size: 24px;}
-.product-list-group .product-list{padding: 2% 0;}
 .product-list-group a{color: #FFF;display: block;width: 16.6666%;float: left;text-align: center;font-size: 16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;/* padding: 0.4% 0; */line-height: 34px;}
 .product-list-group a.btn-more{width: 100%;display: block;line-height: 34px;}
 .card-box .card-classify .list-group{ max-height: 590px; overflow-y: auto;}
@@ -133,8 +129,9 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 .card-box .card-classify .list-group-item-info{background-color: #52b6d0;margin-top: -1px;}
 .card-box .card-classify .list-group .card-cata-title{padding: 10% 0;}
 
-.product-list-head{/* border-right: 1px solid #FFF; */font-size: 24px;text-align: center;}
-.product-list-foot{/* border-left: 1px solid #FFF; */}
+.product-list-body{padding: 2% 0;border:1px solid;border-top: none;border-bottom: none;}
+.product-list-head{font-size: 24px;text-align: center;}
+.product-list-foot{}
 .product-list-head,.product-list-foot{width: 14.58%;}
 .product-list-tit{line-height: 34px;}
 
