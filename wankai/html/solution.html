@@ -309,10 +309,7 @@
                   </div>
                   <div class="rightarea">
                     <div class="areabox clearfix">
-                      <!-- <img src="../images/caseVideo/cv1.jpg"> -->
-                      <video src="../video/movie.ogg" controls="controls">
-                      your browser does not support the video tag
-                      </video>
+                      <img src="../images/caseVideo/cv1.jpg">
                     </div>
                   </div>
                   <!-- video-->
@@ -681,6 +678,14 @@
           });
 
           lookedSlider('.case-video-box',33.3333);//视频
+
+          /*点击加载视频*/
+          $('.case-video-box .looked-body').on('click','p',function () {
+              var i=$('.case-video-box .looked-body p').index(this);
+              var $video='<video src="../video/movie'+parseInt(i+1)+'.ogg" controls="controls">your browser does not support the video tag</video>';
+              $('.case-video-box .rightarea .areabox').empty();
+              $('.case-video-box .rightarea .areabox').append($video);
+          });
           
        });  
 
