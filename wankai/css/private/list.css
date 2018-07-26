@@ -1,0 +1,84 @@
+.product-group-wrap .list-group{margin-bottom:12px;}
+.product-group-wrap .list-group-item{padding:7px;}
+.product-group-wrap .list-group-item h4{font-size: 24px;}
+.product-group-wrap .list-group-item p{font-size: 20px;}
+.product-group-wrap .list-group-item img{display: block;width: 100%;}
+p.ellipse{height: 90px;line-height: 30px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
+p.ellipse4{height: 120px;line-height: 30px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
+
+
+/* 新闻 */
+/* 常见问题 */
+.card-list-title{padding-bottom: 10px; }
+.card-list-title h3{font-size: 36px;line-height: 1;position: relative;float: left;max-width: 100%;}
+.card-list-title .line{margin-left: 5px;border-width: 8px;padding:20px 5px 4px;}
+.card-list-title .navbar-form{margin: 0;padding: 0;padding-top: 2px;}
+
+
+/* 小凯推荐 */
+.recommend-box{padding-top: 2%;}
+.recommend-box .card-list-title{border: none;margin-top: 0;}
+.recommend-box .detail-img-wrap {padding-bottom: 100%;position: relative;}
+.recommend-box .detail-img{display: block;position: absolute;width: 100%; height: 100%;left: 0; top: 0;}
+/* 小凯推荐轮播图 */
+.pc-slide {display: block;width: 100%;max-width: 350px;overflow: hidden;}
+.pc-slide .view{border-bottom: 1px solid #ddd;}
+.pc-slide .view .swiper-container {width: 100%;}
+.pc-slide .view .swiper-container img{display: block;width: 100%;height: 100%;object-fit: cover; }
+.pc-slide .preview {width: 100%;position: relative;padding:5px 30px;}
+.pc-slide .preview .swiper-container {height: 42px;width: 100%;}
+.pc-slide .preview .swiper-slide {width: 50px;height: 100%;cursor:pointer;}
+.pc-slide .preview .arrow-left ,.pc-slide .preview .arrow-right {background: url('../../images/icon/ico-arrow.png') no-repeat 0 0;position: absolute;top:6px;width: 25px;height: 39px;z-index: 4;}
+.pc-slide .preview .arrow-left {left: 2px;background-position: 0 0;}
+.pc-slide .preview .arrow-right {right: 2px;background-position: 0 -39px;}
+.pc-slide .preview img {padding: 1px;display: block;width: 100%;height: 100%;object-fit: cover;}
+.pc-slide .preview .active-nav img {padding: 0;border: 1px solid #52b6d0;}
+/* 可选材质 */
+.choose-box{padding-top: 8%;}
+.choose-title{width: 90px;}
+.choose-box .table{margin-bottom: 10px;}
+.choose-box .table tbody tr td{padding:10px 0;border: none;}
+.choose-foot a,.choose-body a{display: inline-block;font-size: 16px;color: #333;margin:2px;}
+.choose-body a{padding: 3px 2px;border:1px solid #52b6d0;line-height: 1;min-width: 64px;text-align: center;}
+.choose-body a.active{border-color: #f8b62b;}
+.choose-foot{margin-bottom: 10px;padding-left: 12%;}
+.choose-foot a{color: #52b6d0;font-weight: bold;font-size: 18px;}
+.choose-foot a:first-child{margin-right: 20px;}
+.ico-online{margin-right: 5px;width: 100%;background: #fff url('../../images/icon/ico-phone.png') 0 -107px no-repeat;width: 45px;height: 45px;vertical-align: middle;}
+.choose-box .divider{height: 2px;margin-bottom: 10px;}
+.choose-box p span{display: inline-block;padding-right: 6.7%;line-height: 1;}
+
+
+.card-right-body{padding-left: 24px;}
+
+/* 产品详情 */
+.fix-top{z-index: 20;}
+.floor-btns .btn{padding:10px 0;font-size: 16px!important;margin:10px 5px 10px 0;width: 100%;}
+.floor-btns .btn .ico-circle{margin-left: 0!important;}
+.card-floor-box .floor-btns .btn{width: auto;padding: 10px 6px;margin: 5px 2px;}
+.card-floor-box .floor-btns .btn .ico-circle{display: none;}
+.card-floor-box{float: left;width: 82.9%;padding:0 15px;}
+.card-floor-btns{float: left;width: 17.1%;}
+.card-floor-box img{display: block;width: 100%;}
+
+/* 常见问题 */
+.card-list-title .navbar-form {margin: 0;padding: 0;padding-top: 2px;}
+
+
+/* 新闻详情 */
+.new-article-card .header{color: #52b6d0;border-color: #52b6d0;border-width: 2px;}
+.new-article-card.card{margin-top: -8px;}
+.new-article-card.card .header,.new-article-card.card .body{padding:10px 15px;}
+.new-article-card.card .header{padding-top: 0;}
+.new-article-card.card .body{line-height: 24px;font-size: 16px;}
+.new-article-card img{display: inline-block;max-width: 100%;margin: 3px;vertical-align: bottom;}
+.new-info{font-size: 16px;}
+.new-info span{display: inline-block;margin-right: 10px;}
+
+.contact-list{/* margin-right: -15px; */border:1px solid #CCC;}
+.contact-list h3{line-height: 42px;font-size: 22px;margin-bottom: 5px;padding-left: 15px;margin-top: 0;}
+.contact-list .nav{border-top: 2px solid #52b6d0;}
+.contact-list .nav .ico-circle{width: 12px;height: 12px;margin-left: 0;background-color: #ADADAD;}
+.contact-list .nav>li{float: left;width: 50%;}
+.contact-list .nav>li>a{color: #ADADAD;}
+
