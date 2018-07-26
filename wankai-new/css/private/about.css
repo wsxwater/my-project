@@ -1,0 +1,16 @@
+.our-map-wrap{position: relative;padding:41.492% 0 0;background-color: #E0E0E0;}
+.our-map-box{position: absolute;top: 0;left: 0;right: 0;bottom: 0;width: 100%;height: 100%;}
+
+.card-box .rectwrap{width: 40%;margin: 0 auto;padding: 2% 0;min-width: 85px;}
+.card-box .rect{border: 2px solid;box-sizing: border-box;}
+.card-box .alert .ico-circle{width: 20px;height: 20px;background-color: #fff;}
+.card-box .alert .rect{font-size: 24px;}
+.card-box .alert .rect span{font-size: 36px;}
+
+.card-box .alert{position: relative;padding-bottom: 30px;font-size: 16px;}
+.card-box .alert:after{content: '';display: block;width: 100%;height: 30px;position: absolute;left: 0;right: 0;bottom: 0px;}
+
+.about-box .vbtn-warning{background-color: #f8b62b;color: #FFF;padding: 10px;display: inline-block;text-align: center;font-size: 28px;}
+.linkbox p{line-height: 28px;margin: 0;padding: 3% 0;}
+.linkbox .ico-circle{width: 20px;height: 20px;vertical-align: middle;margin-left: 0px;margin-top: -5px;}
+.linkbox{padding: 20px 0;}
