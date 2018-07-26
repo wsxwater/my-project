@@ -44,6 +44,8 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 
 /* banner */
 .banner img{display: block;width: 100%;}
+.banner-rect{position: relative;padding-bottom: 15.625%;}
+.banner-rect>img{position: absolute;display: block;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;background: #f8f8f8 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAqBAMAAAAdXSXHAAAAFVBMVEUAAADi5unh5ejk6Ov0+Pvw9Pfq7vHHFbs6AAAAAXRSTlMAQObYZgAAANFJREFUOMu1j0EKwkAMRaf2AnlTdd0Ru283HqBC9wrewPufQaeUBmoyguBftHweeZmETWiQ4KZqOCYfx0eKV3+8G+GJ6z4kgdHFIBVJLCQZvz9g4B1kzGywvaG6JCHeDDczPt9hP5jD2c5EnDBXz8u7dIy96YY2/2MTHMxyX6jFWA1Lq8HEokcablo98uPdagcw3NCvTTZuXY6L0Wa4idqsYWTFrYm1qRvNFyyVitSteDCwGXUXMF6kjFH3L1iKbtoyRt2OPVG0U8w/sYT65CeFF1O0Ne1VbiTYAAAAAElFTkSuQmCC') center center no-repeat;}}
 
 .vbtn{display: inline-block;padding: 6px 12px;margin-bottom: 0;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action: manipulation;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;background-image: none;border: 1px solid transparent;border-radius: 4px;}
 
