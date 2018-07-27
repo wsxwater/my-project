@@ -7,8 +7,8 @@
 .card-box .alert .rect{font-size: 24px;}
 .card-box .alert .rect span{font-size: 36px;}
 
-.card-box .alert{position: relative;padding-bottom: 30px;font-size: 16px;}
-.card-box .alert:after{content: '';display: block;width: 100%;height: 30px;position: absolute;left: 0;right: 0;bottom: 0px;}
+.card-box .alert{position: relative;/* padding-bottom: 30px; */font-size: 16px;margin-bottom: 0;}
+.card-box .alert:after{/* content: '';display: block;width: 100%;height: 30px;position: absolute;left: 0;right: 0;bottom: 0px; */}
 
 .about-box .vbtn-warning{background-color: #f8b62b;color: #FFF;padding: 10px;display: inline-block;text-align: center;font-size: 28px;}
 .linkbox p{line-height: 28px;margin: 0;padding: 3% 0;}

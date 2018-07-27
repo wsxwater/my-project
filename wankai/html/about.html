@@ -175,7 +175,7 @@
         </div>
         <div class="comwid ovxh">
           <div class="row align-center vrow32">
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-xs-6 col-sm-3 m-b-10">
               <div class="alert alert-danger">
                   <div><span class="ico-circle"></span></div> 
                   <div class="rectwrap">
@@ -188,9 +188,9 @@
                     </div>
                   </div>
                   <div>油烟废气处理<br />解决方案厂家</div>
-              </div>
+              </div><canvas id="canvasDanger"></canvas>
             </div>
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-xs-6 col-sm-3 m-b-10">
               <div class="alert bg-light-green">
                   <div><span class="ico-circle"></span></div> 
                   <div class="rectwrap">
@@ -203,9 +203,9 @@
                     </div>
                   </div>
                   <div>强大的研发团队<br />为您定制环保设备</div>
-              </div>
+              </div><canvas id="canvasGreen"></canvas>
             </div>
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-xs-6 col-sm-3 m-b-10">
               <div class="alert alert-warning">
                   <div><span class="ico-circle"></span></div> 
                   <div class="rectwrap">
@@ -218,9 +218,9 @@
                     </div>
                   </div>
                   <div>20个行业废气<br />处理应用经验</div>
-              </div>
+              </div><canvas id="canvasWarning"></canvas>
             </div>
-            <div class="col-xs-6 col-sm-3">
+            <div class="col-xs-6 col-sm-3 m-b-10">
               <div class="alert alert-success">
                   <div><span class="ico-circle"></span></div> 
                   <div class="rectwrap">
@@ -233,7 +233,7 @@
                     </div>
                   </div>
                   <div>优质的服务<br />让您无忧</div>
-              </div>
+              </div><canvas id="canvasSuccess"></canvas>
             </div>
 
           </div>
@@ -459,6 +459,35 @@
         marker.addEventListener("click", function(){          
           map.openInfoWindow(infoWindow,point); //开启信息窗口
         });
+
+
+
+        function drawTriangle(obj,width,height,color) {
+          var canvas=document.getElementById(obj);
+          var context=canvas.getContext('2d');
+          canvas.width=width;
+          canvas.height=height;
+          canvas.style.width=width+'px';
+          canvas.style.height=height+'px';
+          context.fillStyle=color;
+          context.beginPath();
+          context.moveTo(0,0);
+          context.lineTo(canvas.width,0);
+          context.lineTo(canvas.width/2,canvas.height);
+          context.closePath();
+          context.fill();
+        }
+        drawTriangle('canvasDanger',$('#canvasDanger').parent().width(),16,$('#canvasDanger').siblings().css('background-color'));
+        drawTriangle('canvasGreen',$('#canvasGreen').parent().width(),16,$('#canvasGreen').siblings().css('background-color'));
+        drawTriangle('canvasWarning',$('#canvasWarning').parent().width(),16,$('#canvasWarning').siblings().css('background-color'));
+        drawTriangle('canvasSuccess',$('#canvasSuccess').parent().width(),16,$('#canvasSuccess').siblings().css('background-color'));
+
+        window.onresize=function () {
+         drawTriangle('canvasDanger',$('#canvasDanger').parent().width(),16,$('#canvasDanger').siblings().css('background-color'));
+         drawTriangle('canvasGreen',$('#canvasGreen').parent().width(),16,$('#canvasGreen').siblings().css('background-color'));
+         drawTriangle('canvasWarning',$('#canvasWarning').parent().width(),16,$('#canvasWarning').siblings().css('background-color'));
+         drawTriangle('canvasSuccess',$('#canvasSuccess').parent().width(),16,$('#canvasSuccess').siblings().css('background-color'));
+        }
 
     	});
     </script>
