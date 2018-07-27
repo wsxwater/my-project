@@ -442,7 +442,7 @@
         });
 
         var map = new BMap.Map("allmap");
-        var point = new BMap.Point(113.899858,22.964977);
+        var point = new BMap.Point(113.778598,23.066877);
         var marker = new BMap.Marker(point);  // 创建标注
         map.addOverlay(marker);              // 将标注添加到地图中
         map.centerAndZoom(point, 19);
@@ -451,10 +451,10 @@
         var opts = {
           width : 200,     // 信息窗口宽度
           height: 40,     // 信息窗口高度
-          title : "<div class=\"col-red\">广东中联邦精细化工有限公司</div>" , // 信息窗口标题
+          title : "<div class=\"col-red\">东莞市万凯环保科技有限公司</div>" , // 信息窗口标题
           // enableMessage:true,//设置允许信息窗发送短息
         }
-        var infoWindow = new BMap.InfoWindow("<div class=\"font-12\">地址：东莞市松山湖光大WE谷B1栋1908室</div>", opts);  // 创建信息窗口对象 
+        var infoWindow = new BMap.InfoWindow("<div class=\"font-12\">地址：广东省东莞市东城区樟村文化路平岭工业区9号</div>", opts);  // 创建信息窗口对象 
         map.openInfoWindow(infoWindow,point); //开启信息窗口
         marker.addEventListener("click", function(){          
           map.openInfoWindow(infoWindow,point); //开启信息窗口
