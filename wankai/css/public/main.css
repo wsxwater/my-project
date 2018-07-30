@@ -194,7 +194,7 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 .product-list .product-list-body{border:1px solid;border-top:none;border-bottom: none;padding: 2% 0;}
 .product-list-group{color: #FFF;border-bottom:1px solid;position: relative;}
 .product-list-title{font-size: 24px;line-height: 34px;padding: 10px 0;text-align: center;}
-.product-list-group a{color: #FFF;display: block;text-align: center;font-size: 16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;line-height: 34px;padding:0 2px;}
+.product-list-group a{color: #FFF;display: block;text-align: center;font-size: 15px;line-height: 1;padding:10px 2px;}
 .product-list .product-list-body a{width: 16.6666%;float: left;}
 .product-list-group a.btn-more{width: 100%;display: block;line-height: 34px;}
 .product-list-head{font-size: 24px;text-align: center;}

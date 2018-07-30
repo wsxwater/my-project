@@ -177,7 +177,7 @@
                     </div>
                   </div>
                 </section>
-                <section class="product-list clearfix bg-default">
+                <section class="product-list clearfix bg-default" id="productCenter">
                   <div class="table-cell-wrap">
                     <div class="table-cell product-list-head"><div class="product-list-title">产品中心</div></div>
                     <div class="table-cell product-list-body">
@@ -235,18 +235,6 @@
               <section class="product-show-item">04</section>
               <section class="product-show-item">05</section>
               <section class="product-show-item">06</section>
-              <section class="product-show-item">07</section>
-              <section class="product-show-item">08</section>
-              <section class="product-show-item">09</section>
-              <section class="product-show-item">10</section>
-              <section class="product-show-item">11</section>
-              <section class="product-show-item">12</section>
-              <section class="product-show-item">13</section>
-              <section class="product-show-item">14</section>
-              <section class="product-show-item">15</section>
-              <section class="product-show-item">16</section>
-              <section class="product-show-item">17</section>
-              <section class="product-show-item">18</section>
             </div>
 
 	  		</div>
@@ -864,9 +852,9 @@
 
 
         var now=0;
-        var len=$('.product-list-group a').length;
+        var len=$('#productCenter .product-list-body a').length;
         $('.product-list-group').on('mouseover','a',function () {
-          var i=$('.product-list-group a').index(this);
+          var i=$('#productCenter .product-list-body a').index(this);
           now=i;
           switchTab();
         });
