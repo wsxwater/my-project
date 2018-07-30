@@ -853,7 +853,7 @@
 
         var now=0;
         var len=$('#productCenter .product-list-body a').length;
-        $('.product-list-group').on('mouseover','a',function () {
+        $('#productCenter .product-list-body').on('mouseover','a',function () {
           var i=$('#productCenter .product-list-body a').index(this);
           now=i;
           switchTab();
