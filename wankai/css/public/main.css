@@ -62,7 +62,7 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 
 /* headbox */
 .topbox{color: #626262;padding: 14px 0 2px;border-bottom: 1px solid #52b6d0;}
-.topbox a{color: #626262;display: inline-block;width: 25%;text-align: right;font-size: 14px;letter-spacing: 0;}
+.topbox a{color: #626262;display: inline-block;width: 24%;text-align: right;font-size: 14px;}
 .topbox a:hover{color: #f00;}
 
 /* logo 位置的navbar*/
