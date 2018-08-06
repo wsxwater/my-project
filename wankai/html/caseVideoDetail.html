@@ -446,10 +446,14 @@
                       </div>
                       <div class="rightarea">
                         <div class="areabox clearfix">
-                          <img src="../images/caseVideo/cv1.jpg">
+                          <!-- <img src="../images/caseVideo/cv1.jpg"> -->
                           <!-- <video src="../video/movie.ogg" controls="controls">
                           your browser does not support the video tag
                           </video> -->
+                          <div class="video-box">
+                            <div class="video-cell"><img src="../images/caseVideo/cv1.jpg"></div>
+                          </div>
+                          
                         </div>
                       </div>
                       <!-- video-->
@@ -635,8 +639,8 @@
         $('.case-video-box .looked-body').on('click','p',function () {
             var i=$('.case-video-box .looked-body p').index(this);
             var $video='<video src="../video/movie'+parseInt(i+1)+'.ogg" controls="controls">your browser does not support the video tag</video>';
-            $('.case-video-box .rightarea .areabox').empty();
-            $('.case-video-box .rightarea .areabox').append($video);
+            $('.case-video-box .rightarea .areabox .video-cell').empty();
+            $('.case-video-box .rightarea .areabox .video-cell').append($video);
         });
 
                  
