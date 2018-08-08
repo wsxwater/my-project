@@ -18,14 +18,14 @@
 .ico-sq:after{border-bottom:3px solid;bottom: 0;left: 0;}
 
 /* .index-box .card-list .row>div{padding-right: 7px;padding-left: 7px;} */ 
-
+.solve-problem-box{font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .solve-problem-title {margin-bottom: 10px;}
 .solve-problem-title span{position: relative;display: inline-block;}
 .solve-problem-title span:after{content: '';position: absolute;display: block;bottom:-10px;left: 0;right: 0;height: 4px;overflow: hidden;background: #f8b62b;}
 .solve-problem-box .table-cell-wrap{padding: 4% 0;}
 .solve-problem-item1{width: 25%;}
 .solve-problem-item1>span{display: inline-block;width: 100%;padding: 17% 1%;border-radius: 50%;-webkit-border-radius: 50%;-o-border-radius: 50%;-moz-border-radius: 50%;}
-.vinfo{padding:5px 0 5px 5px;border-radius: 10px;}
+.vinfo{padding:5px 0 5px 5px;border-radius: 10px;font-family:"Roboto","Arial","Tahoma","sans-serif","黑体";}
 .font-140{font-size: 140px;}
 .solve-problem-box .ico{width: 25px;height: 25px;background: url('../../images/icon/ico-sp.png') 0 0 no-repeat;margin: 0 5px 0 0;}
 .solve-problem-box .ico-sp1{background-position: 0 0;margin-top: -2px;}
@@ -40,7 +40,7 @@
 
 /* 公司动态 */
 .more{font-size:12px;padding:0 5px;display: inline-block;position: relative;color: #00a7eb;}
-.title-c{display: inline-block;color:#333;font-size: 18px;margin-right:5px;line-height: 18px;}
+.title-c{display: inline-block;color:#333;font-size: 18px;margin-right:5px;line-height: 18px;font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .title-e{display: inline-block;color:#ADADAD;padding-left:4px;line-height: 18px;text-transform: uppercase;}
 /* .tab-show{display: none;}
 .tab-show-card{display: block;} */

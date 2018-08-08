@@ -85,7 +85,7 @@
     .card-list-title h3{font-size: 28px;}
     .card-list-title .navbar-form{float: none;width: 100%;padding-top: 10px;}
 
-    .pc-slide{max-width: 320px;margin-right: auto;margin-left: auto;}
+    .pc-slide,.pictures{max-width: 320px;margin-right: auto;margin-left: auto;}
     .recommend-cell{padding-left: 15px;padding-right: 15px;}
 
     /* 产品中心 */
@@ -99,7 +99,7 @@
     .card-floor-box .floor-btns .btn{font-size: 12px!important;}
 
     /* 新闻详情 */
-    .new-article-card.card{margin-top: 0;}
+    .new-article-card.card{margin-top: 0;padding-left: 0;}
     .new-article-card.card .header,.new-article-card.card .body{padding:10px 0;}
     .contact-list .nav>li{float: none;width: 100%;}
 

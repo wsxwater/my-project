@@ -1,6 +1,7 @@
 .product-group-wrap .list-group{margin-bottom:12px;}
-.product-group-wrap .list-group-item{padding:7px;}
-.product-group-wrap .list-group-item h4{font-size: 24px;}
+.product-group-wrap .list-group-item{/* padding:7px; */padding:10px 15px;}
+.product-group-wrap .list-group-item h4{font-size: 24px;font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
+.product-group-wrap .list-group-item .btn:not(.btn-link):not(.btn-circle){font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .product-group-wrap .list-group-item p{font-size: 20px;}
 .product-group-wrap .list-group-item img{display: block;width: 100%;height: 100%;background: #f8f8f8 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAqBAMAAAAdXSXHAAAAFVBMVEUAAADi5unh5ejk6Ov0+Pvw9Pfq7vHHFbs6AAAAAXRSTlMAQObYZgAAANFJREFUOMu1j0EKwkAMRaf2AnlTdd0Ru283HqBC9wrewPufQaeUBmoyguBftHweeZmETWiQ4KZqOCYfx0eKV3+8G+GJ6z4kgdHFIBVJLCQZvz9g4B1kzGywvaG6JCHeDDczPt9hP5jD2c5EnDBXz8u7dIy96YY2/2MTHMxyX6jFWA1Lq8HEokcablo98uPdagcw3NCvTTZuXY6L0Wa4idqsYWTFrYm1qRvNFyyVitSteDCwGXUXMF6kjFH3L1iKbtoyRt2OPVG0U8w/sYT65CeFF1O0Ne1VbiTYAAAAAElFTkSuQmCC') center center no-repeat;}
 p.ellipse{height: 90px;line-height: 30px;overflow: hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;}
@@ -12,21 +13,24 @@ p.ellipse4{height: 120px;line-height: 30px;overflow: hidden;text-overflow:ellips
 /* 新闻 */
 /* 常见问题 */
 .card-list-title{padding-bottom: 10px; }
-.card-list-title h3{font-size: 36px;line-height: 1;position: relative;float: left;max-width: 100%;}
+.card-list-title h3{font-size: 36px;line-height: 1;position: relative;float: left;max-width: 100%;font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .card-list-title .line{margin-left: 5px;border-width: 8px;padding:20px 5px 4px;}
 .card-list-title .navbar-form{margin: 0;padding: 0;padding-top: 2px;}
 
 
 /* 小凯推荐 */
 .recommend-box{padding-top: 2%;}
-.recommend-box .card-list-title{border: none;margin-top: 0;}
+.recommend-box .card-list-title{border: none;margin-top: 0;font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .recommend-box .detail-img-wrap {padding-bottom: 100%;position: relative;}
 .recommend-box .detail-img{display: block;position: absolute;width: 100%; height: 100%;left: 0; top: 0;}
+.recommend-cell-title{font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 /* 小凯推荐轮播图 */
 .pc-slide {display: block;width: 100%;max-width: 350px;overflow: hidden;}
 .pc-slide .view{border-bottom: 1px solid #ddd;}
 .pc-slide .view .swiper-container {width: 100%;}
-.pc-slide .view .swiper-container img{display: block;width: 100%;height: 100%;object-fit: cover; }
+/* .pc-slide .view .swiper-container a{display: block;width: 100%;height: 100%;overflow: hidden;position: relative;} */
+.pc-slide .view .swiper-container img.btn-block{display: block;width: 100%;height: 100%;object-fit: cover; }
+.pc-slide .view .swiper-container img.zoomImg{padding: 2px;background-color: #52b6d0;background-color: rgba(82, 182, 208, 0.5);}
 .pc-slide .preview {width: 100%;position: relative;padding:5px 30px;}
 .pc-slide .preview .swiper-container {height: 42px;width: 100%;}
 .pc-slide .preview .swiper-slide {width: 50px;height: 100%;cursor:pointer;}
@@ -35,27 +39,46 @@ p.ellipse4{height: 120px;line-height: 30px;overflow: hidden;text-overflow:ellips
 .pc-slide .preview .arrow-right {right: 2px;background-position: 0 -39px;}
 .pc-slide .preview img {padding: 1px;display: block;width: 100%;height: 100%;object-fit: cover;}
 .pc-slide .preview .active-nav img {padding: 0;border: 1px solid #52b6d0;}
+
+.pictures{display: block;width: 100%;max-width: 350px;overflow: hidden;}
+.pictures img.btn-block{display: block;width: 100%;height: 100%;}
+.pictures .pictures-lg a{width: 100%;height: 100%;position: relative;overflow: hidden;display: none;}
+.pictures .pictures-lg a.active{display: block;}
+.pictures .pictures-lg img.btn-block{width: 100%;height: 100%;object-fit: cover;}
+.pictures .pictures-sm .pictures-sm-cell{width: 100%;position: relative;padding: 5px 30px;height: 54px;}
+.pictures .pictures-sm .pictures-sm-item{position: relative;width: 100%;overflow: hidden;height: 44px;}
+.pictures .pictures-sm ul{list-style: none;overflow: hidden;margin: 0;padding: 0;width:auto;height: 44px;
+position:absolute;top:0;left:0;overflow:auto;white-space:nowrap;
+font-size: 0;}
+.pictures .pictures-sm li{display: inline-block;width: 50px;height: 42px;padding: 1px;}
+.pictures .pictures-sm li.active{border:1px solid #52b6d0;padding: 0;}
+.pictures .pictures-sm .arrow-left,.pictures .pictures-sm .arrow-right{background: url('../../images/icon/ico-arrow.png') no-repeat 0 0;position: absolute;top:6px;width: 25px;height: 39px;z-index: 4;}
+.pictures .pictures-sm .arrow-left{left: 2px;background-position: 0 0;}
+.pictures .pictures-sm .arrow-right{right: 2px;background-position: 0 -39px;}
+.magnifier{}
+
+
 /* 可选材质 */
 .choose-box{padding-top: 8%;}
-.choose-title{width: 90px;}
+.choose-title{width: 90px;font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .choose-box .table{margin-bottom: 10px;}
 .choose-box .table tbody tr td{padding:10px 0;border: none;}
 .choose-foot a,.choose-body a{display: inline-block;font-size: 16px;color: #333;margin:2px;}
 .choose-body a{padding: 3px 2px;border:1px solid #52b6d0;line-height: 1;min-width: 64px;text-align: center;}
 .choose-body a.active{border-color: #f8b62b;}
-.choose-foot{margin-bottom: 10px;padding-left: 12%;}
+.choose-foot{margin-bottom: 10px;padding-left: 12%;font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .choose-foot a{color: #52b6d0;font-weight: bold;font-size: 18px;}
 .choose-foot a:first-child{margin-right: 20px;}
 .ico-online{margin-right: 5px;width: 100%;background: #fff url('../../images/icon/ico-phone.png') 0 -107px no-repeat;width: 45px;height: 45px;vertical-align: middle;}
 .choose-box .divider{height: 2px;margin-bottom: 10px;}
-.choose-box p span{display: inline-block;padding-right: 6.7%;line-height: 1;}
-
+.choose-box p span{display: inline-block;/* padding-right: 6.7%; */line-height: 1;width: 20%;vertical-align: middle;font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
+/* .choose-box p span:last-child{width: 28%;} */
 
 .card-right-body{padding-left: 24px;}
 
 /* 产品详情 */
 .fix-top{z-index: 20;}
-.floor-btns .btn{padding:10px 0;font-size: 16px!important;margin:10px 5px 10px 0;width: 100%;}
+.floor-btns .btn{padding:10px 0;font-size: 16px!important;margin:10px 5px 10px 0;width: 100%;font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .floor-btns .btn .ico-circle{margin-left: 0!important;}
 .card-floor-box .floor-btns .btn{width: auto;padding: 10px 6px;margin: 5px 2px;}
 .card-floor-box .floor-btns .btn .ico-circle{display: none;}
@@ -69,18 +92,20 @@ p.ellipse4{height: 120px;line-height: 30px;overflow: hidden;text-overflow:ellips
 
 /* 新闻详情 */
 .new-article-card .header{color: #52b6d0;border-color: #52b6d0;border-width: 2px;}
-.new-article-card.card{margin-top: -8px;}
-.new-article-card.card .header,.new-article-card.card .body{padding:10px 15px;}
+.new-article-card.card{margin-top: -8px;padding-left: 2%;}
+.new-article-card.card .header,.new-article-card.card .body{padding:10px 0;}
 .new-article-card.card .header{padding-top: 0;}
+.new-article-card.card .header h3{font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .new-article-card.card .body{line-height: 24px;font-size: 16px;}
 .new-article-card img{display: inline-block;max-width: 100%;margin: 3px;vertical-align: bottom;}
 .new-info{font-size: 16px;}
 .new-info span{display: inline-block;margin-right: 10px;}
 
 .contact-list{/* margin-right: -15px; */border:1px solid #CCC;}
-.contact-list h3{line-height: 42px;font-size: 22px;margin-bottom: 5px;padding-left: 15px;margin-top: 0;}
+.contact-list h3{line-height: 42px;font-size: 22px;margin-bottom: 5px;padding-left: 15px;margin-top: 0;font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .contact-list .nav{border-top: 2px solid #52b6d0;}
 .contact-list .nav .ico-circle{width: 12px;height: 12px;margin-left: 0;background-color: #ADADAD;}
 .contact-list .nav>li{float: left;width: 50%;}
 .contact-list .nav>li>a{color: #ADADAD;}
+
 
