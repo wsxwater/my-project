@@ -24,7 +24,11 @@
 	<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="../plugins/Swiper-3.2.7/css/swiper.min.css">
-	<link href="../plugins/light-gallery/css/lightgallery.min.css" rel="stylesheet" />
+
+  <!-- <link href="../plugins/light-gallery/css/lightgallery.min.css" rel="stylesheet" /> -->
+  <link href="../plugins/jquery.photoSwiper/photoswipe.min.css" rel="stylesheet">
+  <link href="../plugins/jquery.photoSwiper/default-skin.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/private/list.css">
 	<link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
@@ -401,25 +405,19 @@
                           <div><a href="qualification.html" class="btn-block font-48 col-default">资质齐全&nbsp;&nbsp;&nbsp;包过环评</a></div>
                         </div>
                       </div>
-                      <div class="col-xs-6 col-sm-3">
-                        <div class="card z-depth-0">
-                          <a href="../images/qualification/qc1.jpg" class="card-image btn-block"><img src="../images/qualification/qc1.jpg"></a>
-                        </div>
-                      </div>
-                      <div class="col-xs-6 col-sm-3">
-                        <div class="card z-depth-0">
-                          <a href="../images/qualification/qc2.jpg" class="card-image btn-block"><img src="../images/qualification/qc2.jpg"></a>
-                        </div>
-                      </div>
-                      <div class="col-xs-6 col-sm-3">
-                        <div class="card z-depth-0">
-                          <a href="../images/qualification/qc3.jpg" class="card-image btn-block"><img src="../images/qualification/qc3.jpg"></a>
-                        </div>
-                      </div>
-                      <div class="col-xs-6 col-sm-3">
-                        <div class="card z-depth-0">
-                          <a href="../images/qualification/qc4.jpg" class="card-image btn-block"><img src="../images/qualification/qc4.jpg"></a>
-                        </div>
+                      <div class="col-xs-12 qualification-card-group">
+                        <a href="../images/qualification/qc1.jpg" data-size="1252x1600" data-med="../images/qualification/qc1.jpg" data-med-size="801x1024" data-author="东莞市万凯环保科技有限公司" class="col-xs-6 col-sm-3 card z-depth-0">
+                          <div class="card-image"><img src="../images/qualification/qc1.jpg"></div>
+                        </a>
+                        <a href="../images/qualification/qc2.jpg" data-size="1252x1600" data-med="../images/qualification/qc2.jpg" data-med-size="801x1024" data-author="东莞市万凯环保科技有限公司" class="col-xs-6 col-sm-3 card z-depth-0">
+                          <div class="card-image"><img src="../images/qualification/qc2.jpg"></div>
+                        </a>
+                        <a href="../images/qualification/qc3.jpg" data-size="1252x1600" data-med="../images/qualification/qc3.jpg" data-med-size="801x1024" data-author="东莞市万凯环保科技有限公司" class="col-xs-6 col-sm-3 card z-depth-0">
+                          <div class="card-image"><img src="../images/qualification/qc3.jpg"></div>
+                        </a>
+                        <a href="../images/qualification/qc4.jpg" data-size="1252x1600" data-med="../images/qualification/qc4.jpg" data-med-size="801x1024" data-author="东莞市万凯环保科技有限公司" class="col-xs-6 col-sm-3 card z-depth-0">
+                          <div class="card-image"><img src="../images/qualification/qc4.jpg"></div>
+                        </a>
                       </div>
                     </section>
                   </div>
@@ -482,20 +480,18 @@
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
-    <script src="../plugins/light-gallery/js/lightgallery.js"></script>
+    
+    <!-- <script src="../plugins/light-gallery/js/lightgallery.js"></script> -->
+    <script src="../plugins/jquery.photoSwiper/photoswipe.min.js"></script>
+    <script src="../plugins/jquery.photoSwiper/photoswipe-ui-default.min.js"></script>
+    <script src="../plugins/jquery.photoSwiper/jquery.initPhotoSwiper.js"></script>
+    
     <script src="../plugins/jquery.zoombie/jquery.zoombie.js"></script><!-- 放大镜 -->
     <script src="../js/myroute.js"></script>
     <script src="../js/pages/admin.js"></script>
 
     <script type="text/javascript">
     	$(function(){
-
-        /*公司资质*/
-        $('.qualification ').lightGallery({
-            thumbnail: true,
-            selector: '.card a'
-        });
-
 
         //可选材质
         $('.optional-material.choose-body').on('click','a',function () {

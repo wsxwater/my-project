@@ -331,7 +331,14 @@ document.writeln("<\/div>");
          openPhotoSwipe( hashData.pid,  galleryElements[ hashData.gid - 1 ], true, true );
      }
   };
-  if (('.card-product-box').length>0) {
+  
+  if ($('.card-product-box').length>0) {
     initPhotoSwipeFromDOM('.card-product-box');
   }
+  
+  if ($('.qualification-card-group').length>0) {
+    initPhotoSwipeFromDOM('.qualification-card-group');
+  }
+
+
 })();

@@ -271,7 +271,9 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 /* 资质齐全包过环评 */
 .qualification{}
 .qualification .row{background-color: #E0E0E0;padding:0 2% 4%;margin-bottom: 0;margin:0;}
-.qualification .row>div{padding:0 7px;}
+/* .qualification .row>div{padding:0 7px;} */
+.qualification-card-group{padding: 0;}
+.qualification-card-group a.card{padding:0 7px;margin-bottom: 10px;background-color: transparent;display: block;}
 .qualification .row .card{margin-bottom: 10px;}
 
 /*看了又看*/

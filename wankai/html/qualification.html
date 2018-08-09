@@ -24,8 +24,8 @@
 	<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="../plugins/Swiper-3.2.7/css/swiper.min.css">
-	<link href="../plugins/light-gallery/css/lightgallery.min.css" rel="stylesheet" />
 
+	<!-- <link href="../plugins/light-gallery/css/lightgallery.min.css" rel="stylesheet" /> -->
   <link href="../plugins/jquery.photoSwiper/photoswipe.min.css" rel="stylesheet">
   <link href="../plugins/jquery.photoSwiper/default-skin.min.css" rel="stylesheet">
 
@@ -198,7 +198,7 @@
                  <!-- 
                     href="":pc端要放大图片
                     data-size="1600x1194":pc端要放大的尺寸 
-                    
+
                     data-med="":移动端要放大图片
                     data-med-size="1024x764":移动端要放大的尺寸
                  -->
@@ -239,6 +239,7 @@
                     </div>
                 </a>
               </div> 
+
               <!-- <div class="row vrow3 align-center card-product-box">
                 <div class="col-xs-6 col-sm-4">
                   <div class="card z-depth-0 card-product">
@@ -437,15 +438,16 @@
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
-    <script src="../plugins/light-gallery/js/lightgallery.js"></script>
-    <script src="../plugins/jquery.zoombie/jquery.zoombie.js"></script><!-- 放大镜 -->
+    
+    <!-- <script src="../plugins/light-gallery/js/lightgallery.js"></script> -->
+    <script src="../plugins/jquery.photoSwiper/photoswipe.min.js"></script>
+    <script src="../plugins/jquery.photoSwiper/photoswipe-ui-default.min.js"></script>
+    <script src="../plugins/jquery.photoSwiper/jquery.initPhotoSwiper.js"></script>
+    
     <script src="../js/myroute.js"></script>
     <script src="../js/pages/admin.js"></script>
 
 
-    <script src="../plugins/jquery.photoSwiper/photoswipe.min.js"></script>
-    <script src="../plugins/jquery.photoSwiper/photoswipe-ui-default.min.js"></script>
-    <script src="../plugins/jquery.photoSwiper/jquery.initPhotoSwiper.js"></script>
 
     <script type="text/javascript">
     	$(function(){
@@ -463,8 +465,6 @@
         //     thumbnail: true,
         //     selector: '.card-product a'
         // });
-        
-        //$('.card-product-box .card-product .card-image').zoombie({ on: 'toggle' });
         
 
 
