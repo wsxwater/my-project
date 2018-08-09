@@ -29,7 +29,7 @@ p.ellipse4{height: 120px;line-height: 30px;overflow: hidden;text-overflow:ellips
 .pc-slide .view{border-bottom: 1px solid #ddd;}
 .pc-slide .view .swiper-container {width: 100%;}
 /* .pc-slide .view .swiper-container a{display: block;width: 100%;height: 100%;overflow: hidden;position: relative;} */
-.pc-slide .view .swiper-container img.btn-block{display: block;width: 100%;height: 100%;object-fit: cover; }
+.pc-slide .view .swiper-container img{display: block;width: 100%;height: 100%;object-fit: cover; }
 .pc-slide .view .swiper-container img.zoomImg{padding: 2px;background-color: #52b6d0;background-color: rgba(82, 182, 208, 0.5);}
 .pc-slide .preview {width: 100%;position: relative;padding:5px 30px;}
 .pc-slide .preview .swiper-container {height: 42px;width: 100%;}
@@ -55,7 +55,7 @@ font-size: 0;}
 .pictures .pictures-sm .arrow-left,.pictures .pictures-sm .arrow-right{background: url('../../images/icon/ico-arrow.png') no-repeat 0 0;position: absolute;top:6px;width: 25px;height: 39px;z-index: 4;}
 .pictures .pictures-sm .arrow-left{left: 2px;background-position: 0 0;}
 .pictures .pictures-sm .arrow-right{right: 2px;background-position: 0 -39px;}
-.magnifier{}
+.magnifier{width: 40%;height: 40%;border:2px solid #52b6d0;background-color: #fff;;position: absolute;background-repeat: no-repeat;}
 
 
 /* 可选材质 */

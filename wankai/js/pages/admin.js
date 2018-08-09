@@ -202,12 +202,74 @@ function lookedSlider(class_name,params) {
   });
 }
 
+$.AdminBSB.tabCarousel={
+  activate:function () {
+    var _this=this;
+    var $pnow=0;
+    var $pul=$('.pictures-sm ul');
+    var $pli=$('.pictures-sm ul li');
+    var $plen=$pli.length;
+
+    $('.pictures .pictures-lg a').zoombie({on:'toggle mouseover'});
+
+    $pul.on('click', 'li', function() {
+      var i=$pli.index(this);
+      $pnow=i;
+      picturesTab();
+    });
+
+    //采购设备
+    $('.purchase-equipment').on('click','a',function () {
+       var idx=$('.purchase-equipment a').index(this);
+       $pnow=idx;
+       picturesTab();
+    })
+
+    function picturesTab() {
+      if (!$pul.is(':animated')) {
+        $pul.animate({left: -$pnow*$('.pictures-sm ul li').eq(0).outerHeight()+'px'}, 'slow')/*.('left',)*/;
+      }
+      $pli.eq($pnow).addClass('active').siblings().removeClass('active');
+      $('.pictures-lg a').eq($pnow).addClass('active').siblings().removeClass('active');
+      $('.purchase-equipment a').eq($pnow).addClass('active').siblings().removeClass('active');
+    }
+
+    function picturesTabPrev() {
+      if($pnow==0){
+          $pnow=$plen-1;
+      }else{
+          $pnow--;
+      }
+      picturesTab();
+    }
+    function picturesTabNext() {
+      if($pnow==$plen-1){
+          $pnow=0;
+      }else{
+          $pnow++;
+      }
+      picturesTab();
+    }
+
+    $('.pictures-sm .arrow-left').click(function () {
+      picturesTabPrev();
+    });
+    $('.pictures-sm .arrow-right').click(function () {
+      picturesTabNext();
+    });
+  }
+};
+
 //==========================================================================================================================
 
 $(function () {
 
     $.AdminBSB.rightSideBarM.activate();
     $.classifyMenu.activate();
+
+    if ($('.pictures').length>0) {
+        $.AdminBSB.tabCarousel.activate();
+    }
     
     highlightPage();
     function highlightPage() {
@@ -220,8 +282,8 @@ $(function () {
         for (var i = 0; i < links.length; i++) {
             var link_url=links.eq(i).children().attr('href').toLowerCase();
             var cur_url =window.location.href.toLowerCase();
-            console.log(cur_url);
-            console.log(link_url);
+            //console.log(cur_url);
+            //console.log(link_url);
             if (cur_url.indexOf(link_url)!=-1) {
                 links.eq(i).children().addClass('active')
             }

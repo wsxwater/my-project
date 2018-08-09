@@ -34,16 +34,60 @@
 
     	<div class="row vrow32">
 	    	<div class="col-xs-12 col-sm-5 col-md-4">
-	    		<div class="pictures">
+	    		<!-- <div class="pictures">
 	    			<div class="pictures-lg">
 	    				<div class="rectbox">
 	    					<div class="rect">
-	    						<a href="javascript:;" class="active" id="image1"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    						<a href="javascript:;" class="active"><img src="http://www.jsdaima.com/Upload/1419473191/bike_blue.jpg" class="btn-block"><div class="magnifier"></div></a>
 	    					</div>
 	    				</div>
 	    				
 	    			</div>
 	    			<div class="pictures-sm"></div>
+	    		</div> -->
+
+	    		<div class="pictures">
+	    		  <div class="pictures-lg">
+	    		    <div class="rectbox">
+	    		      <div class="rect">
+	    		        <a href="javascript:;" class="active"><img src="../images/list/reread1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="http://www.jsdaima.com/Upload/1419473191/bike_blue.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        <a href="javascript:;"><img src="../images/list/p1.jpg" class="btn-block"><div class="magnifier"></div></a>
+	    		        
+	    		      </div>
+	    		    </div>
+	    		  </div>
+	    		  <div class="pictures-sm">
+	    		    <div class="pictures-sm-cell">
+	    		      <a class="arrow-left" href="javascript:;"></a>
+	    		      <a class="arrow-right" href="javascript:;"></a>
+	    		      <div class="pictures-sm-item">
+	    		        <ul class="clearfix">
+	    		          <li class="active"><img src="../images/list/reread1.jpg" class="btn-block"></li>
+	    		          <li><img src="http://www.jsdaima.com/Upload/1419473191/bike_blue.jpg" class="btn-block"></li>
+	    		          <li><img src="../images/list/p1.jpg" class="btn-block"></li>
+	    		          <li><img src="../images/list/p1.jpg" class="btn-block"></li>
+	    		          <li><img src="../images/list/p1.jpg" class="btn-block"></li>
+	    		          <li><img src="../images/list/p1.jpg" class="btn-block"></li>
+	    		          <li><img src="../images/list/p1.jpg" class="btn-block"></li>
+	    		          <li><img src="../images/list/p1.jpg" class="btn-block"></li>
+	    		          <li><img src="../images/list/p1.jpg" class="btn-block"></li>
+	    		          <li><img src="../images/list/p1.jpg" class="btn-block"></li>
+	    		          <li><img src="../images/list/p1.jpg" class="btn-block"></li>
+	    		          <li><img src="../images/list/p1.jpg" class="btn-block"></li>
+	    		        </ul>
+	    		      </div>
+	    		    </div>
+	    		  </div>
 	    		</div>
                 
 
@@ -62,7 +106,156 @@
 
 	<script type="text/javascript">
 		$(function () {
-			
+
+			$.picTabCarousel={
+				activate:function () {
+					var _this=this;
+					var obj=$('.pictures-lg a');
+					// obj.on('click mousemove',function (event) {
+					// 	var e=window.event||event;
+					// 	var mw=$('.magnifier').outerWidth()/2;
+					// 	var x=e.clientX-$(this).offset().left;
+					// 	var y=e.clientY-$(this).offset().top;
+					// 	var $img=$(this).children('img');
+					// 	var scalex,scaley;
+
+					// 	$('.magnifier').show();
+					// 	// 图片地址
+					// 	var img_url = $img.attr('src');
+					// 	// 创建对象
+					// 	var img = new Image();
+					// 	// 改变图片的src
+					// 	img.src = img_url;
+					// 	// 加载完成执行
+					// 	img.onload = function(){
+					// 	    // 打印
+					// 	    //console.log('width:'+img.width+',height:'+img.height);
+					// 	    var width=img.width;
+					// 	    var height=img.height;
+					// 	    scalex=width/$img.outerWidth();
+					// 	    scaley=height/$img.outerWidth();
+					// 		console.log(scalex,scaley);
+					// 	    $('.magnifier').css({'left':(x-mw)+'px','top':(y-mw)+'px','background-image':'url('+img_url+')','background-position':(-x)*scalex+'px '+(-y)*scaley+'px'});
+					// 		//console.log(e.clientX);
+					// 	}
+
+					// 	return false;
+					// });
+					// 
+					_this.cancel();
+				},
+				tab:function () {
+					
+				},
+				tabPrev:function () {
+					
+				},
+				tabNext:function () {
+					
+				},
+				cancel:function () {
+					var obj=$('.pictures-lg a');
+					obj.mouseleave(function () {
+						$('.magnifier').hide();
+					});
+
+					$('body').click(function(event) {
+						$('.magnifier').hide();
+					});
+				}
+			}
+
+			$.picTabCarousel.activate();
+			$('.pictures-lg a').on('click mousemove',function (event) {
+				var e=window.event||event;
+				var mw=$('.magnifier').outerWidth()/2;
+				var x=e.clientX-$(this).offset().left;
+				var y=e.clientY-$(this).offset().top;
+				var $img=$(this).children('img');
+				var scalex,scaley;
+
+				$('.magnifier').show();
+				// 图片地址
+				var img_url = $img.attr('src');
+				// 创建对象
+				var img = new Image();
+				// 改变图片的src
+				img.src = img_url;
+				// 加载完成执行
+				img.onload = function(){
+				    // 打印
+				    //console.log('width:'+img.width+',height:'+img.height);
+				    var width=img.width;
+				    var height=img.height;
+				    scalex=width/$img.outerWidth();
+				    scaley=height/$img.outerWidth();
+					console.log(scalex,scaley);
+				    $('.magnifier').css({'left':(x)+'px','top':(y)+'px','background-image':'url('+img_url+')','background-position':(-x)*scalex+'px '+(-y)*scaley+'px'});
+					//console.log(e.clientX);
+				}
+
+				return false;
+			});
+
+			$('.pictures-lg a').mouseleave(function () {
+				$('.magnifier').hide();
+			});
+
+			$('body').click(function(event) {
+				$('.magnifier').hide();
+			});
+
+			//$('.pictures .pictures-lg a').zoombie({on:'toggle mouseover'});
+
+			var $pnow=0;
+			var $plen=$('.pictures-sm ul li').length;
+			var $pul=$('.pictures-sm ul');
+
+			$('.pictures-sm ul').on('click', 'li', function() {
+			  var i=$('.pictures-sm ul li').index(this);
+			  $pnow=i;
+			  picturesTab();
+			});
+
+			//采购设备
+			$('.purchase-equipment').on('click','a',function () {
+			   var idx=$('.purchase-equipment a').index(this);
+			   $pnow=idx;
+			   picturesTab();
+			})
+
+			function picturesTab() {
+			  if (!$pul.is(':animated')) {
+			    $pul.animate({left: -$pnow*$('.pictures-sm ul li').eq(0).outerHeight()+'px'}, 'slow')/*('left',)*/;
+			  }
+			  $('.pictures-sm ul li').eq($pnow).addClass('active').siblings().removeClass('active');
+			  $('.pictures-lg a').eq($pnow).addClass('active').siblings().removeClass('active');
+			  $('.purchase-equipment a').eq($pnow).addClass('active').siblings().removeClass('active');
+			}
+
+			function picturesTabPrev() {
+			  if($pnow==0){
+			      $pnow=$plen-1;
+			  }else{
+			      $pnow--;
+			  }
+			  picturesTab();
+			}
+			function picturesTabNext() {
+			  if($pnow==$plen-1){
+			      $pnow=0;
+			  }else{
+			      $pnow++;
+			  }
+			  picturesTab();
+			}
+
+			$('.pictures-sm .arrow-left').click(function () {
+			  picturesTabPrev();
+			});
+			$('.pictures-sm .arrow-right').click(function () {
+			  picturesTabNext();
+			});
 
 
 		    //$("#img_01").imageLens();

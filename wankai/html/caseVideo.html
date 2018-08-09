@@ -704,77 +704,18 @@
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
     <script src="../plugins/light-gallery/js/lightgallery.js"></script>
-    <script src="../plugins/jquery.zoombie/jquery.zoombie.js"></script>
-
-
-
+    <script src="../plugins/jquery.zoombie/jquery.zoombie.js"></script><!-- 放大镜 -->
     <script src="../js/myroute.js"></script>
     <script src="../js/pages/admin.js"></script>
 
     <script type="text/javascript">
     	$(function(){
-        // $('.detail-img a').zoombie();
-        // $('.detail-img a').zoombie({on:'toggle'});
-        // $('.pictures .pictures-lg a').zoombie();
-        $('.pictures .pictures-lg a').zoombie({on:'toggle mouseover'});
-
-        var $pnow=0;
-        var $plen=$('.pictures-sm ul li').length;
-        var $pul=$('.pictures-sm ul');
-
-        $('.pictures-sm ul').on('click', 'li', function() {
-          var i=$('.pictures-sm ul li').index(this);
-          $pnow=i;
-          picturesTab();
-        });
-
-        //采购设备
-        $('.purchase-equipment').on('click','a',function () {
-           var idx=$('.purchase-equipment a').index(this);
-           $pnow=idx;
-           picturesTab();
-        })
-
-        function picturesTab() {
-          if (!$pul.is(':animated')) {
-            $pul.animate({left: -$pnow*$('.pictures-sm ul li').eq(0).outerHeight()+'px'}, 'slow')/*('left',)*/;
-          }
-          $('.pictures-sm ul li').eq($pnow).addClass('active').siblings().removeClass('active');
-          $('.pictures-lg a').eq($pnow).addClass('active').siblings().removeClass('active');
-          $('.purchase-equipment a').eq($pnow).addClass('active').siblings().removeClass('active');
-        }
-
-        function picturesTabPrev() {
-          if($pnow==0){
-              $pnow=$plen-1;
-          }else{
-              $pnow--;
-          }
-          picturesTab();
-        }
-        function picturesTabNext() {
-          if($pnow==$plen-1){
-              $pnow=0;
-          }else{
-              $pnow++;
-          }
-          picturesTab();
-        }
-
-        $('.pictures-sm .arrow-left').click(function () {
-          picturesTabPrev();
-        });
-        $('.pictures-sm .arrow-right').click(function () {
-          picturesTabNext();
-        });
        
-
         /*公司资质*/
         $('.qualification ').lightGallery({
             thumbnail: true,
             selector: '.card a'
         });
-
 
         // //轮播图片
         // var viewSwiper = new Swiper('.pc-slide .view .swiper-container', {
