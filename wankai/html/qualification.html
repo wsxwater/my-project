@@ -24,7 +24,11 @@
 	<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="../plugins/Swiper-3.2.7/css/swiper.min.css">
-	<!-- <link href="../plugins/light-gallery/css/lightgallery.min.css" rel="stylesheet" /> -->
+	<link href="../plugins/light-gallery/css/lightgallery.min.css" rel="stylesheet" />
+
+  <link href="../plugins/jquery.photoSwiper/photoswipe.min.css" rel="stylesheet">
+  <link href="../plugins/jquery.photoSwiper/default-skin.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="../css/public/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/private/list.css">
 	<link rel="stylesheet" type="text/css" href="../css/public/adjuct.css">
@@ -191,9 +195,54 @@
             </div><!-- /.card-left -->
             <div class="card-right">
               <div class="row vrow3 align-center card-product-box">
+                 <!-- 
+                    href="":pc端要放大图片
+                    data-size="1600x1194":pc端要放大的尺寸 
+                    
+                    data-med="":移动端要放大图片
+                    data-med-size="1024x764":移动端要放大的尺寸
+                 -->
+                <a href="../images/index/default.jpg" data-size="1600x1194" data-med="../images/index/default.jpg" data-med-size="1024x764" data-author="东莞市万凯环保科技有限公司" class="col-black col-xs-6 col-sm-4 card z-depth-0 card-product">
+                    <div class="card-image"><img src="../images/index/default.jpg" /></div>
+                    <div class="body">
+                      <div class="text-ellipsis1">等离子CEP环保证书04</div>
+                    </div>
+                </a>
+                <a href="../images/index/case1.jpg" data-size="1600x1194" data-med="../images/index/case1.jpg" data-med-size="1024x764" data-author="东莞市万凯环保科技有限公司" class="col-black col-xs-6 col-sm-4 card z-depth-0 card-product">
+                    <div class="card-image"><img src="../images/index/case1.jpg" /></div>
+                    <div class="body">
+                      <div class="text-ellipsis1">等离子CEP环保证书04</div>
+                    </div>
+                </a>
+                <a href="../images/index/default.jpg" data-size="1600x1194" data-med="../images/index/default.jpg" data-med-size="1024x764" data-author="东莞市万凯环保科技有限公司" class="col-black col-xs-6 col-sm-4 card z-depth-0 card-product">
+                    <div class="card-image"><img src="../images/index/default.jpg" /></div>
+                    <div class="body">
+                      <div class="text-ellipsis1">等离子CEP环保证书04</div>
+                    </div>
+                </a>
+                <a href="../images/index/case1.jpg" data-size="1600x1194" data-med="../images/index/case1.jpg" data-med-size="1024x764" data-author="东莞市万凯环保科技有限公司" class="col-black col-xs-6 col-sm-4 card z-depth-0 card-product">
+                    <div class="card-image"><img src="../images/index/case1.jpg" /></div>
+                    <div class="body">
+                      <div class="text-ellipsis1">等离子CEP环保证书04</div>
+                    </div>
+                </a>
+                <a href="../images/index/case1.jpg" data-size="1600x1194" data-med="../images/index/case1.jpg" data-med-size="1024x764" data-author="东莞市万凯环保科技有限公司" class="col-black col-xs-6 col-sm-4 card z-depth-0 card-product">
+                    <div class="card-image"><img src="../images/index/case1.jpg" /></div>
+                    <div class="body">
+                      <div class="text-ellipsis1">等离子CEP环保证书04</div>
+                    </div>
+                </a>
+                <a href="../images/index/case1.jpg" data-size="1600x1194" data-med="../images/index/case1.jpg" data-med-size="1024x764" data-author="东莞市万凯环保科技有限公司" class="col-black col-xs-6 col-sm-4 card z-depth-0 card-product">
+                    <div class="card-image"><img src="../images/index/case1.jpg" /></div>
+                    <div class="body">
+                      <div class="text-ellipsis1">等离子CEP环保证书04</div>
+                    </div>
+                </a>
+              </div> 
+              <!-- <div class="row vrow3 align-center card-product-box">
                 <div class="col-xs-6 col-sm-4">
                   <div class="card z-depth-0 card-product">
-                    <a href="javascript:;" class="btn-block"><!-- ../images/index/default.jpg -->
+                    <a href="../images/index/default.jpg" data-size="600x600" data-med="../images/index/default.jpg" data-med-size="600x448" class="btn-block">
                       <div class="card-image"><img src="../images/index/default.jpg" alt="等离子CEP环保证书04"></div>
                       <div class="body">
                         <div class="text-ellipsis1">等离子CEP环保证书04</div>
@@ -203,7 +252,7 @@
                 </div>
                 <div class="col-xs-6 col-sm-4">
                   <div class="card z-depth-0 card-product">
-                    <a href="javascript:;" class="btn-block"><!-- ../images/index/case1.jpg -->
+                    <a href="../images/index/case1.jpg" data-size="600x448" data-med="../images/index/case1.jpg" data-med-size="600x448" class="btn-block">
                       <div class="card-image"><img src="../images/index/case1.jpg" alt="等离子CEP环保证书04"></div>
                       <div class="body">
                         <div class="text-ellipsis1">等离子CEP环保证书04</div>
@@ -213,7 +262,7 @@
                 </div>
                 <div class="col-xs-6 col-sm-4">
                   <div class="card z-depth-0 card-product">
-                    <a href="javascript:;" class="btn-block"><!-- ../images/index/case1.jpg -->
+                    <a href="../images/index/case1.jpg" data-size="600x448" data-med="../images/index/case1.jpg" data-med-size="600x448" class="btn-block">
                       <div class="card-image"><img src="../images/index/case1.jpg" alt="等离子CEP环保证书04"></div>
                       <div class="body">
                         <div class="text-ellipsis1">等离子CEP环保证书04</div>
@@ -223,7 +272,7 @@
                 </div>
                 <div class="col-xs-6 col-sm-4">
                   <div class="card z-depth-0 card-product">
-                    <a href="javascript:;" class="btn-block"><!-- ../images/index/default.jpg -->
+                    <a href="../images/index/default.jpg" data-size="600x448" data-med="../images/index/default.jpg" data-med-size="600x448" class="btn-block">../images/index/default.jpg
                       <div class="card-image"><img src="../images/index/default.jpg" alt="等离子CEP环保证书04"></div>
                       <div class="body">
                         <div class="text-ellipsis1">等离子CEP环保证书04</div>
@@ -233,7 +282,7 @@
                 </div>
                 <div class="col-xs-6 col-sm-4">
                   <div class="card z-depth-0 card-product">
-                    <a href="javascript:;" class="btn-block"><!-- ../images/index/case1.jpg -->
+                    <a href="../images/index/case1.jpg" data-size="600x448" data-med="../images/index/case1.jpg" data-med-size="600x448" class="btn-block">
                       <div class="card-image"><img src="../images/index/case1.jpg" alt="等离子CEP环保证书04"></div>
                       <div class="body">
                         <div class="text-ellipsis1">等离子CEP环保证书04</div>
@@ -243,7 +292,7 @@
                 </div>
                 <div class="col-xs-6 col-sm-4">
                   <div class="card z-depth-0 card-product">
-                    <a href="javascript:;" class="btn-block"><!-- ../images/index/case1.jpg -->
+                    <a href="../images/index/case1.jpg" data-size="600x448" data-med="../images/index/case1.jpg" data-med-size="600x448" class="btn-block">
                       <div class="card-image"><img src="../images/index/case1.jpg" alt="等离子CEP环保证书04"></div>
                       <div class="body">
                         <div class="text-ellipsis1">等离子CEP环保证书04</div>
@@ -251,7 +300,7 @@
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <nav aria-label="Page navigation" class="align-center pagination-box">
                 <ul class="pagination">
                   <li><a href="javascript:;"><span>共20页236条记录</span></a></li>
@@ -384,13 +433,19 @@
         <div is="foot"></div>
     </div>
 
+
     <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="../plugins/Swiper-3.2.7/js/swiper.min.js"></script>
-    <!-- <script src="../plugins/light-gallery/js/lightgallery.js"></script> -->
+    <script src="../plugins/light-gallery/js/lightgallery.js"></script>
     <script src="../plugins/jquery.zoombie/jquery.zoombie.js"></script><!-- 放大镜 -->
     <script src="../js/myroute.js"></script>
     <script src="../js/pages/admin.js"></script>
+
+
+    <script src="../plugins/jquery.photoSwiper/photoswipe.min.js"></script>
+    <script src="../plugins/jquery.photoSwiper/photoswipe-ui-default.min.js"></script>
+    <script src="../plugins/jquery.photoSwiper/jquery.initPhotoSwiper.js"></script>
 
     <script type="text/javascript">
     	$(function(){
@@ -409,7 +464,12 @@
         //     selector: '.card-product a'
         // });
         
-        $('.card-product-box .card-product .card-image').zoombie({ on: 'toggle' });
+        //$('.card-product-box .card-product .card-image').zoombie({ on: 'toggle' });
+        
+
+
+        
+        
                  
     	});
     </script>

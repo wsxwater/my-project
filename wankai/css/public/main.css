@@ -266,7 +266,8 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 .ico-problem0.ico-problem-arrow:before{left: -10px;}
 .ico-problem1.ico-problem-arrow:before{right: -10px;}
 
-
+/* qualification.html */
+.card-product-box a.card.card-product{display: block;}
 /* 资质齐全包过环评 */
 .qualification{}
 .qualification .row{background-color: #E0E0E0;padding:0 2% 4%;margin-bottom: 0;margin:0;}

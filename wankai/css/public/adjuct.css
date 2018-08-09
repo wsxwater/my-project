@@ -32,7 +32,8 @@
     .vrow,.vrow>div{padding-left: 7px;padding-right: 7px;}
     .vrow>div:nth-of-type(odd){padding-left: 7px;}
     .vrow>div:nth-of-type(even){padding-right: 7px;}
-    .vrow3,.vrow3>div{padding-left: 7px;padding-right: 7px;}
+    .vrow3,.vrow3>div,.card-product-box a.card.card-product{padding-left: 7px;padding-right: 7px;}
+
     
     .index-box .vbtn-info {font-size: 17px;}
     /* 5大优势 */
