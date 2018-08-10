@@ -165,45 +165,62 @@
 				}
 			}
 
-			$.picTabCarousel.activate();
-			$('.pictures-lg a').on('click mousemove',function (event) {
-				var e=window.event||event;
-				var mw=$('.magnifier').outerWidth()/2;
-				var x=e.clientX-$(this).offset().left;
-				var y=e.clientY-$(this).offset().top;
-				var $img=$(this).children('img');
-				var scalex,scaley;
+			//$.picTabCarousel.activate();
+			function picZoombieLens() {
+				$('.pictures-lg a').on('click mousemove',function (event) {
+					var e=window.event||event;
+					var $target=$('.magnifier');
+					var mw=$target.outerWidth()/2;
+					var x=e.clientX-$(this).offset().left;
+					var y=e.clientY-$(this).offset().top;
+					var $img=$(this).children('img');
+					var scalex,scaley;
 
-				$('.magnifier').show();
-				// 图片地址
-				var img_url = $img.attr('src');
-				// 创建对象
-				var img = new Image();
-				// 改变图片的src
-				img.src = img_url;
-				// 加载完成执行
-				img.onload = function(){
-				    // 打印
-				    //console.log('width:'+img.width+',height:'+img.height);
-				    var width=img.width;
-				    var height=img.height;
-				    scalex=width/$img.outerWidth();
-				    scaley=height/$img.outerWidth();
-					console.log(scalex,scaley);
-				    $('.magnifier').css({'left':(x)+'px','top':(y)+'px','background-image':'url('+img_url+')','background-position':(-x)*scalex+'px '+(-y)*scaley+'px'});
-					//console.log(e.clientX);
-				}
 
-				return false;
-			});
+					if (x < 0 || y < 0 || x > $(this).width() || y > $(this).height()) {
+					    $target.hide();
+					}else{
+						$target.show();
+						// 图片地址
+						var img_url = $img.attr('src');
+						// 创建对象
+						var img = new Image();
+						// 改变图片的src
+						img.src = img_url;
+						// 加载完成执行
+						img.onload = function(){
+						    // 打印
+						    //console.log('width:'+img.width+',height:'+img.height);
+						    $target.css({'background-image':'url('+this.src+')'});
+						    var width=img.width;
+						    var height=img.height;
+						    scalex=width/$img.outerWidth();
+						    scaley=height/$img.outerWidth();
+							//console.log(scalex,scaley);
+							//console.log(x,y);
+							x=(x-mw);
+							y=(y-mw);
+						    $target.css({'left':x+'px','top':y+'px'});
+	                        x=(-1)*x*scalex-mw;
+	                        y=(-1)*y*scaley-mw;
+						    $target.css({'background-position':x+'px '+y+'px'});
+							//console.log(e.clientX);
+						}
+					}
+
+					return false;
+				});
+			}
+
+			picZoombieLens();
 
 			$('.pictures-lg a').mouseleave(function () {
 				$('.magnifier').hide();
 			});
 
-			$('body').click(function(event) {
-				$('.magnifier').hide();
-			});
+			// $('body').click(function(event) {
+			// 	$('.magnifier').hide();
+			// });
 
 			//$('.pictures .pictures-lg a').zoombie({on:'toggle mouseover'});
 
@@ -256,6 +273,30 @@
 			$('.pictures-sm .arrow-right').click(function () {
 			  picturesTabNext();
 			});
+
+            
+			var disX=0;
+            var oBox=$('.pictures .pictures-sm .pictures-sm-item ul').get(0);
+            var $width=$('.pictures .pictures-sm .pictures-sm-item ul li').outerWidth()*($('.pictures .pictures-sm .pictures-sm-item ul li').length-1);
+			    console.log($width);
+			oBox.onmousedown=function (ev) {
+				disX=ev.clientX-oBox.offsetLeft;
+			    console.log(disX);
+				document.onmousemove=function(ev){
+					 var l=ev.clientX-disX;
+                     if (l<=-$width) {
+                     	l=-$width;
+                     }else if(l>=$('.pictures .pictures-sm .pictures-sm-item').width()-$('.pictures .pictures-sm .pictures-sm-item ul li').eq(0).outerWidth()){
+                     	l=$('.pictures .pictures-sm .pictures-sm-item').width()-$('.pictures .pictures-sm .pictures-sm-item ul li').eq(0).outerWidth();
+                     }
+					 oBox.style.left=l+'px';
+				}
+				document.onmouseup=function(){
+				    document.onmousemove=null;
+					document.onmouseup=null;
+				}
+				return false;
+			};
 
 
 		    //$("#img_01").imageLens();
