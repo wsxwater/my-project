@@ -64,7 +64,7 @@ document.writeln("");
 document.writeln("    <\/div>");
 document.writeln("");
 document.writeln("<\/div>");
-(function() {
+$(function() {
   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
      var parseThumbnailElements = function(el) {
@@ -341,4 +341,4 @@ document.writeln("<\/div>");
   }
 
 
-})();
+});
