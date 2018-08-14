@@ -171,13 +171,16 @@ $.classifyMenu={
   }
 }
 
-function lookedSlider(class_name,params) {
+function lookedSlider(class_name,params,limit) {
   var length=$(class_name+' .looked-body p').length;
   var $param=parseFloat(params);
   var $down=$(class_name+' .looked-ico .ico-down');
   var $up=$(class_name+' .looked-ico .ico-up');
   var $object=$(class_name+' .looked-cell');
   var now=0;
+  if (length<=limit) {
+    return;
+  }
   $down.click(function () {
     if (!$object.is(':animated')) {
         if (now==length-1) {
