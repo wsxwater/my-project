@@ -172,18 +172,18 @@ $.classifyMenu={
 }
 
 function lookedSlider(class_name,params,limit) {
-  var length=$(class_name+' .looked-body p').length;
+  var $length=$(class_name+' .looked-body p').length;
   var $param=parseFloat(params);
   var $down=$(class_name+' .looked-ico .ico-down');
   var $up=$(class_name+' .looked-ico .ico-up');
   var $object=$(class_name+' .looked-cell');
   var now=0;
-  if (length<=limit) {
+  if ($length<=limit) {
     return;
   }
   $down.click(function () {
     if (!$object.is(':animated')) {
-        if (now==length-1) {
+        if (now==$length-1) {
             now=0;
             $object.animate({top:0},'slow');
         } else {
@@ -195,11 +195,13 @@ function lookedSlider(class_name,params,limit) {
   });
   $up.on('click',function () {
       if (!$object.is(':animated')) {
-          now--;
-          if (now==-1) {
-            now=length-1;
+          if(now==-1){
+              now=$length-1;
+              $object.animate({top:0},'slow');
+          }else{
+              now--;
+              $object.animate({top:-Math.abs(now)*$param+'%'},'slow');
           }
-          $object.animate({top:-Math.abs(now)*$param+'%'},'slow');
       }
       console.log('up:'+now);
   });
@@ -238,7 +240,7 @@ $.AdminBSB.tabCarousel={
     }
 
     function picturesTabPrev() {
-      if($pnow==0){
+      if($pnow==-1){
           $pnow=$plen-1;
       }else{
           $pnow--;
