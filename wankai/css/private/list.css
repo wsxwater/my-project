@@ -80,11 +80,13 @@ font-size: 0;}
 .fix-top,.fix-top2{z-index: 20;}
 .floor-btns .btn{padding:10px 0;font-size: 16px!important;margin:10px 5px 10px 0;width: 100%;font-family: "Roboto","Arial","Tahoma","sans-serif","FZLanTingHei-H-GBK";}
 .floor-btns .btn .ico-circle{margin-left: 0!important;}
-.card-floor-box .floor-btns .btn{width: auto;padding: 10px 6px;margin: 5px 2px;}
+.card-floor-box .floor-btns .btn{width: auto;padding: 10px 6px;margin: 5px 2px;display: none;}
+.card-floor-box .floor-btns .btn.current{display: inline-block;}
 .card-floor-box .floor-btns .btn .ico-circle{display: none;}
 .card-floor-box{float: left;width: 82.9%;padding:0 15px;}
 .card-floor-btns{float: left;width: 17.1%;}
 .card-floor-box img{display: block;width: 100%;}
+.card-floor-box .floor-btns .btn.btns-ctrl{font-size: 20px!important;padding: 4px 12px;display: inline-block;}
 
 /* 常见问题 */
 .card-list-title .navbar-form {margin: 0;padding: 0;padding-top: 2px;}

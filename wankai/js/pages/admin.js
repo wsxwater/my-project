@@ -297,7 +297,7 @@ $(function () {
     } 
 
 
-    /*顶部导航栏 的 手机网站、官方微信 hover click 弹出二维码*/  
+    /*顶部导航栏 hover click 弹出二维码*/  
     $('.topbox a').eq(0).mouseover(function(event) {
       console.log('test');
       $(this).addClass('current');
@@ -307,6 +307,11 @@ $(function () {
       $(this).toggleClass('current');
     });  
     
-
+    //产品详情按钮组
+    if($('.card-floor-box .floor-btns .btn.btns-ctrl')){
+      $('.card-floor-box .floor-btns .btn.btns-ctrl').click(function () {
+        $(this).siblings().not($(this)).toggleClass('current');
+      });
+    }
 
 });
