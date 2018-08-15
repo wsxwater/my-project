@@ -297,7 +297,15 @@ $(function () {
     } 
 
 
-
+    /*顶部导航栏 的 手机网站、官方微信 hover click 弹出二维码*/  
+    $('.topbox a').eq(0).mouseover(function(event) {
+      console.log('test');
+      $(this).addClass('current');
+    }).mouseout(function(event) {
+      $(this).removeClass('current');
+    }).click(function () {
+      $(this).toggleClass('current');
+    });  
     
 
 

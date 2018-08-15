@@ -67,8 +67,17 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 
 /* headbox */
 .topbox{color: #626262;padding: 14px 0 2px;border-bottom: 1px solid #52b6d0;}
-.topbox a{color: #626262;display: inline-block;width: 24%;text-align: right;font-size: 14px;}
+.topbox a{color: #626262;display: inline-block;width: 24%;text-align: right;font-size: 14px;position: relative;}
 .topbox a:hover{color: #f00;}
+
+.hover-img-box{display: none;position: absolute;top:16px;right: 0;background-color: #fff;padding:5px;z-index: 3;margin-top: 12px;margin-bottom: 0;border: 1px solid #ddd;}
+.hover-img-box img{display: block;width: 128px;height: 128px;}
+.topbox a.current .hover-img-box{display: block;}
+.topbox a .arrow,.topbox a .arrow:after {position: absolute;display: block;width: 0;height: 0;border-color: transparent;border-style: solid;}
+.topbox a .arrow{border-width: 11px;top: -10px;right: 5px;margin-left: -11px;border-bottom-color: #ddd;border-top-width:0;}
+.topbox a .arrow:after {content: " ";top: 1px;margin-left: -10px;border-width: 10px;border-top-width: 0;border-bottom-color: #fff;}
+
+
 
 /* logo 位置的navbar*/
 .navbar-static.navbar{position: static;padding: 1.787% 0 8px;margin-bottom: 0;font-family:"Roboto","Arial","Tahoma","sans-serif","黑体";}
@@ -120,7 +129,6 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 .nav-wrap .nav-list.nav>li{display: block;}
 .nav-wrap .nav-list.nav>li>a{padding: 10px;color: #333;}
 .nav-wrap .nav-list.nav>li>a:hover,.nav-wrap .nav-list.nav>li>a.active{color: #FFF;}
-
 
 
 /* 底部 */
