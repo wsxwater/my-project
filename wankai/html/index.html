@@ -210,13 +210,13 @@
                 </section>
             </div>
 
-            <div class="product-show col-white" data-ispc="true">
+            <div class="product-show col-white"><!--  data-ispc="true" -->
               <a href="javascript:;" class="btn-ctrl btn-ctrl-l"></a>
               <a href="javascript:;" class="btn-ctrl btn-ctrl-r"></a>
               <section class="product-show-item current">
                 <div class="itemwrap">
                   <div class="itembox clearfix">
-                      <div class="leftarea">
+                      <div class="leftarea" data-ispc="true">
                         <div class="areabox">
                             <div class="itembox-cell title">等离子UV一体机</div>
                             <div class="itembox-cell intro">
@@ -234,7 +234,9 @@
                       <div class="rightarea">
                         <dvi class="areabox">
                           <!-- <img src="../images/index/psh.jpg"> -->
-                          <img src="../images/productCenter/p1.jpg">
+                          <a href="http://www.baidu.com" class="btn-block">
+                            <img src="../images/productCenter/p1.jpg">
+                          </a>
                           <!-- <a href="javascript:;" class="btn-ctrl btn-ctrl-l"></a>
                           <a href="javascript:;" class="btn-ctrl btn-ctrl-r"></a> -->
                         </dvi>
@@ -921,6 +923,7 @@
           console.log(now);
           switchTab();
         }
+        
 
         $('.product-show .btn-ctrl-l').click(function() {
           tabPrev();
@@ -931,13 +934,12 @@
           return false;
         });
 
-
-        /*公司资质*/
-        // $('.qualification ').lightGallery({
-        //     thumbnail: true,
-        //     selector: '.card a'
-        // });
-        
+        var timer=setInterval(tabNext,3000);
+        $('#productCenter,.product-show').mouseover(function() {
+          clearInterval(timer);
+        }).mouseout(function() {
+          timer=setInterval(tabNext,3000);
+        });
 
 
                  

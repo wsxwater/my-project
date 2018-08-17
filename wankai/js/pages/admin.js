@@ -179,8 +179,10 @@ function lookedSlider(class_name,params,limit) {
   var $object=$(class_name+' .looked-cell');
   var now=0;
   if ($length<=limit) {
+    $(class_name+' .looked-ico').hide();
     return;
   }
+  $(class_name+' .looked-ico').show();
   $down.click(function () {
     if (!$object.is(':animated')) {
         if (now==$length-1) {

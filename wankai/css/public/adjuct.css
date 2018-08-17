@@ -10,7 +10,7 @@
     /* 头部 */
     .navbar-nav{display: none;}
     .navbar.navbar-static .navbar-header{width: 100%;}
-    .navbar-static .navbar-toggle{position: fixed;top:30px;z-index: 21;}
+    .navbar-static .navbar-toggle{position: fixed;top:30px;z-index: 21;border:1px solid #fff;}
     .navbar-static .navbar-brand img[data-ispc="true"]{display: none;}
     .navbar-static .navbar-brand img[data-ispc="false"]{display: block;}
 
@@ -98,7 +98,9 @@
 
     /* 产品中心 */
     .product-group-wrap .list-group-item h4 { text-align: center;font-size: 16px;}
-
+    .qual-box .product-group-wrap .list-group-item{padding: 0 10px;}
+    .qual-box .product-group-wrap .list-group-item h4 {text-align: left;margin-top: 0;margin-bottom: 0;white-space: normal;text-overflow: unset;line-height: 1.4;}
+    .qual-box .product-group-wrap .list-group-item .new-link{padding: 10px 0;}
     /* 案例视频 */
     .card-right-body{padding-left: 0;}
      
@@ -148,6 +150,10 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .itembox .btn-group .btn{font-size: 20px!important;}
+}
+@media screen and (min-width: 768px) {
+   .qual-box .product-group-wrap .list-group-item .col-sm-4{width: 24.439%;}
+   .qual-box .product-group-wrap .list-group-item .col-sm-8{width: 75.561%}
 }
 
 @media screen and (max-width: 1265px) {
