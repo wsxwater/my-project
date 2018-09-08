@@ -98,9 +98,7 @@
 
     /* 产品中心 */
     .product-group-wrap .list-group-item h4 { text-align: center;font-size: 16px;}
-    .qual-box .product-group-wrap .list-group-item{padding: 0 10px;}
-    .qual-box .product-group-wrap .list-group-item h4 {text-align: left;margin-top: 0;margin-bottom: 0;white-space: normal;text-overflow: unset;line-height: 1.4;}
-    .qual-box .product-group-wrap .list-group-item .new-link{padding: 10px 0;}
+    
     /* 案例视频 */
     .card-right-body{padding-left: 0;}
      

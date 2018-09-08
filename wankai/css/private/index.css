@@ -55,15 +55,6 @@
 .nav-tabs+.tab-content{padding-top: 0;}
 .tab-content .card .body{padding: 0 15px;}
 
-.nav-title:before,.ico-fly{content: '';display: inline-block;margin-right: 10px;background: #fff url('../../images/icon/ico-nav.png') 0 0 no-repeat;
-width: 20px;height: 20px;vertical-align: middle;margin-top: -4px;}
-.nav-title.ico-nav0:before{background-position: 0 0;}
-.nav-title.ico-nav1:before{background-position: 0 -20px;}
-.nav-title.ico-nav2:before{background-position: 0 -40px;}
-.nav-title.ico-nav2{height: 40px;overflow: hidden;display: block;display:-webkit-box;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
-.ico-fly{background-position: 0 -60px;}
-
-
 .card-video{margin-top: 10px;}
 .sample-form.pb2{padding-bottom: 2%;}
 

@@ -1,4 +1,4 @@
-body{font-family:"Roboto","Arial","Tahoma","sans-serif","黑体";word-break:break-all; word-wrap:break-word; }
+body{font-family:"Roboto","Arial","Tahoma",sans-serif,"黑体";word-break:break-all; word-wrap:break-word; }
 .white{background-color: #fff;}
 a:link,a:visited,a:hover,a:active{text-decoration: none;}
 
@@ -333,4 +333,13 @@ a:link,a:visited,a:hover,a:active{text-decoration: none;}
 .case-box.qual-body .swiper-button-next{right: 0px;} 
 .case-box.qual-body .swiper-button-prev{left: 0px;}
 .swiper-slide-title{font-size: 30px;}
+
+
+.nav-title:before,.ico-fly{content: '';display: inline-block;margin-right: 10px;background: #fff url('../../images/icon/ico-nav.png') 0 0 no-repeat;
+width: 20px;height: 20px;vertical-align: middle;margin-top: -4px;}
+.nav-title.ico-nav0:before{background-position: 0 0;}
+.nav-title.ico-nav1:before{background-position: 0 -20px;}
+.nav-title.ico-nav2:before{background-position: 0 -40px;}
+.nav-title.ico-nav2{height: 40px;overflow: hidden;display: block;display:-webkit-box;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.ico-fly{background-position: 0 -60px;}
 

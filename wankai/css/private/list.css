@@ -9,7 +9,7 @@ p.ellipse4{height: 120px;line-height: 30px;overflow: hidden;text-overflow:ellips
 
 .list-box{overflow-x: hidden;}
 
-.qual-box .product-group-wrap .list-group-item .new-link{display: block;width: 100%;color: #000;}
+.new-link{display: block;width: 100%;color: #000;}
 
 
 /* 新闻 */

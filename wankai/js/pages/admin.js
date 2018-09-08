@@ -314,6 +314,10 @@ $(function () {
       $('.card-floor-box .floor-btns .btn.btns-ctrl').click(function () {
         $(this).siblings().not($(this)).toggleClass('current');
       });
+
+      $('.card-floor-box .floor-btns a').click(function () {
+        $('.card-floor-box .floor-btns a').removeClass('current');
+      });
     }
 
 });
