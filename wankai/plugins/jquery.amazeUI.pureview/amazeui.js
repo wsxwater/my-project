@@ -91,24 +91,10 @@
             __webpack_require__(34);
             __webpack_require__(35);
             __webpack_require__(36);
-            // __webpack_require__(37);
-            // __webpack_require__(38);
-            // __webpack_require__(39);
+            __webpack_require__(37);
+            __webpack_require__(38);
+            __webpack_require__(39);
             __webpack_require__(40);
-            // __webpack_require__(41);
-            // __webpack_require__(42);
-            // __webpack_require__(43);
-            // __webpack_require__(44);
-            // __webpack_require__(45);
-            // __webpack_require__(46);
-            // __webpack_require__(47);
-            // __webpack_require__(48);
-            // __webpack_require__(49);
-            // __webpack_require__(50);
-            // __webpack_require__(51);
-            // __webpack_require__(52);
-            // __webpack_require__(53);
-            // __webpack_require__(54);
 
             module.exports = $.AMUI = UI;
 
@@ -10004,8 +9990,9 @@
                         //图片放大效果
                         $(function () {
                             $('.am-pureview-ctrl').remove();
+                            var append_html="<div class='am-pureview-ctrl'><img class='rotate_jia' src='../plugins/jquery.amazeUI.pureview/images/jiahao.png' /><img class='rotate_div' src='../plugins/jquery.amazeUI.pureview/images/xuanzhuan.png' /><img class='rotate_jian'  src='../plugins/jquery.amazeUI.pureview/images/jianhao.png' /><div class='ctrl-direction'><img class='up-img' src='../plugins/jquery.amazeUI.pureview/images/shang.png' /><img class='down-img' src='../plugins/jquery.amazeUI.pureview/images/xia.png' /><img class='left-img' src='../plugins/jquery.amazeUI.pureview/images/zuo.png'  /><img class='middle-img' src='../plugins/jquery.amazeUI.pureview/images/zhong.png'  /><img class='right-img' src='../plugins/jquery.amazeUI.pureview/images/you.png'  /></div></div></div>";
                             $(".am-pureview-bar-active")
-                                .append("<div class='am-pureview-ctrl' style='position:absolute;z-index:10000000000000;width: 400px;;height:50px;bottom:30px;left:50%;margin-left:-200px;cursor: pointer'><img class='rotate_jia' src='../plugins/jquery.amazeUI.purview/images/jiahao.png' width='60' alt=''/><img class='rotate_div' style='margin:0 10px; ' src='../plugins/jquery.amazeUI.purview/images/xuanzhuan.png' width='60' alt=''/><img class='rotate_jian'  src='../plugins/jquery.amazeUI.purview/images/jianhao.png' width='60' alt=''/><img class='up-img' src='../plugins/jquery.amazeUI.purview/images/shang.png'  alt=''><img class='down-img' src='../plugins/jquery.amazeUI.purview/images/xia.png'  alt=''><img class='left-img' src='../plugins/jquery.amazeUI.purview/images/zuo.png'   alt=''><img class='right-img' src='../plugins/jquery.amazeUI.purview/images/you.png'   alt=''><img class='middle-img' src='../plugins/jquery.amazeUI.purview/images/zhong.png'   alt=''></div></div>");
+                                .append(append_html);
                             var rotate = 0;
                             $(".rotate_div").on("click", function () {
                                 rotate += 90;
